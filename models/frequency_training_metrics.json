@@ -1,0 +1,18 @@
+{
+    "model": "Frequency-only FFT + ResNet50",
+    "frequency_representation": "2D FFT magnitude with log scaling",
+    "dataset": "dragonintelligence/CIFAKE-image-dataset",
+    "split": "train",
+    "training_samples": 2000,
+    "epochs": 1,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "device": "cpu",
+    "history": [
+        {
+            "epoch": 1,
+            "loss": 0.5124960145950317,
+            "accuracy": 0.7375
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "model": "Hybrid Spatial + Frequency",
+    "spatial_branch": "Pretrained ResNet50",
+    "frequency_branch": "FFT magnitude + CNN",
+    "dataset": "CIFAKE",
+    "split": "test",
+    "total_images": 20000,
+    "accuracy": 0.83425,
+    "precision": 0.7551721505458432,
+    "recall": 0.9892,
+    "f1_score": 0.8564872938222434,
+    "confusion_matrix": [
+        [
+            6793,
+            3207
+        ],
+        [
+            108,
+            9892
+        ]
+    ]
+}

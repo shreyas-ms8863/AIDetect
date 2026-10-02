@@ -1,0 +1,20 @@
+filename,ground_truth,prediction,ai_probability,real_probability
+"ChatGPT Image Aug 24, 2026, 10_37_14 PM.png",AI-GENERATED,REAL,11.49,88.51
+"ChatGPT Image Aug 24, 2026, 10_37_15 PM.png",AI-GENERATED,REAL,11.49,88.51
+"ChatGPT Image Aug 24, 2026, 10_42_49 PM.png",AI-GENERATED,REAL,3.17,96.83
+"ChatGPT Image Aug 24, 2026, 10_50_48 PM.png",AI-GENERATED,AI-GENERATED,54.71,45.29
+"ChatGPT Image Aug 24, 2026, 11_58_39 PM.png",AI-GENERATED,REAL,1.64,98.36
+Gemini_Generated_Image_gezzfdgezzfdgezz.png,AI-GENERATED,REAL,19.18,80.82
+Gemini_Generated_Image_gezzfdgezzfdgezz~2.jpg,AI-GENERATED,REAL,21.6,78.4
+Gemini_Generated_Image_m8cmktm8cmktm8cm.png,AI-GENERATED,REAL,3.0,97.0
+Gemini_Generated_Image_wbj9powbj9powbj9.png,AI-GENERATED,REAL,7.68,92.32
+rrr-jr-ntr-komaram-bheem-2022-movies-telugu-movies-tollywood-3840x2160-7006.jpg,AI-GENERATED,REAL,15.38,84.62
+537393401_18081235945931759_4800469971069440458_n.jpg,REAL,REAL,1.03,98.97
+IMG_20251213_231617.jpg,REAL,REAL,0.02,99.98
+IMG_20260401_111850_1~2.jpg,REAL,AI-GENERATED,95.51,4.49
+NTR.jpg,REAL,REAL,25.97,74.03
+WhatsApp Image 2026-05-26 at 9.18.05 AM.jpeg,REAL,AI-GENERATED,84.77,15.23
+WhatsApp Image 2026-08-06 at 4.45.45 PM.jpeg,REAL,REAL,0.0,100.0
+image.png,REAL,REAL,10.55,89.45
+images.jpg,REAL,REAL,35.6,64.4
+wp4915659-aravinda-sametha-veera-raghava-wallpapers.jpg,REAL,REAL,43.45,56.55

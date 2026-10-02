@@ -1,0 +1,14 @@
+{
+    "dataset": "Tiny-GenImage",
+    "split": "validation",
+    "total_images": 100,
+    "sample_per_class": 50,
+    "accuracy_percent": 59.0,
+    "precision_percent": 63.64,
+    "recall_percent": 42.0,
+    "f1_score_percent": 50.6,
+    "true_negative": 38,
+    "false_positive": 12,
+    "false_negative": 29,
+    "true_positive": 21
+}

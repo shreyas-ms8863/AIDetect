@@ -1,0 +1,19 @@
+Test,Model,Clean Accuracy,Test Accuracy,Accuracy Drop
+Clean,Spatial V2,95.93,95.93,0.0
+Clean,Frequency V2,88.75,88.75,0.0
+Clean,Hybrid V2,95.72,95.72,0.0
+JPEG Q50,Spatial V2,95.93,91.44,4.49
+JPEG Q50,Frequency V2,88.75,85.64,3.11
+JPEG Q50,Hybrid V2,95.72,93.46,2.26
+Resize,Spatial V2,95.93,95.18,0.75
+Resize,Frequency V2,88.75,79.96,8.79
+Resize,Hybrid V2,95.72,94.63,1.09
+Blur,Spatial V2,95.93,56.27,39.66
+Blur,Frequency V2,88.75,51.15,37.6
+Blur,Hybrid V2,95.72,55.61,40.11
+Gaussian Noise,Spatial V2,95.93,85.91,10.02
+Gaussian Noise,Frequency V2,88.75,51.27,37.48
+Gaussian Noise,Hybrid V2,95.72,90.41,5.31
+JPEG Re-encoding Q90,Spatial V2,95.93,95.95,-0.02
+JPEG Re-encoding Q90,Frequency V2,88.75,88.08,0.67
+JPEG Re-encoding Q90,Hybrid V2,95.72,95.25,0.47

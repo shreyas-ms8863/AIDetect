@@ -1,0 +1,17 @@
+{
+    "model": "Spatial-only ResNet50",
+    "dataset": "dragonintelligence/CIFAKE-image-dataset",
+    "split": "train",
+    "training_samples": 2000,
+    "epochs": 1,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "device": "cpu",
+    "history": [
+        {
+            "epoch": 1,
+            "loss": 0.42204125493764877,
+            "accuracy": 0.8085
+        }
+    ]
+}

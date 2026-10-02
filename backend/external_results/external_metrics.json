@@ -1,0 +1,71 @@
+{
+    "Spatial V2": {
+        "accuracy": 43.02,
+        "precision": 43.02,
+        "recall_ai": 100.0,
+        "f1": 60.16,
+        "real_recall": 0.0,
+        "ai_recall": 100.0,
+        "false_positive_rate": 100.0,
+        "true_negative": 0,
+        "false_positive": 49,
+        "false_negative": 0,
+        "true_positive": 37,
+        "confusion_matrix": [
+            [
+                0,
+                49
+            ],
+            [
+                0,
+                37
+            ]
+        ]
+    },
+    "Frequency V2": {
+        "accuracy": 66.28,
+        "precision": 62.5,
+        "recall_ai": 54.05,
+        "f1": 57.97,
+        "real_recall": 75.51,
+        "ai_recall": 54.05,
+        "false_positive_rate": 24.49,
+        "true_negative": 37,
+        "false_positive": 12,
+        "false_negative": 17,
+        "true_positive": 20,
+        "confusion_matrix": [
+            [
+                37,
+                12
+            ],
+            [
+                17,
+                20
+            ]
+        ]
+    },
+    "Hybrid V2": {
+        "accuracy": 43.02,
+        "precision": 43.02,
+        "recall_ai": 100.0,
+        "f1": 60.16,
+        "real_recall": 0.0,
+        "ai_recall": 100.0,
+        "false_positive_rate": 100.0,
+        "true_negative": 0,
+        "false_positive": 49,
+        "false_negative": 0,
+        "true_positive": 37,
+        "confusion_matrix": [
+            [
+                0,
+                49
+            ],
+            [
+                0,
+                37
+            ]
+        ]
+    }
+}

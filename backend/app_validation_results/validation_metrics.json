@@ -1,0 +1,21 @@
+{
+    "total_images": 19,
+    "correct": 8,
+    "incorrect": 11,
+    "accuracy": 42.1053,
+    "precision_ai": 33.3333,
+    "recall_ai": 10.0,
+    "f1_ai": 15.3846,
+    "real_recall": 77.7778,
+    "ai_recall": 10.0,
+    "confusion_matrix": {
+        "true_negative": 7,
+        "false_positive": 2,
+        "false_negative": 9,
+        "true_positive": 1
+    },
+    "dataset": {
+        "real_images": 9,
+        "ai_images": 10
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "Clean": {
+        "Spatial V2": {
+            "accuracy": 95.93,
+            "precision": 94.39,
+            "recall": 97.66,
+            "f1": 96.0
+        },
+        "Frequency V2": {
+            "accuracy": 88.75,
+            "precision": 91.33,
+            "recall": 85.63,
+            "f1": 88.39
+        },
+        "Hybrid V2": {
+            "accuracy": 95.72,
+            "precision": 96.87,
+            "recall": 94.49,
+            "f1": 95.67
+        }
+    },
+    "JPEG Q50": {
+        "Spatial V2": {
+            "accuracy": 91.44,
+            "precision": 86.7,
+            "recall": 97.89,
+            "f1": 91.95
+        },
+        "Frequency V2": {
+            "accuracy": 85.64,
+            "precision": 83.69,
+            "recall": 88.54,
+            "f1": 86.04
+        },
+        "Hybrid V2": {
+            "accuracy": 93.46,
+            "precision": 93.3,
+            "recall": 93.64,
+            "f1": 93.47
+        }
+    },
+    "Resize": {
+        "Spatial V2": {
+            "accuracy": 95.18,
+            "precision": 94.93,
+            "recall": 95.46,
+            "f1": 95.19
+        },
+        "Frequency V2": {
+            "accuracy": 79.96,
+            "precision": 72.04,
+            "recall": 97.92,
+            "f1": 83.01
+        },
+        "Hybrid V2": {
+            "accuracy": 94.63,
+            "precision": 97.14,
+            "recall": 91.97,
+            "f1": 94.48
+        }
+    },
+    "Blur": {
+        "Spatial V2": {
+            "accuracy": 56.27,
+            "precision": 53.42,
+            "recall": 98.0,
+            "f1": 69.15
+        },
+        "Frequency V2": {
+            "accuracy": 51.15,
+            "precision": 50.64,
+            "recall": 90.45,
+            "f1": 64.93
+        },
+        "Hybrid V2": {
+            "accuracy": 55.61,
+            "precision": 53.0,
+            "recall": 99.14,
+            "f1": 69.07
+        }
+    },
+    "Gaussian Noise": {
+        "Spatial V2": {
+            "accuracy": 85.91,
+            "precision": 79.21,
+            "recall": 97.37,
+            "f1": 87.35
+        },
+        "Frequency V2": {
+            "accuracy": 51.27,
+            "precision": 50.65,
+            "recall": 98.91,
+            "f1": 66.99
+        },
+        "Hybrid V2": {
+            "accuracy": 90.41,
+            "precision": 89.27,
+            "recall": 91.86,
+            "f1": 90.55
+        }
+    },
+    "JPEG Re-encoding Q90": {
+        "Spatial V2": {
+            "accuracy": 95.95,
+            "precision": 94.62,
+            "recall": 97.44,
+            "f1": 96.01
+        },
+        "Frequency V2": {
+            "accuracy": 88.08,
+            "precision": 91.5,
+            "recall": 83.96,
+            "f1": 87.57
+        },
+        "Hybrid V2": {
+            "accuracy": 95.25,
+            "precision": 96.74,
+            "recall": 93.67,
+            "f1": 95.18
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "dataset": "CIFAKE",
+    "split": "test",
+    "total_images": 20000,
+    "correct": 19447,
+    "incorrect": 553,
+    "accuracy": 0.97235,
+    "accuracy_percent": 97.23,
+    "precision": 0.972681,
+    "precision_percent": 97.27,
+    "recall": 0.972,
+    "recall_percent": 97.2,
+    "f1_score": 0.97234,
+    "f1_score_percent": 97.23,
+    "true_negative": 9727,
+    "false_positive": 273,
+    "false_negative": 280,
+    "true_positive": 9720
+}

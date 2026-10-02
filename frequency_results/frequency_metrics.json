@@ -1,0 +1,21 @@
+{
+    "model": "Frequency-only FFT + ResNet50",
+    "frequency_representation": "2D FFT magnitude with log scaling",
+    "dataset": "CIFAKE",
+    "split": "test",
+    "total_images": 20000,
+    "accuracy": 0.8184,
+    "precision": 0.8804971319311663,
+    "recall": 0.7368,
+    "f1_score": 0.8022648083623694,
+    "confusion_matrix": [
+        [
+            9000,
+            1000
+        ],
+        [
+            2632,
+            7368
+        ]
+    ]
+}

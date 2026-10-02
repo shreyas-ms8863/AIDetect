@@ -1,0 +1,58 @@
+{
+    "device": "cuda",
+    "dataset": {
+        "real_images": 9,
+        "ai_images": 10,
+        "total_images": 19
+    },
+    "models": [
+        {
+            "model": "Spatial V2",
+            "total_images": 19,
+            "correct": 10,
+            "incorrect": 9,
+            "accuracy": 0.5263157894736842,
+            "precision_ai": 0.5263157894736842,
+            "recall_ai": 1.0,
+            "f1_ai": 0.6896551724137931,
+            "real_recall": 0.0,
+            "ai_recall": 1.0,
+            "true_negatives": 0,
+            "false_positives": 9,
+            "false_negatives": 0,
+            "true_positives": 10
+        },
+        {
+            "model": "Frequency V2",
+            "total_images": 19,
+            "correct": 5,
+            "incorrect": 14,
+            "accuracy": 0.2631578947368421,
+            "precision_ai": 0.3,
+            "recall_ai": 0.3,
+            "f1_ai": 0.3,
+            "real_recall": 0.2222222222222222,
+            "ai_recall": 0.3,
+            "true_negatives": 2,
+            "false_positives": 7,
+            "false_negatives": 7,
+            "true_positives": 3
+        },
+        {
+            "model": "Hybrid V2",
+            "total_images": 19,
+            "correct": 10,
+            "incorrect": 9,
+            "accuracy": 0.5263157894736842,
+            "precision_ai": 0.5263157894736842,
+            "recall_ai": 1.0,
+            "f1_ai": 0.6896551724137931,
+            "real_recall": 0.0,
+            "ai_recall": 1.0,
+            "true_negatives": 0,
+            "false_positives": 9,
+            "false_negatives": 0,
+            "true_positives": 10
+        }
+    ]
+}

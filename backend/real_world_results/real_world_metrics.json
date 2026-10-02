@@ -1,0 +1,14 @@
+{
+    "test_type": "Real-world generalization",
+    "total_images": 19,
+    "correct": 8,
+    "incorrect": 11,
+    "accuracy_percent": 42.11,
+    "precision_percent": 33.33,
+    "recall_percent": 10.0,
+    "f1_score_percent": 15.38,
+    "true_negative": 7,
+    "false_positive": 2,
+    "false_negative": 9,
+    "true_positive": 1
+}

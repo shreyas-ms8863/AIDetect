@@ -1,0 +1,56 @@
+{
+    "dataset": "AIDetect real-world test",
+    "total_images": 19,
+    "ai_images": 10,
+    "real_images": 9,
+    "models": {
+        "spatial_only": {
+            "accuracy": 0.5263157894736842,
+            "precision": 0.5263157894736842,
+            "recall": 1.0,
+            "f1_score": 0.6896551724137931,
+            "confusion_matrix": [
+                [
+                    0,
+                    9
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        },
+        "frequency_only": {
+            "accuracy": 0.5263157894736842,
+            "precision": 0.5263157894736842,
+            "recall": 1.0,
+            "f1_score": 0.6896551724137931,
+            "confusion_matrix": [
+                [
+                    0,
+                    9
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        },
+        "hybrid": {
+            "accuracy": 0.5263157894736842,
+            "precision": 0.5263157894736842,
+            "recall": 1.0,
+            "f1_score": 0.6896551724137931,
+            "confusion_matrix": [
+                [
+                    0,
+                    9
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        }
+    }
+}

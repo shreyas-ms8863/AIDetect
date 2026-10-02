@@ -1,0 +1,561 @@
+{
+    "metadata": {
+        "training_data": {
+            "real_images_count": 2099,
+            "ai_images_count": 2066,
+            "total_images_count": 4165,
+            "overlap_with_eval_sets": 0,
+            "data_leakage": "CONFIRMED_ZERO"
+        }
+    },
+    "external_86_metrics": {
+        "Spatial V2": {
+            "accuracy": 43.02,
+            "precision": 43.02,
+            "ai_recall": 100.0,
+            "real_recall": 0.0,
+            "f1": 60.16,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    49
+                ],
+                [
+                    0,
+                    37
+                ]
+            ]
+        },
+        "Frequency V2": {
+            "accuracy": 44.19,
+            "precision": 43.21,
+            "ai_recall": 94.59,
+            "real_recall": 6.12,
+            "f1": 59.32,
+            "fpr": 93.88,
+            "confusion_matrix": [
+                [
+                    3,
+                    46
+                ],
+                [
+                    2,
+                    35
+                ]
+            ]
+        },
+        "Hybrid V2": {
+            "accuracy": 43.02,
+            "precision": 43.02,
+            "ai_recall": 100.0,
+            "real_recall": 0.0,
+            "f1": 60.16,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    49
+                ],
+                [
+                    0,
+                    37
+                ]
+            ]
+        },
+        "Spatial V3": {
+            "accuracy": 51.16,
+            "precision": 43.9,
+            "ai_recall": 48.65,
+            "real_recall": 53.06,
+            "f1": 46.15,
+            "fpr": 46.94,
+            "confusion_matrix": [
+                [
+                    26,
+                    23
+                ],
+                [
+                    19,
+                    18
+                ]
+            ]
+        },
+        "Frequency V3": {
+            "accuracy": 43.02,
+            "precision": 34.21,
+            "ai_recall": 35.14,
+            "real_recall": 48.98,
+            "f1": 34.67,
+            "fpr": 51.02,
+            "confusion_matrix": [
+                [
+                    24,
+                    25
+                ],
+                [
+                    24,
+                    13
+                ]
+            ]
+        },
+        "Hybrid V3": {
+            "accuracy": 41.86,
+            "precision": 0.0,
+            "ai_recall": 0.0,
+            "real_recall": 73.47,
+            "f1": 0,
+            "fpr": 26.53,
+            "confusion_matrix": [
+                [
+                    36,
+                    13
+                ],
+                [
+                    37,
+                    0
+                ]
+            ]
+        }
+    },
+    "cifake_metrics": {
+        "Spatial V2": {
+            "accuracy": 95.5,
+            "precision": 93.33,
+            "ai_recall": 98.0,
+            "real_recall": 93.0,
+            "f1": 95.61,
+            "fpr": 7.0,
+            "confusion_matrix": [
+                [
+                    93,
+                    7
+                ],
+                [
+                    2,
+                    98
+                ]
+            ]
+        },
+        "Frequency V2": {
+            "accuracy": 53.5,
+            "precision": 56.6,
+            "ai_recall": 30.0,
+            "real_recall": 77.0,
+            "f1": 39.22,
+            "fpr": 23.0,
+            "confusion_matrix": [
+                [
+                    77,
+                    23
+                ],
+                [
+                    70,
+                    30
+                ]
+            ]
+        },
+        "Hybrid V2": {
+            "accuracy": 92.0,
+            "precision": 87.5,
+            "ai_recall": 98.0,
+            "real_recall": 86.0,
+            "f1": 92.45,
+            "fpr": 14.0,
+            "confusion_matrix": [
+                [
+                    86,
+                    14
+                ],
+                [
+                    2,
+                    98
+                ]
+            ]
+        },
+        "Spatial V3": {
+            "accuracy": 91.5,
+            "precision": 88.07,
+            "ai_recall": 96.0,
+            "real_recall": 87.0,
+            "f1": 91.87,
+            "fpr": 13.0,
+            "confusion_matrix": [
+                [
+                    87,
+                    13
+                ],
+                [
+                    4,
+                    96
+                ]
+            ]
+        },
+        "Frequency V3": {
+            "accuracy": 68.0,
+            "precision": 87.5,
+            "ai_recall": 42.0,
+            "real_recall": 94.0,
+            "f1": 56.76,
+            "fpr": 6.0,
+            "confusion_matrix": [
+                [
+                    94,
+                    6
+                ],
+                [
+                    58,
+                    42
+                ]
+            ]
+        },
+        "Hybrid V3": {
+            "accuracy": 77.0,
+            "precision": 75.47,
+            "ai_recall": 80.0,
+            "real_recall": 74.0,
+            "f1": 77.67,
+            "fpr": 26.0,
+            "confusion_matrix": [
+                [
+                    74,
+                    26
+                ],
+                [
+                    20,
+                    80
+                ]
+            ]
+        }
+    },
+    "mirror_selfie_metrics": {
+        "Spatial V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Frequency V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Hybrid V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Spatial V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Frequency V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Hybrid V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        }
+    },
+    "additional_10_real_metrics": {
+        "Spatial V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    10
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Frequency V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    10
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Hybrid V2": {
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "ai_recall": 0,
+            "real_recall": 0.0,
+            "f1": 0,
+            "fpr": 100.0,
+            "confusion_matrix": [
+                [
+                    0,
+                    10
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Spatial V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    10,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Frequency V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    10,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "Hybrid V3": {
+            "accuracy": 100.0,
+            "precision": 0,
+            "ai_recall": 0,
+            "real_recall": 100.0,
+            "f1": 0,
+            "fpr": 0.0,
+            "confusion_matrix": [
+                [
+                    10,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        }
+    },
+    "additional_10_ai_metrics": {
+        "Spatial V2": {
+            "accuracy": 100.0,
+            "precision": 100.0,
+            "ai_recall": 100.0,
+            "real_recall": 0,
+            "f1": 100.0,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        },
+        "Frequency V2": {
+            "accuracy": 100.0,
+            "precision": 100.0,
+            "ai_recall": 100.0,
+            "real_recall": 0,
+            "f1": 100.0,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        },
+        "Hybrid V2": {
+            "accuracy": 100.0,
+            "precision": 100.0,
+            "ai_recall": 100.0,
+            "real_recall": 0,
+            "f1": 100.0,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    10
+                ]
+            ]
+        },
+        "Spatial V3": {
+            "accuracy": 10.0,
+            "precision": 100.0,
+            "ai_recall": 10.0,
+            "real_recall": 0,
+            "f1": 18.18,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    9,
+                    1
+                ]
+            ]
+        },
+        "Frequency V3": {
+            "accuracy": 80.0,
+            "precision": 100.0,
+            "ai_recall": 80.0,
+            "real_recall": 0,
+            "f1": 88.89,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    8
+                ]
+            ]
+        },
+        "Hybrid V3": {
+            "accuracy": 60.0,
+            "precision": 100.0,
+            "ai_recall": 60.0,
+            "real_recall": 0,
+            "f1": 75.0,
+            "fpr": 0,
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    4,
+                    6
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,460 @@
+{
+    "dataset": "Tiny-GenImage",
+    "source": "TheKernel01/Tiny-GenImage",
+    "validation_shard": "data/validation-00000-of-00004.parquet",
+    "total_images": 100,
+    "real_images": 50,
+    "ai_images": 50,
+    "models": {
+        "spatial_only": {
+            "accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1_score": 0.6666666666666666,
+            "confusion_matrix": [
+                [
+                    0,
+                    50
+                ],
+                [
+                    0,
+                    50
+                ]
+            ]
+        },
+        "frequency_only": {
+            "accuracy": 0.49,
+            "precision": 0.4946236559139785,
+            "recall": 0.92,
+            "f1_score": 0.6433566433566433,
+            "confusion_matrix": [
+                [
+                    3,
+                    47
+                ],
+                [
+                    4,
+                    46
+                ]
+            ]
+        },
+        "hybrid": {
+            "accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1_score": 0.6666666666666666,
+            "confusion_matrix": [
+                [
+                    0,
+                    50
+                ],
+                [
+                    0,
+                    50
+                ]
+            ]
+        }
+    },
+    "generator_metadata": [
+        {
+            "dataset_index": 0,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 1,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 2,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 3,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 4,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 5,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 6,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 7,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 8,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 9,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 10,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 11,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 12,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 13,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 14,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 15,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 16,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 17,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 18,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 19,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 20,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 21,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 22,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 23,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 24,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 25,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 26,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 27,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 28,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 29,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 30,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 31,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 32,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 33,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 34,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 35,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 36,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 37,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 38,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 39,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 40,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 41,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 42,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 43,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 44,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 45,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 46,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 47,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 48,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 49,
+            "generator": "tensor(0)"
+        },
+        {
+            "dataset_index": 50,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 51,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 52,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 53,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 54,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 55,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 56,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 57,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 58,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 59,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 60,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 61,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 62,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 63,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 64,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 65,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 66,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 67,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 68,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 69,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 70,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 71,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 72,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 73,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 74,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 75,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 76,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 77,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 78,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 79,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 80,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 81,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 82,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 83,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 84,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 85,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 86,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 87,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 88,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 89,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 90,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 91,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 92,
+            "generator": "tensor(1)"
+        },
+        {
+            "dataset_index": 93,
+            "generator": "tensor(2)"
+        },
+        {
+            "dataset_index": 94,
+            "generator": "tensor(3)"
+        },
+        {
+            "dataset_index": 95,
+            "generator": "tensor(4)"
+        },
+        {
+            "dataset_index": 96,
+            "generator": "tensor(6)"
+        },
+        {
+            "dataset_index": 97,
+            "generator": "tensor(7)"
+        },
+        {
+            "dataset_index": 98,
+            "generator": "tensor(8)"
+        },
+        {
+            "dataset_index": 99,
+            "generator": "tensor(1)"
+        }
+    ]
+}

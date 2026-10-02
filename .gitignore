@@ -1,0 +1,51 @@
+# ==============================
+# AIDetect Git Ignore
+# ==============================
+
+# Python virtual environment
+backend/venv/
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Node dependencies
+frontend/node_modules/
+node_modules/
+
+# Frontend build output
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large trained model checkpoints
+models/*.pth
+models/*.pt
+models/*.ckpt
+models/*.onnx
+
+# Temporary files
+*.tmp
+*.temp

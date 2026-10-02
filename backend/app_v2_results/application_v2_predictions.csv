@@ -1,0 +1,58 @@
+model,filename,actual,prediction,ai_probability,real_probability,correct
+Spatial V2,537393401_18081235945931759_4800469971069440458_n.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,IMG_20251213_231617.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,IMG_20260401_111850_1~2.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,NTR.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,WhatsApp Image 2026-05-26 at 9.18.05 AM.jpeg,REAL,AI,1.0,0.0,False
+Spatial V2,WhatsApp Image 2026-08-06 at 4.45.45 PM.jpeg,REAL,AI,1.0,0.0,False
+Spatial V2,image.png,REAL,AI,1.0,0.0,False
+Spatial V2,images.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,wp4915659-aravinda-sametha-veera-raghava-wallpapers.jpg,REAL,AI,1.0,0.0,False
+Spatial V2,"ChatGPT Image Aug 24, 2026, 10_37_14 PM.png",AI,AI,1.0,0.0,True
+Spatial V2,"ChatGPT Image Aug 24, 2026, 10_37_15 PM.png",AI,AI,1.0,0.0,True
+Spatial V2,"ChatGPT Image Aug 24, 2026, 10_42_49 PM.png",AI,AI,1.0,0.0,True
+Spatial V2,"ChatGPT Image Aug 24, 2026, 10_50_48 PM.png",AI,AI,1.0,0.0,True
+Spatial V2,"ChatGPT Image Aug 24, 2026, 11_58_39 PM.png",AI,AI,1.0,0.0,True
+Spatial V2,Gemini_Generated_Image_gezzfdgezzfdgezz.png,AI,AI,1.0,0.0,True
+Spatial V2,Gemini_Generated_Image_gezzfdgezzfdgezz~2.jpg,AI,AI,1.0,0.0,True
+Spatial V2,Gemini_Generated_Image_m8cmktm8cmktm8cm.png,AI,AI,1.0,0.0,True
+Spatial V2,Gemini_Generated_Image_wbj9powbj9powbj9.png,AI,AI,1.0,0.0,True
+Spatial V2,rrr-jr-ntr-komaram-bheem-2022-movies-telugu-movies-tollywood-3840x2160-7006.jpg,AI,AI,1.0,0.0,True
+Frequency V2,537393401_18081235945931759_4800469971069440458_n.jpg,REAL,AI,0.5102599263191223,0.4897401034832001,False
+Frequency V2,IMG_20251213_231617.jpg,REAL,AI,0.5111138224601746,0.48888617753982544,False
+Frequency V2,IMG_20260401_111850_1~2.jpg,REAL,REAL,0.4884309768676758,0.5115690231323242,True
+Frequency V2,NTR.jpg,REAL,AI,0.5615013241767883,0.43849867582321167,False
+Frequency V2,WhatsApp Image 2026-05-26 at 9.18.05 AM.jpeg,REAL,REAL,0.4848291575908661,0.5151708126068115,True
+Frequency V2,WhatsApp Image 2026-08-06 at 4.45.45 PM.jpeg,REAL,AI,0.5020185708999634,0.497981458902359,False
+Frequency V2,image.png,REAL,AI,0.5338683128356934,0.46613168716430664,False
+Frequency V2,images.jpg,REAL,AI,0.5577320456504822,0.4422679543495178,False
+Frequency V2,wp4915659-aravinda-sametha-veera-raghava-wallpapers.jpg,REAL,AI,0.5024809241294861,0.4975190758705139,False
+Frequency V2,"ChatGPT Image Aug 24, 2026, 10_37_14 PM.png",AI,AI,0.503071665763855,0.4969283640384674,True
+Frequency V2,"ChatGPT Image Aug 24, 2026, 10_37_15 PM.png",AI,AI,0.503071665763855,0.4969283640384674,True
+Frequency V2,"ChatGPT Image Aug 24, 2026, 10_42_49 PM.png",AI,REAL,0.48842135071754456,0.5115786790847778,False
+Frequency V2,"ChatGPT Image Aug 24, 2026, 10_50_48 PM.png",AI,AI,0.5171109437942505,0.4828890860080719,True
+Frequency V2,"ChatGPT Image Aug 24, 2026, 11_58_39 PM.png",AI,REAL,0.48939988017082214,0.5106000900268555,False
+Frequency V2,Gemini_Generated_Image_gezzfdgezzfdgezz.png,AI,REAL,0.4715224504470825,0.5284775495529175,False
+Frequency V2,Gemini_Generated_Image_gezzfdgezzfdgezz~2.jpg,AI,REAL,0.46578648686408997,0.5342135429382324,False
+Frequency V2,Gemini_Generated_Image_m8cmktm8cmktm8cm.png,AI,REAL,0.49470287561416626,0.5052971243858337,False
+Frequency V2,Gemini_Generated_Image_wbj9powbj9powbj9.png,AI,REAL,0.48216649889945984,0.5178335309028625,False
+Frequency V2,rrr-jr-ntr-komaram-bheem-2022-movies-telugu-movies-tollywood-3840x2160-7006.jpg,AI,REAL,0.4698329567909241,0.5301671028137207,False
+Hybrid V2,537393401_18081235945931759_4800469971069440458_n.jpg,REAL,AI,1.0,4.407468428744535e-35,False
+Hybrid V2,IMG_20251213_231617.jpg,REAL,AI,1.0,8.346365736488122e-30,False
+Hybrid V2,IMG_20260401_111850_1~2.jpg,REAL,AI,1.0,2.0710317633465238e-29,False
+Hybrid V2,NTR.jpg,REAL,AI,1.0,1.544960899493646e-28,False
+Hybrid V2,WhatsApp Image 2026-05-26 at 9.18.05 AM.jpeg,REAL,AI,1.0,2.3853126667491328e-39,False
+Hybrid V2,WhatsApp Image 2026-08-06 at 4.45.45 PM.jpeg,REAL,AI,1.0,2.695435637906872e-34,False
+Hybrid V2,image.png,REAL,AI,1.0,1.0620386603927861e-26,False
+Hybrid V2,images.jpg,REAL,AI,1.0,1.4455216457169089e-28,False
+Hybrid V2,wp4915659-aravinda-sametha-veera-raghava-wallpapers.jpg,REAL,AI,1.0,3.2421930351046746e-31,False
+Hybrid V2,"ChatGPT Image Aug 24, 2026, 10_37_14 PM.png",AI,AI,1.0,1.6196053700544774e-28,True
+Hybrid V2,"ChatGPT Image Aug 24, 2026, 10_37_15 PM.png",AI,AI,1.0,1.6196053700544774e-28,True
+Hybrid V2,"ChatGPT Image Aug 24, 2026, 10_42_49 PM.png",AI,AI,1.0,2.078779568864206e-30,True
+Hybrid V2,"ChatGPT Image Aug 24, 2026, 10_50_48 PM.png",AI,AI,1.0,3.345417660928913e-31,True
+Hybrid V2,"ChatGPT Image Aug 24, 2026, 11_58_39 PM.png",AI,AI,1.0,1.3137516952227714e-25,True
+Hybrid V2,Gemini_Generated_Image_gezzfdgezzfdgezz.png,AI,AI,1.0,8.399875081931903e-28,True
+Hybrid V2,Gemini_Generated_Image_gezzfdgezzfdgezz~2.jpg,AI,AI,1.0,8.768639629138533e-28,True
+Hybrid V2,Gemini_Generated_Image_m8cmktm8cmktm8cm.png,AI,AI,1.0,1.3663969324746981e-27,True
+Hybrid V2,Gemini_Generated_Image_wbj9powbj9powbj9.png,AI,AI,1.0,4.0140510257981044e-30,True
+Hybrid V2,rrr-jr-ntr-komaram-bheem-2022-movies-telugu-movies-tollywood-3840x2160-7006.jpg,AI,AI,1.0,4.5869542466261605e-30,True
