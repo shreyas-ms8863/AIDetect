@@ -1,0 +1,32 @@
+# ============================================================
+# AIDetect — Python Dependencies
+# Reference environment: Python 3.12.10 (Windows 11 / x86_64)
+# ============================================================
+
+# Web API framework & server
+fastapi==0.141.1
+uvicorn==0.54.0
+python-multipart==0.0.32
+
+# Numerical & Image Processing
+numpy==2.5.3
+pillow==12.3.0
+
+# Data analysis, evaluation metrics & visualization
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
+tqdm==4.70.1
+
+# Dataset loading (CIFAKE, GenImage via HuggingFace Hub)
+datasets==5.0.1
+huggingface-hub==1.33.0
+
+# Deep Learning Framework
+# Note: The tested environment uses PyTorch with CUDA 12.8 support:
+#   torch==2.11.0+cu128
+#   torchvision==0.26.0+cu128
+# CPU-only users or users with different CUDA versions should install the
+# corresponding PyTorch build from https://pytorch.org/get-started/locally/
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128

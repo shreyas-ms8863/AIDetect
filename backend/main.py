@@ -60,7 +60,7 @@ DEVICE = torch.device(
 )
 
 print("=" * 70)
-print("AIDetect V2 Backend")
+print(f"AIDetect {MODEL_VERSION} Backend")
 print("=" * 70)
 
 print()
@@ -660,7 +660,7 @@ print("=" * 70)
 # ============================================================
 
 app = FastAPI(
-    title="AIDetect V2 API",
+    title=f"AIDetect {MODEL_VERSION} API",
     version="4.0"
 )
 
@@ -699,20 +699,23 @@ def home():
     return {
 
         "message":
-            "AIDetect V2 backend is running",
+            f"AIDetect {MODEL_VERSION} backend is running",
 
         "device":
             str(DEVICE),
 
+        "model_version":
+            MODEL_VERSION,
+
         "models_loaded": {
 
-            "spatial_v2":
+            f"spatial_{MODEL_VERSION.lower()}":
                 spatial_model is not None,
 
-            "frequency_v2":
+            f"frequency_{MODEL_VERSION.lower()}":
                 frequency_model is not None,
 
-            "hybrid_v2":
+            f"hybrid_{MODEL_VERSION.lower()}":
                 hybrid_model is not None
         }
     }
@@ -825,7 +828,7 @@ def run_spatial(
 
     return result_from_logits(
         logits,
-        "Spatial V2"
+        f"Spatial {MODEL_VERSION}"
     )
 
 
@@ -853,7 +856,7 @@ def run_frequency(
 
     return result_from_logits(
         logits,
-        "Frequency V2"
+        f"Frequency {MODEL_VERSION}"
     )
 
 
@@ -890,7 +893,7 @@ def run_hybrid(
 
     return result_from_logits(
         logits,
-        "Hybrid V2"
+        f"Hybrid {MODEL_VERSION}"
     )
 
 
@@ -1104,7 +1107,7 @@ async def analyze_image(
         )
 
     # --------------------------------------------------------
-    # Primary result = Hybrid V2
+    # Primary result = Hybrid (active model version)
     # --------------------------------------------------------
 
     primary_result = (
@@ -1233,7 +1236,7 @@ async def analyze_image(
         },
 
         # ----------------------------------------------------
-        # DEBUG INFORMATION (Spatial V2, Frequency V2, Hybrid V2)
+        # DEBUG INFORMATION (Spatial, Frequency, Hybrid)
         # ----------------------------------------------------
 
         "debug": {
@@ -1263,7 +1266,7 @@ async def analyze_image(
         # ----------------------------------------------------
         # ROBUSTNESS
         #
-        # Primary robustness values use Hybrid V2.
+        # Primary robustness values use Hybrid model.
         # ----------------------------------------------------
 
         "robustness": {

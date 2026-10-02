@@ -348,6 +348,7 @@ The frontend provides a polished forensic analysis dashboard:
 ```
 AIDetect/
 ├── README.md
+├── requirements.txt
 ├── .gitignore
 │
 ├── backend/
@@ -414,10 +415,10 @@ AIDetect/
 
 ### Prerequisites
 
-- Python 3.10+
-- Node.js 18+
-- NVIDIA GPU with CUDA (recommended; CPU fallback is supported)
-- Trained model checkpoints (see [Model Checkpoints](#model-checkpoints))
+- **Python:** 3.12.x (reference environment tested on Python 3.12.10)
+- **Node.js:** 18+ (tested with Vite 8.3 + React 19)
+- **Compute:** NVIDIA GPU with CUDA recommended; CPU fallback supported
+- **Trained Model Checkpoints:** Required in `models/` (see [Model Checkpoints](#model-checkpoints))
 
 ### 1. Clone the Repository
 
@@ -432,16 +433,17 @@ cd AIDetect
 cd backend
 python -m venv venv
 
-# Windows
+# Windows (Command Prompt / PowerShell):
 venv\Scripts\activate
 
-# Linux/macOS
+# Linux / macOS:
 source venv/bin/activate
 
-pip install torch torchvision fastapi uvicorn pillow numpy pandas
+# Install project dependencies from root requirements.txt
+pip install -r ../requirements.txt
 ```
 
-> **Note:** There is no `requirements.txt` in the repository. The key dependencies are: `torch`, `torchvision`, `fastapi`, `uvicorn`, `pillow`, `numpy`. Training scripts additionally require `pandas` and `datasets` (HuggingFace).
+> **GPU & PyTorch Note:** The tested reference environment runs **PyTorch 2.11.0 + CUDA 12.8** on an NVIDIA GeForce RTX 4050 Laptop GPU. CUDA 12.8 is not strictly mandatory for all systems. Users on CPU-only machines or different CUDA toolkits (e.g., CUDA 11.8, 12.1, 12.4) should install the corresponding PyTorch build from [pytorch.org](https://pytorch.org/get-started/locally/) prior to running inference.
 
 ### 3. Frontend Setup
 
@@ -452,39 +454,75 @@ npm install
 
 ### 4. Place Model Checkpoints
 
-Copy the trained `.pth` files into the `models/` directory:
+The application expects trained weights in the root `models/` directory:
 
 ```
 models/
-├── spatial_resnet50_v3.pth
-├── frequency_resnet50_v3.pth
-└── hybrid_resnet50_fft_v3.pth
+├── spatial_resnet50_v3.pth       # ~90 MB (Default Spatial model)
+├── frequency_resnet50_v3.pth     # ~90 MB (Default Frequency model)
+└── hybrid_resnet50_fft_v3.pth    # ~96 MB (Default Hybrid fusion model)
 ```
+
+If evaluating or testing historical V2 models, also provide:
+```
+models/
+├── spatial_resnet50_v2.pth       # ~90 MB (V2 Spatial model)
+├── frequency_resnet50_v2.pth     # ~90 MB (V2 Frequency model)
+└── hybrid_resnet50_fft_v2.pth    # ~96 MB (V2 Hybrid fusion model)
+```
+
+> **Important:** Checkpoints are intentionally excluded from GitHub due to file size limits. There is currently no automated public download URL; checkpoint files must be obtained or trained locally using the scripts in `backend/`.
 
 ### 5. Start the Backend
 
 ```bash
 cd backend
+
+# Windows
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+
+# Start the FastAPI server
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-The backend will load all three models and display:
+Add `--reload` if developing or debugging.
+
+Upon startup, the server automatically loads the active **V3** models with strict tensor matching:
 ```
+======================================================================
+AIDetect V3 Backend
+======================================================================
+Device: cuda
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+
 Loading V3 models...
 [OK] Spatial V3 loaded with STRICT matching.
 [OK] Frequency V3 loaded with STRICT matching.
 [OK] Hybrid V3 loaded with STRICT matching.
+======================================================================
 ALL V3 MODELS LOADED SUCCESSFULLY
+======================================================================
 ```
 
-To use V2 models instead:
+To switch to **V2** models instead, set `AIDETECT_USE_V2=true`:
 ```bash
-set AIDETECT_USE_V2=true    # Windows
-export AIDETECT_USE_V2=true  # Linux/macOS
+# Windows (PowerShell)
+$env:AIDETECT_USE_V2="true"
+uvicorn main:app --host 127.0.0.1 --port 8000
+
+# Windows (CMD)
+set AIDETECT_USE_V2=true
+uvicorn main:app --host 127.0.0.1 --port 8000
+
+# Linux / macOS
+export AIDETECT_USE_V2=true
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-### 6. Start the Frontend
+### 6. Start the Frontend Development Server
 
 ```bash
 cd frontend
@@ -493,39 +531,50 @@ npm run dev
 
 Open **http://localhost:5173** in your browser.
 
+### 7. Production Build (Frontend)
+
+To build the client dashboard for production deployment:
+
+```bash
+cd frontend
+npm run build
+```
+
+This runs TypeScript type checking (`tsc -b`) and Vite production bundling into `frontend/dist/`.
+
 ---
 
 ## Usage
 
-1. Open the frontend at `http://localhost:5173`
-2. Upload an image via drag-and-drop or the file picker
-3. Click **Analyze Image**
-4. View the forensic analysis dashboard:
-   - Primary Hybrid V3 prediction with confidence
-   - Individual Spatial, Frequency, and Hybrid model results
-   - Model agreement status
-   - Robustness check across 5 transformations
+1. Start the FastAPI backend at `http://127.0.0.1:8000`.
+2. Start the Vite frontend at `http://localhost:5173`.
+3. Upload an image using drag-and-drop or the file selector (supports PNG, JPG, JPEG, WebP).
+4. Click **Analyze Image**.
+5. Inspect the forensic dashboard:
+   - **Primary verdict:** Hybrid V3 classification with confidence score.
+   - **Dual probability bar:** Visual AI vs. Real likelihood split.
+   - **Model agreement check:** Confirms whether all 3 models concur or flag a divergence.
+   - **Multi-model breakdown:** Side-by-side Spatial, Frequency, and Hybrid outputs.
+   - **Robustness assessment:** Hybrid V3 behavior across JPEG Q35, 50% Resize, Gaussian Blur, and Gaussian Noise.
 
 ---
 
 ## Model Checkpoints
 
-The trained `.pth` checkpoint files are **excluded from the GitHub repository** via `.gitignore` because they are large (~90–96 MB each, ~280 MB total for V3).
+Trained `.pth` checkpoint files are excluded from git tracking via `.gitignore` because of their large file sizes (~90–96 MB each, totaling ~280 MB per model generation).
 
-The expected checkpoint filenames are:
+Expected checkpoint files:
 
-| File | Size | Model |
-|------|:----:|-------|
-| `spatial_resnet50_v3.pth` | ~90 MB | Spatial V3 |
-| `frequency_resnet50_v3.pth` | ~90 MB | Frequency V3 |
-| `hybrid_resnet50_fft_v3.pth` | ~96 MB | Hybrid V3 |
-| `spatial_resnet50_v2.pth` | ~90 MB | Spatial V2 (optional) |
-| `frequency_resnet50_v2.pth` | ~90 MB | Frequency V2 (optional) |
-| `hybrid_resnet50_fft_v2.pth` | ~96 MB | Hybrid V2 (optional) |
+| File | Size | Generation | Description |
+|------|:----:|:----------:|-------------|
+| `spatial_resnet50_v3.pth` | ~90 MB | V3 (Active) | Spatial ResNet-50 trained on mixed datasets |
+| `frequency_resnet50_v3.pth` | ~90 MB | V3 (Active) | Frequency ResNet-50 on 2D FFT spectrums |
+| `hybrid_resnet50_fft_v3.pth` | ~96 MB | V3 (Active) | Dual-branch spatial + frequency fusion |
+| `spatial_resnet50_v2.pth` | ~90 MB | V2 (Optional) | CIFAKE-trained spatial model |
+| `frequency_resnet50_v2.pth` | ~90 MB | V2 (Optional) | CIFAKE-trained frequency model |
+| `hybrid_resnet50_fft_v2.pth` | ~96 MB | V2 (Optional) | CIFAKE-trained hybrid fusion model |
 
-To reproduce the models, run the training scripts in `backend/` with access to the CIFAKE and Tiny-GenImage datasets (available on HuggingFace).
-
-> The repository does not include a pre-configured model download mechanism. You must either train the models locally or obtain the checkpoint files separately.
+> If checkpoints are missing locally, they can be re-trained using `backend/train_v3_robust.py` (for V3) or `backend/train_*_v2.py` (for V2) with access to the Hugging Face datasets.
 
 ---
 
@@ -545,15 +594,15 @@ These figures are generated by `backend/generate_analysis_graphs.py` and `backen
 
 ---
 
-## Limitations
+## Limitations & Reproducibility Constraints
 
-- **Domain gap:** Models trained primarily on CIFAKE (32×32 images) show significantly degraded accuracy on high-resolution real-world photographs. V2 models exhibit near-100% false positive rates on external camera photos. V3 partially addresses this but does not fully solve it.
-- **Blur sensitivity:** All models degrade substantially under strong Gaussian blur (accuracy drops to ~50–56%).
-- **Limited training diversity for V3:** While V3 incorporates multiple data sources, the total training set (~4,165 base images) is small relative to the diversity of real-world image generators.
-- **No unseen generator coverage:** The models have not been evaluated against generators absent from training (e.g., FLUX, Imagen).
-- **Small evaluation sets:** Cross-dataset evaluations use 86–100 images, limiting statistical confidence in generalization metrics.
-- **No confidence calibration:** Model confidence scores are raw softmax outputs and have not been calibrated using temperature scaling or similar methods.
-- **Checkpoint availability:** Trained model files are not distributed with the repository; the application requires either local training or separate checkpoint acquisition.
+- **Model Checkpoints Not in Repository:** Trained `.pth` model checkpoints (~280 MB per version) are not tracked in GitHub due to storage limits. The application cannot perform inference without placing or training these weights first.
+- **Hardware & CUDA Dependency:** GPU acceleration requires an NVIDIA GPU with compatible drivers and PyTorch build. CPU fallback is operational but will exhibit higher latency during 2D FFT extraction and inference.
+- **Dataset Acquisition:** Training and evaluation datasets (CIFAKE, Tiny-GenImage) are hosted externally on Hugging Face Hub and are not packaged in the repository; they must be cached locally for retraining.
+- **Experimental Metric Precision:** Exact numerical replication of floating-point test metrics depends on the exact model checkpoints, PyTorch/CUDA backend versions, and system architecture.
+- **Domain Gap & Generalization:** Models trained primarily on low-resolution datasets (such as CIFAKE's 32×32 images) experience significant accuracy degradation on high-resolution smartphone and camera photographs. V2 models exhibit high false positive rates on external photos; V3 improves this balance but domain transfer remains an active research challenge.
+- **Blur Sensitivity:** All architectures degrade under aggressive Gaussian blur (dropping to ~50–56% accuracy).
+- **Uncalibrated Probabilities:** Output confidence percentages reflect raw softmax probabilities rather than calibrated posterior estimates.
 
 ---
 
