@@ -1,5 +1,6 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Optional, Dict, Any
 
 from PIL import Image, ImageFilter
 
@@ -653,7 +654,17 @@ print("=" * 70)
 print(f"ALL {MODEL_VERSION} MODELS LOADED SUCCESSFULLY")
 print("=" * 70)
 
+# ============================================================
+# LOAD FORENSIC DECISION PIPELINE (PHASE 14/15 PRODUCTION)
+# ============================================================
+print("\nLoading Forensic Decision Pipeline (Phase 14/15 Production)...")
+try:
+    from backend.forensic_inference import ForensicInferencePipeline
+except ImportError:
+    from forensic_inference import ForensicInferencePipeline
 
+forensic_pipeline = ForensicInferencePipeline(device=DEVICE, strategy="calibrated")
+print(f"[OK] Forensic Decision Pipeline loaded with default strategy: '{forensic_pipeline.engine.default_strategy}'\n")
 
 # ============================================================
 # FASTAPI
@@ -708,15 +719,17 @@ def home():
             MODEL_VERSION,
 
         "models_loaded": {
-
-            f"spatial_{MODEL_VERSION.lower()}":
-                spatial_model is not None,
-
-            f"frequency_{MODEL_VERSION.lower()}":
-                frequency_model is not None,
-
-            f"hybrid_{MODEL_VERSION.lower()}":
-                hybrid_model is not None
+            f"spatial_{MODEL_VERSION.lower()}": spatial_model is not None,
+            f"frequency_{MODEL_VERSION.lower()}": frequency_model is not None,
+            f"hybrid_{MODEL_VERSION.lower()}": hybrid_model is not None,
+        },
+        "forensic_pipeline": {
+            "loaded": forensic_pipeline is not None,
+            "default_strategy": forensic_pipeline.engine.default_strategy,
+            "models": {
+                "generation": "frequency_resnet50_v4.pth",
+                "manipulation": "manipulation_frequency_resnet50_v1.pth",
+            }
         }
     }
 
@@ -1041,7 +1054,8 @@ def add_noise(
     "/analyze"
 )
 async def analyze_image(
-    file: UploadFile = File(...)
+    file: UploadFile = File(...),
+    strategy: Optional[str] = Query(None)
 ):
 
     # --------------------------------------------------------
@@ -1071,6 +1085,8 @@ async def analyze_image(
     try:
 
         contents = await file.read()
+        if len(contents) == 0:
+            raise ValueError("Uploaded file is empty.")
 
         original_image = Image.open(
             io.BytesIO(contents)
@@ -1085,6 +1101,20 @@ async def analyze_image(
                 "uploaded image."
             )
         )
+
+    # --------------------------------------------------------
+    # Forensic inference (Phase 14/15 Production Integration)
+    # --------------------------------------------------------
+
+    try:
+        forensic_result = forensic_pipeline.predict(
+            original_image,
+            strategy=strategy
+        )
+    except Exception as e:
+        forensic_result = {
+            "error": str(e)
+        }
 
     # --------------------------------------------------------
     # Original image - all models
@@ -1319,6 +1349,72 @@ async def analyze_image(
                 noise_results
         },
 
+        # ----------------------------------------------------
+        # Integrated forensic pipeline (Phase 14/15)
+        # ----------------------------------------------------
+
+        "forensic":
+            forensic_result,
+
         "message":
             "Image analyzed successfully"
+    }
+
+
+# ============================================================
+# DEDICATED FORENSIC ANALYZE ENDPOINTS (PHASE 14/15)
+# ============================================================
+
+@app.post("/forensic/analyze")
+@app.post("/analyze/forensic")
+async def analyze_forensic(
+    file: UploadFile = File(...),
+    strategy: Optional[str] = Query(None, description="Decision strategy: 'calibrated' (default) or 'baseline'")
+):
+    """
+    Dedicated forensic analysis endpoint integrating frozen Generation (V4)
+    and frozen Manipulation (Phase 7 Frequency) detectors with the Strategy E
+    calibrated decision engine.
+    """
+    if (
+        not file.content_type
+        or not file.content_type.startswith("image/")
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail="Please upload a valid image file."
+        )
+
+    try:
+        contents = await file.read()
+        if len(contents) == 0:
+            raise ValueError("Uploaded file is empty.")
+
+        image = Image.open(io.BytesIO(contents))
+        image.load()
+    except Exception as e:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Could not read the uploaded image: {str(e)}"
+        )
+
+    try:
+        forensic_result = forensic_pipeline.predict(
+            image,
+            strategy=strategy
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Forensic inference failed: {str(e)}"
+        )
+
+    return {
+        "filename": file.filename,
+        "forensic": forensic_result,
+        "final_label": forensic_result["final"]["label"],
+        "final_confidence": forensic_result["final"]["confidence"],
+        "strategy": forensic_result["final"]["strategy"],
+        "decision_case": forensic_result["final"]["decision_case"],
+        "message": "Forensic analysis completed successfully"
     }

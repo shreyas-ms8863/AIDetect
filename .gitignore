@@ -49,3 +49,22 @@ models/*.onnx
 # Temporary files
 *.tmp
 *.temp
+
+# ==============================
+# Research datasets - keep local
+# ==============================
+
+dataset_v4/
+dataset_manipulation_v2/
+manipulation_v1/
+manipulation_external_test/
+
+# Research-generated evaluation artifacts
+backend/phase*_results/
+backend/integrated_results/
+backend/v4_results/
+
+# Evaluation logs / temporary outputs
+backend/v4_eval_log.txt
+backend/v4_eval_output.txt
+backend/false_negative_diagnostic_report.json
