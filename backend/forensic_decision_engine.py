@@ -392,18 +392,34 @@ class ForensicDecisionEngine:
         max_prob = float(probs[max_idx])
         pred_label = self.calib_classes[max_idx]
 
+        # Conflict safeguard: if calibration chooses AI_GENERATED, but generation detector has
+        # weak/borderline AI excitation (< 0.60) while manipulation detector strongly confirms
+        # an authentic original camera photograph (>= conflict_strong_original = 0.85):
+        # Prevent borderline generation noise from falsely convicting genuine photos.
+        p_orig = norm_manip["probability_original"]
+        if pred_label == "AI_GENERATED" and p_orig >= self.conflict_strong_original:
+            if p_gen_ai < 0.50:
+                pred_label = "REAL_ORIGINAL"
+                max_prob = p_orig
+            elif p_gen_ai < 0.60:
+                pred_label = "UNCERTAIN"
+                max_prob = max(p_gen_ai, p_orig)
+
         fusion_probs = {
             cls: round(float(probs[i]), 4) for i, cls in enumerate(self.calib_classes)
         }
 
         # Check uncertainty threshold
-        if max_prob < self.calib_uncertainty_threshold:
+        if pred_label == "UNCERTAIN" or max_prob < self.calib_uncertainty_threshold:
             return {
                 "label": "UNCERTAIN",
                 "confidence": round(max_prob, 4),
                 "fusion_confidence": round(max_prob, 4),
                 "fusion_probabilities": fusion_probs,
                 "reason": (
+                    f"Calibrated forensic evidence is ambiguous or contradictory: generation detector "
+                    f"excitation ({p_gen_ai:.2%}) is in conflict with authentic pristine capture ({p_orig:.2%})."
+                ) if pred_label == "UNCERTAIN" else (
                     f"Calibrated probability fusion evidence is ambiguous: dominant class confidence "
                     f"({max_prob:.2%}) is below threshold ({self.calib_uncertainty_threshold:.2%})."
                 ),

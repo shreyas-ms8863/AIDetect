@@ -727,7 +727,7 @@ def home():
             "loaded": forensic_pipeline is not None,
             "default_strategy": forensic_pipeline.engine.default_strategy,
             "models": {
-                "generation": "frequency_resnet50_v4.pth",
+                "generation": "hybrid_resnet50_fft_v4.pth",
                 "manipulation": "manipulation_frequency_resnet50_v1.pth",
             }
         }

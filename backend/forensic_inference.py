@@ -40,7 +40,7 @@ MODEL_DIR    = PROJECT_DIR / "models"
 # DEFAULT FROZEN CHECKPOINT PATHS
 # ---------------------------------------------------------------------------
 
-DEFAULT_GEN_CKPT   = MODEL_DIR / "frequency_resnet50_v4.pth"
+DEFAULT_GEN_CKPT   = MODEL_DIR / "hybrid_resnet50_fft_v4.pth"
 DEFAULT_MANIP_CKPT = MODEL_DIR / "manipulation_frequency_resnet50_v1.pth"
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -51,18 +51,28 @@ class ForensicInferencePipeline:
     """
     def __init__(
         self,
-        generation_ckpt: Union[str, Path] = DEFAULT_GEN_CKPT,
+        generation_ckpt: Optional[Union[str, Path]] = None,
         manipulation_ckpt: Union[str, Path] = DEFAULT_MANIP_CKPT,
-        generation_model_type: str = "frequency",
+        generation_model_type: str = "hybrid",
         device: Optional[torch.device] = None,
         min_confidence: float = 0.55,
         strategy: str = "calibrated",
     ):
         self.device = device or DEVICE
-        self.gen_ckpt_path = Path(generation_ckpt)
-        self.manip_ckpt_path = Path(manipulation_ckpt)
         self.gen_model_type = generation_model_type.lower()
         self.strategy = strategy
+
+        if generation_ckpt is None:
+            if self.gen_model_type == "hybrid":
+                self.gen_ckpt_path = MODEL_DIR / "hybrid_resnet50_fft_v4.pth"
+            elif self.gen_model_type == "spatial":
+                self.gen_ckpt_path = MODEL_DIR / "spatial_resnet50_v4.pth"
+            else:
+                self.gen_ckpt_path = MODEL_DIR / "frequency_resnet50_v4.pth"
+        else:
+            self.gen_ckpt_path = Path(generation_ckpt)
+
+        self.manip_ckpt_path = Path(manipulation_ckpt)
         
         # Verify checkpoints exist
         if not self.gen_ckpt_path.exists():

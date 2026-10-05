@@ -123,7 +123,7 @@ export const ForensicVerdict: FC<ForensicVerdictProps> = ({
 
         {/* Official Verdict Explanation */}
         <p className="verdict-formal-explanation">
-          {config.explanation}
+          {finalResult.reason || config.explanation}
         </p>
       </div>
 
