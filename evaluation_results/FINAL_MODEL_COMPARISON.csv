@@ -1,0 +1,5 @@
+﻿Model,Clean_F1,Robustness_Avg_F1,External_F1,External_Accuracy,External_AI_Recall,External_REAL_FPR,Clean_to_External_F1_Drop_pp
+V5-A Spatial,97.02,76.49,70.84,67.38,79.25,44.50,26.18
+V5-B Frequency,90.65,63.38,32.96,55.25,22.00,11.50,57.69
+V5-C Hybrid,96.89,71.79,62.95,64.25,60.75,32.25,33.94
+V5-D Gated Residual,97.17,73.44,58.01,63.62,50.25,23.00,39.16

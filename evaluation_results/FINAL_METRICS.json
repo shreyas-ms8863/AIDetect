@@ -1,0 +1,126 @@
+﻿{
+  "project": "AIDetect",
+  "evaluation_version": "V5",
+  "clean_test": {
+    "dataset_size": 9000,
+    "models": {
+      "V5-A Spatial": {
+        "accuracy": 97.02,
+        "precision": 97.17,
+        "recall": 96.87,
+        "f1": 97.02
+      },
+      "V5-B Frequency": {
+        "accuracy": 90.66,
+        "precision": 90.68,
+        "recall": 90.62,
+        "f1": 90.65
+      },
+      "V5-C Hybrid": {
+        "accuracy": 96.88,
+        "precision": 96.64,
+        "recall": 97.13,
+        "f1": 96.89
+      },
+      "V5-D Gated Residual": {
+        "accuracy": 97.18,
+        "precision": 97.30,
+        "recall": 97.04,
+        "f1": 97.17
+      }
+    }
+  },
+  "robustness_average": {
+    "V5-A Spatial": {
+      "f1": 76.49,
+      "degradation_from_clean_pp": 20.53
+    },
+    "V5-B Frequency": {
+      "f1": 63.38,
+      "degradation_from_clean_pp": 27.28
+    },
+    "V5-C Hybrid": {
+      "f1": 71.79,
+      "degradation_from_clean_pp": 25.09
+    },
+    "V5-D Gated Residual": {
+      "f1": 73.44,
+      "degradation_from_clean_pp": 23.74
+    }
+  },
+  "external_defactify": {
+    "dataset_size": 800,
+    "real": 400,
+    "ai": 400,
+    "models": {
+      "V5-A Spatial": {
+        "accuracy": 67.38,
+        "precision": 64.04,
+        "recall": 79.25,
+        "f1": 70.84,
+        "balanced_accuracy": 67.38,
+        "real_fpr": 44.50
+      },
+      "V5-B Frequency": {
+        "accuracy": 55.25,
+        "precision": 65.67,
+        "recall": 22.00,
+        "f1": 32.96,
+        "balanced_accuracy": 55.25,
+        "real_fpr": 11.50
+      },
+      "V5-C Hybrid": {
+        "accuracy": 64.25,
+        "precision": 65.32,
+        "recall": 60.75,
+        "f1": 62.95,
+        "balanced_accuracy": 64.25,
+        "real_fpr": 32.25
+      },
+      "V5-D Gated Residual": {
+        "accuracy": 63.62,
+        "precision": 68.60,
+        "recall": 50.25,
+        "f1": 58.01,
+        "balanced_accuracy": 63.62,
+        "real_fpr": 23.00
+      }
+    },
+    "generator_recall": {
+      "V5-A Spatial": {
+        "SD3": 91,
+        "Midjourney_v6": 73,
+        "DALL-E_3": 79,
+        "SDXL": 74
+      },
+      "V5-B Frequency": {
+        "SD3": 17,
+        "Midjourney_v6": 34,
+        "DALL-E_3": 28,
+        "SDXL": 9
+      },
+      "V5-C Hybrid": {
+        "SD3": 62,
+        "Midjourney_v6": 66,
+        "DALL-E_3": 65,
+        "SDXL": 50
+      },
+      "V5-D Gated Residual": {
+        "SD3": 56,
+        "Midjourney_v6": 67,
+        "DALL-E_3": 47,
+        "SDXL": 31
+      }
+    }
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 2.1983866643,
+    "raw_nll": 0.116260,
+    "calibrated_nll": 0.072624,
+    "raw_brier": 0.022778,
+    "calibrated_brier": 0.020232,
+    "raw_ece_percent": 1.97,
+    "calibrated_ece_percent": 0.47
+  }
+}
