@@ -1,0 +1,41 @@
+{
+    "experiment": "Spatial V3 Blur Robustness",
+    "model": "spatial_resnet50_v3",
+    "dataset": "CIFAKE",
+    "split": "test",
+    "total_images": 20000,
+    "fake_images": 10000,
+    "real_images": 10000,
+    "blur_condition": {
+        "type": "GaussianBlur",
+        "kernel_size": 5,
+        "sigma": 1.5
+    },
+    "correct": 19316,
+    "incorrect": 684,
+    "accuracy": 0.9658,
+    "precision": 0.9393510658366346,
+    "recall": 0.9959,
+    "f1_score": 0.9667993398699155,
+    "fake": {
+        "precision": 0.9956373696531177,
+        "recall": 0.9357,
+        "f1": 0.9647386328487473
+    },
+    "real": {
+        "precision": 0.9393510658366346,
+        "recall": 0.9959,
+        "f1": 0.9667993398699155
+    },
+    "confusion_matrix": {
+        "actual_fake_predicted_fake": 9357,
+        "actual_fake_predicted_real": 643,
+        "actual_real_predicted_fake": 41,
+        "actual_real_predicted_real": 9959
+    },
+    "false_positive_rate": 0.0643,
+    "false_negative_rate": 0.0041,
+    "evaluation_time_seconds": 123.34347772598267,
+    "test_set_used_for_training": false,
+    "test_set_used_for_validation": false
+}

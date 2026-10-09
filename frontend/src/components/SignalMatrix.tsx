@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { FC } from "react";
-import type { ModelPrediction, ForensicBlock } from "../types";
+import type { ModelPrediction, ForensicBlock, V5DResult } from "../types";
 
 interface SignalMatrixProps {
   models?: {
@@ -9,11 +9,12 @@ interface SignalMatrixProps {
     hybrid: ModelPrediction;
   };
   forensic?: ForensicBlock;
+  v5_d?: V5DResult;
 }
 
-export type MatrixTab = "final" | "spatial" | "frequency" | "hybrid";
+export type MatrixTab = "final" | "v5_d" | "spatial" | "frequency" | "hybrid";
 
-export const SignalMatrix: FC<SignalMatrixProps> = ({ models, forensic }) => {
+export const SignalMatrix: FC<SignalMatrixProps> = ({ models, forensic, v5_d }) => {
   const [activeTab, setActiveTab] = useState<MatrixTab>("final");
 
   // Primary forensic signals from Strategy E / Production Engine
@@ -59,6 +60,18 @@ export const SignalMatrix: FC<SignalMatrixProps> = ({ models, forensic }) => {
           >
             FINAL
           </button>
+
+          {v5_d && (
+            <button
+              type="button"
+              className={`pill-tab ${activeTab === "v5_d" ? "tab-active" : ""}`}
+              onClick={() => setActiveTab("v5_d")}
+              role="tab"
+              aria-selected={activeTab === "v5_d"}
+            >
+              V5-D GATED
+            </button>
+          )}
           
           {models && (
             <>
@@ -168,6 +181,105 @@ export const SignalMatrix: FC<SignalMatrixProps> = ({ models, forensic }) => {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* VIEW: V5-D GATED RESIDUAL MODEL BREAKDOWN */}
+      {activeTab === "v5_d" && v5_d && (
+        <div className="matrix-single-model-view">
+          <div className="model-view-header font-mono">
+            <span className="model-view-title">{v5_d.model_name || "V5-D GATED RESIDUAL"} EVALUATION</span>
+            <span className="model-view-confidence">
+              CONFIDENCE: {v5_d.confidence.toFixed(1)}% ({v5_d.prediction})
+            </span>
+          </div>
+
+          <div className="domain-channels-grid">
+            <div className="channel-bar-item">
+              <div className="channel-desc-row font-mono">
+                <span className="channel-name">AUTHENTIC REAL LIKELIHOOD</span>
+                <span className="channel-percent text-emerald">
+                  {v5_d.real_probability.toFixed(1)}%
+                </span>
+              </div>
+              <div className="channel-meter-track">
+                <div
+                  className="channel-meter-fill fill-emerald"
+                  style={{ width: `${Math.min(100, Math.max(0, v5_d.real_probability))}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="channel-bar-item">
+              <div className="channel-desc-row font-mono">
+                <span className="channel-name">AI SYNTHETIC LIKELIHOOD</span>
+                <span className="channel-percent text-rose">
+                  {v5_d.ai_probability.toFixed(1)}%
+                </span>
+              </div>
+              <div className="channel-meter-track">
+                <div
+                  className="channel-meter-fill fill-rose"
+                  style={{ width: `${Math.min(100, Math.max(0, v5_d.ai_probability))}%` }}
+                />
+              </div>
+            </div>
+          </div>
+
+          {v5_d.gate_weights && (
+            <div className="matrix-domain-group" style={{ marginTop: "14px", paddingTop: "14px", borderTop: "1px dashed var(--border-subtle)" }}>
+              <div className="domain-label-bar">
+                <span className="domain-title font-mono">ADAPTIVE FUSION GATE WEIGHTS</span>
+                <span className="domain-status font-mono">3-STREAM FEATURE ATTENTION</span>
+              </div>
+              <div className="domain-channels-grid" style={{ gridTemplateColumns: "1fr 1fr 1fr" }}>
+                <div className="channel-bar-item">
+                  <div className="channel-desc-row font-mono">
+                    <span className="channel-name">SPATIAL</span>
+                    <span className="channel-percent" style={{ color: "#0284c7" }}>
+                      {(v5_d.gate_weights.spatial * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                  <div className="channel-meter-track">
+                    <div
+                      className="channel-meter-fill"
+                      style={{ width: `${Math.min(100, Math.max(0, v5_d.gate_weights.spatial * 100))}%`, backgroundColor: "#0284c7" }}
+                    />
+                  </div>
+                </div>
+
+                <div className="channel-bar-item">
+                  <div className="channel-desc-row font-mono">
+                    <span className="channel-name">FREQUENCY</span>
+                    <span className="channel-percent" style={{ color: "#7c3aed" }}>
+                      {(v5_d.gate_weights.frequency * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                  <div className="channel-meter-track">
+                    <div
+                      className="channel-meter-fill"
+                      style={{ width: `${Math.min(100, Math.max(0, v5_d.gate_weights.frequency * 100))}%`, backgroundColor: "#7c3aed" }}
+                    />
+                  </div>
+                </div>
+
+                <div className="channel-bar-item">
+                  <div className="channel-desc-row font-mono">
+                    <span className="channel-name">RESIDUAL</span>
+                    <span className="channel-percent" style={{ color: "#f59e0b" }}>
+                      {(v5_d.gate_weights.residual * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                  <div className="channel-meter-track">
+                    <div
+                      className="channel-meter-fill"
+                      style={{ width: `${Math.min(100, Math.max(0, v5_d.gate_weights.residual * 100))}%`, backgroundColor: "#f59e0b" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

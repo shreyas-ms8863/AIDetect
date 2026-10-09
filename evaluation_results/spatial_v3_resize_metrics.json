@@ -1,0 +1,41 @@
+{
+    "experiment": "Spatial V3 Resize Robustness",
+    "model": "spatial_resnet50_v3",
+    "dataset": "CIFAKE",
+    "split": "test",
+    "total_images": 20000,
+    "fake_images": 10000,
+    "real_images": 10000,
+    "resize_condition": {
+        "intermediate_size": 112,
+        "final_model_size": 224,
+        "interpolation": "bilinear"
+    },
+    "correct": 19525,
+    "incorrect": 475,
+    "accuracy": 0.97625,
+    "precision": 0.9586824617162669,
+    "recall": 0.9954,
+    "f1_score": 0.9766962664965902,
+    "fake": {
+        "precision": 0.995216803576999,
+        "recall": 0.9571,
+        "f1": 0.97578630779426
+    },
+    "real": {
+        "precision": 0.9586824617162669,
+        "recall": 0.9954,
+        "f1": 0.9766962664965902
+    },
+    "confusion_matrix": {
+        "actual_fake_predicted_fake": 9571,
+        "actual_fake_predicted_real": 429,
+        "actual_real_predicted_fake": 46,
+        "actual_real_predicted_real": 9954
+    },
+    "false_positive_rate": 0.0429,
+    "false_negative_rate": 0.0046,
+    "evaluation_time_seconds": 88.08338809013367,
+    "test_set_used_for_training": false,
+    "test_set_used_for_validation": false
+}

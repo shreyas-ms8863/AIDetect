@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Defactify_Image_Dataset",
+  "dataset_repository": "Rajarshi-Roy-research/Defactify_Image_Dataset",
+  "dataset_commit": "787334f7857fa54f29027a7f09c30e895ad486ef",
+  "split_used": "validation",
+  "selection_seed": 42,
+  "total_initially_selected": 800,
+  "total_screened": 801,
+  "exact_sha256_duplicates": 0,
+  "suspicious_near_duplicates": 1,
+  "total_rejected": 1,
+  "total_replacements": 1,
+  "final_verified_count": 800,
+  "final_real_count": 400,
+  "final_ai_count": 400,
+  "final_category_counts": {
+    "REAL": 400,
+    "SD3": 100,
+    "MIDJOURNEY_V6": 100,
+    "DALLE_3": 100,
+    "SDXL": 100
+  },
+  "final_generator_counts": {
+    "None_Authentic_Photograph": 400,
+    "Stable_Diffusion_3": 100,
+    "Midjourney_v6": 100,
+    "DALL-E_3": 100,
+    "Stable_Diffusion_XL": 100
+  },
+  "unresolved_cases": 0,
+  "ready_to_freeze": true,
+  "inference_executed": false,
+  "audit_timestamp": "2026-10-09 16:32:42 UTC"
+}

@@ -1,0 +1,5 @@
+model,clean_v5_test_f1,avg_controlled_robustness_f1,external_benchmark_f1,clean_to_external_delta,robustness_to_external_delta,clean_rank,robustness_rank,external_rank,rank_change_clean_to_ext
+V5-A Spatial,97.02,76.49,70.84,-26.18,-5.65,2,1,1,+1
+V5-B Frequency,90.65,63.38,32.96,-57.69,-30.42,4,4,4,0
+V5-C Hybrid,96.89,71.79,62.95,-33.94,-8.84,3,3,2,+1
+V5-D Gated Residual,97.17,73.44,58.01,-39.16,-15.43,1,2,3,-2

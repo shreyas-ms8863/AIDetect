@@ -1,0 +1,5 @@
+model,calibrated,calibration_method,N,accuracy,precision,recall,f1,balanced_accuracy,real_fpr,ai_fnr,tp,tn,fp,fn,real_n,real_correct,real_fp,real_mean_ai_prob,real_median_ai_prob,real_pct_ge_50,real_pct_ge_70,real_pct_ge_90,ai_n,ai_correct,ai_fn,ai_recall,ai_mean_ai_prob,ai_median_ai_prob
+V5-A Spatial,False,Raw Softmax (Uncalibrated),800,0.67375,0.640404,0.7925,0.70838,0.67375,0.445,0.2075,317,222,178,83,400,222,178,0.448612,0.281386,44.5,39.5,31.75,400,317,83,0.7925,0.783156,0.996865
+V5-B Frequency,False,Raw Softmax (Uncalibrated),800,0.5525,0.656716,0.22,0.329588,0.5525,0.115,0.78,88,354,46,312,400,354,46,0.130615,0.002813,11.5,9.5,7.5,400,88,312,0.22,0.23276,0.012219
+V5-C Hybrid,False,Raw Softmax (Uncalibrated),800,0.6425,0.653226,0.6075,0.629534,0.6425,0.3225,0.3925,243,271,129,157,400,271,129,0.322395,0.016654,32.25,27.0,23.75,400,243,157,0.6075,0.602452,0.920554
+V5-D Gated Residual,True,Temperature Scaling (T=2.198387),800,0.63625,0.686007,0.5025,0.580087,0.63625,0.23,0.4975,201,308,92,199,400,308,92,0.252051,0.064141,23.0,17.75,9.0,400,201,199,0.5025,0.508713,0.517296

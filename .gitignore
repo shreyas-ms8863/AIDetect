@@ -68,3 +68,28 @@ backend/v4_results/
 backend/v4_eval_log.txt
 backend/v4_eval_output.txt
 backend/false_negative_diagnostic_report.json
+
+# Nested trained model checkpoints
+models/**/*.pth
+models/**/*.pt
+models/**/*.ckpt
+models/**/*.onnx
+backend/models/**/*.pth
+backend/models/**/*.pt
+backend/models/**/*.ckpt
+backend/models/**/*.onnx
+
+# Large external/raw benchmark payloads
+diagnostic_outputs/defactify_validation_raw/
+diagnostic_outputs/external_benchmark_payloads/
+
+# Local diagnostic datasets
+diagnostic_real/
+backend/external_test/
+backend/real_world_test/
+
+# Large per-image evaluation prediction exports
+evaluation_results/*/*_predictions.csv
+
+# Intermediate calibration artifact
+backend/evaluation_results/v5/v5_d_val_logits.npz

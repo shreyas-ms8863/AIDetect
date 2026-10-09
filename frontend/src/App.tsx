@@ -9,6 +9,7 @@ import { ForensicVerdict } from "./components/ForensicVerdict";
 import { ForensicSignature } from "./components/ForensicSignature";
 import { SignalDNA } from "./components/SignalDNA";
 import { SignalMatrix } from "./components/SignalMatrix";
+import { V5DCard } from "./components/V5DCard";
 import { StressTest } from "./components/StressTest";
 import { AnalyzeAnother } from "./components/AnalyzeAnother";
 import { HistoryDrawer } from "./components/HistoryDrawer";
@@ -122,8 +123,9 @@ export function App() {
       const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       const dateStr = now.toLocaleDateString([], { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
 
-      const rawConf = result.forensic?.final?.confidence ?? result.confidence;
-      const normalizedConf = rawConf <= 1.0 ? rawConf * 100 : rawConf;
+      const primaryPred = result.primary_verdict ?? result.v5_d?.prediction ?? result.prediction;
+      const primaryConf = result.primary_confidence ?? result.v5_d?.confidence ?? (result.forensic?.final?.confidence ?? result.confidence);
+      const normalizedConf = primaryConf <= 1.0 ? primaryConf * 100 : primaryConf;
 
       const newId = `specimen-${Date.now()}`;
       const newItem: HistoryItem = {
@@ -134,7 +136,7 @@ export function App() {
         imageSrc: selectedImage || thumbnailDataUrl,
         thumbnailDataUrl: thumbnailDataUrl || selectedImage || "",
         dimensions: imageDimensions,
-        verdict: result.forensic?.final?.label ?? (result.prediction === "AI-GENERATED" ? "AI_GENERATED" : "REAL_ORIGINAL"),
+        verdict: primaryPred === "AI-GENERATED" ? "AI_GENERATED" : "REAL_ORIGINAL",
         confidence: normalizedConf,
         timestamp: timeStr,
         dateStr: dateStr,
@@ -263,6 +265,10 @@ export function App() {
                     <div className="stage-verdict-side">
                       <ForensicVerdict
                         finalResult={analysisResult.forensic.final}
+                        v5_d={analysisResult.v5_d}
+                        crossCheck={analysisResult.forensic_cross_check}
+                        primaryVerdict={analysisResult.primary_verdict}
+                        primaryConfidence={analysisResult.primary_confidence}
                         filename={selectedFile?.name}
                         dimensions={imageDimensions}
                       />
@@ -289,10 +295,16 @@ export function App() {
                     />
                   </div>
 
+                  {/* V5-D Gated Residual Next-Gen Model Showcase (if returned by backend) */}
+                  {analysisResult.v5_d && !analysisResult.v5_d.error && (
+                    <V5DCard v5_d={analysisResult.v5_d} />
+                  )}
+
                   {/* Full-Width Signal Matrix Bento */}
                   <SignalMatrix
                     models={analysisResult.models}
                     forensic={analysisResult.forensic}
+                    v5_d={analysisResult.v5_d}
                   />
 
                   {/* Optional Robustness Stress Test (if returned by backend) */}

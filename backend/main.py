@@ -48,6 +48,11 @@ else:
     HYBRID_MODEL_PATH = os.path.join(MODEL_DIR, "hybrid_resnet50_fft_v3.pth")
     MODEL_VERSION = "V3"
 
+# V5-D Gated Residual Model Checkpoint
+V5_D_MODEL_PATH = os.path.join(BASE_DIR, "models", "v5", "gated_residual_resnet50_v5_best.pth")
+if not os.path.exists(V5_D_MODEL_PATH):
+    V5_D_MODEL_PATH = os.path.join(PROJECT_DIR, "models", "v5", "gated_residual_resnet50_v5_best.pth")
+
 
 
 # ============================================================
@@ -230,6 +235,50 @@ frequency_transform = FFTTransform()
 
 
 # ============================================================
+# V5-D PREPROCESSING TRANSFORMS (AUTHORITATIVE)
+# ============================================================
+import sys as _sys
+for _p in [PROJECT_DIR, BASE_DIR, os.path.join(BASE_DIR, "v5")]:
+    if _p not in _sys.path:
+        _sys.path.insert(0, _p)
+
+try:
+    from backend.v5.v5_models import GatedResidualResNet50
+    from backend.v5.v5_dataset import build_v5_spatial_val_transform, AuthoritativeNativeFFTTransform
+    from backend.v5.v5_calibrator import V5DCalibrator
+except ImportError:
+    try:
+        from v5.v5_models import GatedResidualResNet50
+        from v5.v5_dataset import build_v5_spatial_val_transform, AuthoritativeNativeFFTTransform
+        from v5.v5_calibrator import V5DCalibrator
+    except ImportError:
+        from v5_models import GatedResidualResNet50
+        from v5_dataset import build_v5_spatial_val_transform, AuthoritativeNativeFFTTransform
+        from v5_calibrator import V5DCalibrator
+
+v5_spatial_transform = build_v5_spatial_val_transform()
+v5_fft_transform = AuthoritativeNativeFFTTransform()
+v5_d_calibrator = V5DCalibrator()
+
+def create_v5_gaussian_kernel(kernel_size=5, sigma=1.0, channels=3):
+    radius = kernel_size // 2
+    coords = torch.arange(-radius, radius + 1, dtype=torch.float32)
+    x = coords.unsqueeze(0)
+    y = coords.unsqueeze(1)
+    kernel = torch.exp(-(x ** 2 + y ** 2) / (2 * sigma ** 2))
+    kernel = kernel / kernel.sum()
+    kernel = kernel.unsqueeze(0).unsqueeze(0)
+    kernel = kernel.repeat(channels, 1, 1, 1)
+    return kernel
+
+V5_GAUSSIAN_KERNEL = create_v5_gaussian_kernel(kernel_size=5, sigma=1.0, channels=3).to(DEVICE)
+
+def extract_noise_residual_v5(spatial_tensor: torch.Tensor) -> torch.Tensor:
+    blurred = F.conv2d(spatial_tensor, V5_GAUSSIAN_KERNEL, padding=2, groups=3)
+    return spatial_tensor - blurred
+
+
+# ============================================================
 # SPATIAL MODEL
 # ============================================================
 
@@ -237,7 +286,7 @@ class SpatialResNet50(
     nn.Module
 ):
 
-    def __init__(self):
+    def __init__(self, use_v3_head: bool = True):
 
         super().__init__()
 
@@ -249,10 +298,19 @@ class SpatialResNet50(
             self.model.fc.in_features
         )
 
-        self.model.fc = nn.Linear(
-            num_features,
-            2
-        )
+        if use_v3_head:
+            self.model.fc = nn.Sequential(
+                nn.Dropout(p=0.30),
+                nn.Linear(
+                    num_features,
+                    2
+                )
+            )
+        else:
+            self.model.fc = nn.Linear(
+                num_features,
+                2
+            )
 
     def forward(
         self,
@@ -601,6 +659,16 @@ def load_checkpoint(
     else:
         target_model = model
 
+    # Ensure fc head matches checkpoint head structure
+    if hasattr(target_model, "fc"):
+        if "fc.1.weight" in cleaned_state_dict and isinstance(target_model.fc, nn.Linear):
+            target_model.fc = nn.Sequential(
+                nn.Dropout(p=0.30),
+                nn.Linear(target_model.fc.in_features, 2)
+            )
+        elif "fc.weight" in cleaned_state_dict and isinstance(target_model.fc, nn.Sequential):
+            target_model.fc = nn.Linear(2048, 2)
+
     # --------------------------------------------------------
     # STRICT LOAD
     # --------------------------------------------------------
@@ -667,6 +735,24 @@ forensic_pipeline = ForensicInferencePipeline(device=DEVICE, strategy="calibrate
 print(f"[OK] Forensic Decision Pipeline loaded with default strategy: '{forensic_pipeline.engine.default_strategy}'\n")
 
 # ============================================================
+# LOAD V5-D GATED RESIDUAL MODEL
+# ============================================================
+print("Loading V5-D Gated Residual Model...")
+v5_d_model = None
+if os.path.exists(V5_D_MODEL_PATH):
+    try:
+        v5_d_model = load_checkpoint(
+            GatedResidualResNet50(),
+            V5_D_MODEL_PATH,
+            "V5-D Gated Residual"
+        )
+        print("[OK] V5-D Gated Residual model loaded successfully.\n")
+    except Exception as e:
+        print(f"[WARNING] Could not load V5-D model from {V5_D_MODEL_PATH}: {e}\n")
+else:
+    print(f"[WARNING] V5-D checkpoint not found at {V5_D_MODEL_PATH}\n")
+
+# ============================================================
 # FASTAPI
 # ============================================================
 
@@ -722,12 +808,20 @@ def home():
             f"spatial_{MODEL_VERSION.lower()}": spatial_model is not None,
             f"frequency_{MODEL_VERSION.lower()}": frequency_model is not None,
             f"hybrid_{MODEL_VERSION.lower()}": hybrid_model is not None,
+            "v5_d_gated_residual": v5_d_model is not None,
+        },
+        "v5_d": {
+            "loaded": v5_d_model is not None,
+            "checkpoint": "gated_residual_resnet50_v5_best.pth",
+            "model_name": "V5-D Gated Residual Calibrated",
+            "calibrated": v5_d_calibrator.is_loaded,
+            "calibration_method": v5_d_calibrator.version,
         },
         "forensic_pipeline": {
             "loaded": forensic_pipeline is not None,
             "default_strategy": forensic_pipeline.engine.default_strategy,
             "models": {
-                "generation": "hybrid_resnet50_fft_v4.pth",
+                "generation": "frequency_resnet50_v4.pth",
                 "manipulation": "manipulation_frequency_resnet50_v1.pth",
             }
         }
@@ -941,6 +1035,86 @@ def run_all_models(
 
 
 # ============================================================
+# RUN V5-D GATED RESIDUAL MODEL
+# ============================================================
+
+def run_v5_d(
+    image
+) -> Dict[str, Any]:
+    """
+    Execute inference on the V5-D Gated Residual model (Spatial + Frequency + Noise Residual).
+    Under torch.inference_mode().
+    Deterministic labels: 0 = REAL, 1 = AI.
+    """
+    if v5_d_model is None:
+        raise RuntimeError("V5-D Gated Residual model is not loaded.")
+
+    if not isinstance(image, Image.Image):
+        image = Image.fromarray(image)
+    image = image.convert("RGB")
+
+    # 1. Authoritative V5 Spatial preprocessing (256 bilinear resize -> 224 center crop -> ImageNet normalized)
+    spatial_tensor = v5_spatial_transform(image).unsqueeze(0).to(DEVICE)
+
+    # 2. Authoritative V5 Native-Resolution FFT preprocessing -> 224 bilinear -> min-max -> ImageNet normalized
+    freq_tensor = v5_fft_transform(image).unsqueeze(0).to(DEVICE)
+
+    # 3. Authoritative V5 Noise Residual preprocessing (Spatial - 5x5 Gaussian blur with sigma=1.0)
+    residual_tensor = extract_noise_residual_v5(spatial_tensor)
+
+    with torch.inference_mode():
+        logits, gate = v5_d_model.forward_with_gates(
+            spatial_tensor,
+            freq_tensor,
+            residual_tensor
+        )
+        probs = F.softmax(logits, dim=1)[0]
+        prob_real = float(probs[0].item())
+        prob_ai = float(probs[1].item())
+
+        # Gating distribution across 3 encoders (2048 dims each)
+        spatial_gate_mean = float(gate[0, :2048].mean().item())
+        frequency_gate_mean = float(gate[0, 2048:4096].mean().item())
+        residual_gate_mean = float(gate[0, 4096:].mean().item())
+
+    raw_real_pct = round(prob_real * 100, 2)
+    raw_ai_pct = round(prob_ai * 100, 2)
+
+    # Post-Hoc Probability Calibration (Phases 7 & 8)
+    logits_tuple = (float(logits[0, 0].item()), float(logits[0, 1].item()))
+    cal_res = v5_d_calibrator.calibrate(
+        raw_real_prob=raw_real_pct,
+        raw_ai_prob=raw_ai_pct,
+        logits=logits_tuple
+    )
+
+    cal_ai_pct = cal_res["calibrated_ai_probability"]
+    cal_real_pct = cal_res["calibrated_real_probability"]
+    cal_conf = cal_res["confidence"]
+    cal_method = cal_res["calibration_method"]
+
+    prediction = "AI-GENERATED" if cal_ai_pct >= 50.0 else "REAL"
+
+    return {
+        "prediction": prediction,
+        "confidence": cal_conf,
+        "raw_ai_probability": raw_ai_pct,
+        "raw_real_probability": raw_real_pct,
+        "calibrated_ai_probability": cal_ai_pct,
+        "calibrated_real_probability": cal_real_pct,
+        "ai_probability": cal_ai_pct,
+        "real_probability": cal_real_pct,
+        "calibration_method": cal_method,
+        "model_name": "V5-D Gated Residual Calibrated",
+        "gate_weights": {
+            "spatial": round(spatial_gate_mean, 4),
+            "frequency": round(frequency_gate_mean, 4),
+            "residual": round(residual_gate_mean, 4)
+        }
+    }
+
+
+# ============================================================
 # ROBUSTNESS TRANSFORMATIONS
 # ============================================================
 
@@ -1137,14 +1311,72 @@ async def analyze_image(
         )
 
     # --------------------------------------------------------
-    # Primary result = Hybrid (active model version)
+    # V5-D Gated Residual Inference (Primary Classifier)
     # --------------------------------------------------------
 
-    primary_result = (
-        model_results[
-            "hybrid"
-        ]
-    )
+    v5_d_result = None
+    if v5_d_model is not None:
+        try:
+            v5_d_result = run_v5_d(
+                original_image
+            )
+        except Exception as e:
+            print(f"[WARNING] V5-D inference failed: {e}")
+            v5_d_result = {
+                "error": str(e),
+                "model_name": "V5-D Gated Residual"
+            }
+
+    # --------------------------------------------------------
+    # Primary result selection (V5-D Gated Residual Calibrated)
+    # --------------------------------------------------------
+
+    if v5_d_result is not None and "error" not in v5_d_result:
+        primary_result = v5_d_result
+        primary_verdict = v5_d_result["prediction"]  # "AI-GENERATED" or "REAL"
+        primary_confidence = v5_d_result["confidence"]
+    else:
+        primary_result = model_results["hybrid"]
+        primary_verdict = primary_result["prediction"]
+        primary_confidence = primary_result["confidence"]
+
+    # --------------------------------------------------------
+    # Supporting Forensic Cross-Check (Strategy E)
+    # Strategy E internals and calculations remain 100% intact.
+    # --------------------------------------------------------
+    forensic_cross_check = None
+    if forensic_result and "final" in forensic_result:
+        strategy_e_final = forensic_result["final"]
+        strategy_e_label = strategy_e_final.get("label", "UNCERTAIN")
+        strategy_e_conf = strategy_e_final.get("confidence", 0.0)
+
+        # Check alignment between primary V5-D and Strategy E
+        if strategy_e_label == "UNCERTAIN":
+            cross_check_status = "CONFLICTING"
+            cross_check_explanation = (
+                "Legacy forensic signals show intra-model disagreement or domain shift; "
+                "calibrated V5-D serves as the authoritative primary classifier."
+            )
+        elif (primary_verdict == "REAL" and strategy_e_label == "REAL_ORIGINAL") or \
+             (primary_verdict == "AI-GENERATED" and strategy_e_label in ("AI_GENERATED", "AI_MANIPULATED")):
+            cross_check_status = "CONSISTENT"
+            cross_check_explanation = (
+                "Forensic cross-check confirms primary classification evidence."
+            )
+        else:
+            cross_check_status = "CONFLICTING"
+            cross_check_explanation = (
+                "Legacy forensic signals disagree with the primary classification; "
+                "calibrated V5-D prediction takes precedence."
+            )
+
+        forensic_cross_check = {
+            "status": cross_check_status,
+            "strategy_e_verdict": strategy_e_label,
+            "strategy_e_confidence": round(strategy_e_conf * 100 if strategy_e_conf <= 1.0 else strategy_e_conf, 2),
+            "strategy_e_reason": strategy_e_final.get("reason", ""),
+            "explanation": cross_check_explanation
+        }
 
     # ========================================================
     # ROBUSTNESS ANALYSIS
@@ -1220,28 +1452,29 @@ async def analyze_image(
             file.filename,
 
         # ----------------------------------------------------
-        # PRIMARY RESULT
+        # PRIMARY RESULT (V5-D Gated Residual Calibrated)
         # ----------------------------------------------------
 
         "prediction":
-            primary_result[
-                "prediction"
-            ],
+            primary_verdict,
 
         "confidence":
-            primary_result[
-                "confidence"
-            ],
+            primary_confidence,
+
+        "primary_verdict":
+            primary_verdict,
+
+        "primary_confidence":
+            primary_confidence,
 
         "ai_probability":
-            primary_result[
-                "ai_probability"
-            ],
+            primary_result.get("calibrated_ai_probability", primary_result["ai_probability"]),
 
         "real_probability":
-            primary_result[
-                "real_probability"
-            ],
+            primary_result.get("calibrated_real_probability", primary_result["real_probability"]),
+
+        "forensic_cross_check":
+            forensic_cross_check,
 
         # ----------------------------------------------------
         # MODEL COMPARISON
@@ -1355,6 +1588,13 @@ async def analyze_image(
 
         "forensic":
             forensic_result,
+
+        # ----------------------------------------------------
+        # V5-D Gated Residual model result
+        # ----------------------------------------------------
+
+        "v5_d":
+            v5_d_result,
 
         "message":
             "Image analyzed successfully"

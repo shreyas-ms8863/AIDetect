@@ -1,0 +1,5 @@
+split,total,real,ai,percentage
+train,42000,21000,21000,70.0%
+validation,9000,4500,4500,15.0%
+test,9000,4500,4500,15.0%
+TOTAL,60000,30000,30000,100.0%

@@ -1,0 +1,1022 @@
+{
+  "dataset_info": {
+    "total_images": 800,
+    "total_records": 3200,
+    "models": [
+      "V5-A Spatial",
+      "V5-B Frequency",
+      "V5-C Hybrid",
+      "V5-D Gated Residual"
+    ],
+    "real_images": 400,
+    "ai_images": 400,
+    "generator_counts": {
+      "SD3": 100,
+      "Midjourney v6": 100,
+      "DALL-E 3": 100,
+      "SDXL": 100,
+      "REAL (Natural Photos)": 400
+    }
+  },
+  "model_agreement": {
+    "total_images": 800,
+    "agreement_distribution": {
+      "all_4_agree_count": 298,
+      "all_4_agree_pct": 37.25,
+      "three_of_four_agree_count": 368,
+      "three_of_four_agree_pct": 46.0,
+      "two_vs_two_split_count": 134,
+      "two_vs_two_split_pct": 16.75
+    },
+    "real_images_agreement": {
+      "N": 400,
+      "all_4_agree_count": 185,
+      "all_4_unanimous_REAL_correct": 171,
+      "all_4_unanimous_AI_false_alarm": 14
+    },
+    "ai_images_agreement": {
+      "N": 400,
+      "all_4_agree_count": 113,
+      "all_4_unanimous_AI_correct": 55,
+      "all_4_unanimous_REAL_missed": 58
+    },
+    "pairwise_matrix": {
+      "V5-A Spatial": {
+        "V5-A Spatial": "800 (100.0%)",
+        "V5-B Frequency": "377 (47.1%)",
+        "V5-C Hybrid": "585 (73.1%)",
+        "V5-D Gated Residual": "554 (69.2%)"
+      },
+      "V5-B Frequency": {
+        "V5-A Spatial": "377 (47.1%)",
+        "V5-B Frequency": "800 (100.0%)",
+        "V5-C Hybrid": "478 (59.8%)",
+        "V5-D Gated Residual": "537 (67.1%)"
+      },
+      "V5-C Hybrid": {
+        "V5-A Spatial": "585 (73.1%)",
+        "V5-B Frequency": "478 (59.8%)",
+        "V5-C Hybrid": "800 (100.0%)",
+        "V5-D Gated Residual": "629 (78.6%)"
+      },
+      "V5-D Gated Residual": {
+        "V5-A Spatial": "554 (69.2%)",
+        "V5-B Frequency": "537 (67.1%)",
+        "V5-C Hybrid": "629 (78.6%)",
+        "V5-D Gated Residual": "800 (100.0%)"
+      }
+    }
+  },
+  "real_error_analysis": {
+    "per_model_real": [
+      {
+        "model": "V5-A Spatial",
+        "correct_real": 222,
+        "false_positives": 178,
+        "fpr": 0.445,
+        "mean_ai_prob": 0.4486,
+        "median_ai_prob": 0.2814,
+        "pct_ge_50": 44.5,
+        "pct_ge_70": 39.5,
+        "pct_ge_90": 31.75
+      },
+      {
+        "model": "V5-B Frequency",
+        "correct_real": 354,
+        "false_positives": 46,
+        "fpr": 0.115,
+        "mean_ai_prob": 0.1306,
+        "median_ai_prob": 0.0028,
+        "pct_ge_50": 11.5,
+        "pct_ge_70": 9.5,
+        "pct_ge_90": 7.5
+      },
+      {
+        "model": "V5-C Hybrid",
+        "correct_real": 271,
+        "false_positives": 129,
+        "fpr": 0.3225,
+        "mean_ai_prob": 0.3224,
+        "median_ai_prob": 0.0167,
+        "pct_ge_50": 32.25,
+        "pct_ge_70": 27.0,
+        "pct_ge_90": 23.75
+      },
+      {
+        "model": "V5-D Gated Residual",
+        "correct_real": 308,
+        "false_positives": 92,
+        "fpr": 0.23,
+        "mean_ai_prob": 0.2521,
+        "median_ai_prob": 0.0641,
+        "pct_ge_50": 23.0,
+        "pct_ge_70": 17.75,
+        "pct_ge_90": 9.0
+      }
+    ],
+    "groupings": [
+      {
+        "error_group": "All 4 Models Correct (No Error)",
+        "count": 171,
+        "percentage": 42.75
+      },
+      {
+        "error_group": "V5-A Spatial Only Wrong",
+        "count": 60,
+        "percentage": 15.0
+      },
+      {
+        "error_group": "V5-B Frequency Only Wrong",
+        "count": 15,
+        "percentage": 3.75
+      },
+      {
+        "error_group": "V5-C Hybrid Only Wrong",
+        "count": 22,
+        "percentage": 5.5
+      },
+      {
+        "error_group": "V5-D Gated Residual Only Wrong",
+        "count": 4,
+        "percentage": 1.0
+      },
+      {
+        "error_group": "Both V5-A and V5-D Wrong (Total)",
+        "count": 80,
+        "percentage": 20.0
+      },
+      {
+        "error_group": "Exclusively V5-A and V5-D Wrong (B & C Correct)",
+        "count": 12,
+        "percentage": 3.0
+      },
+      {
+        "error_group": "Multiple-Model Errors (>=2 Models Wrong)",
+        "count": 128,
+        "percentage": 32.0
+      }
+    ]
+  },
+  "ai_generator_analysis": {
+    "hardest_easiest_per_model": {
+      "V5-A Spatial": {
+        "hardest_generator": "Midjourney v6",
+        "hardest_recall": 73.0,
+        "easiest_generator": "SD3",
+        "easiest_recall": 91.0
+      },
+      "V5-B Frequency": {
+        "hardest_generator": "SDXL",
+        "hardest_recall": 9.0,
+        "easiest_generator": "Midjourney v6",
+        "easiest_recall": 34.0
+      },
+      "V5-C Hybrid": {
+        "hardest_generator": "SDXL",
+        "hardest_recall": 50.0,
+        "easiest_generator": "Midjourney v6",
+        "easiest_recall": 66.0
+      },
+      "V5-D Gated Residual": {
+        "hardest_generator": "SDXL",
+        "hardest_recall": 31.0,
+        "easiest_generator": "Midjourney v6",
+        "easiest_recall": 67.0
+      }
+    },
+    "ai_tradeoffs_A_vs_D": {
+      "D_fail_A_succ_total": 126,
+      "D_fail_A_succ_by_generator": {
+        "SDXL": 44,
+        "SD3": 36,
+        "DALL-E 3": 33,
+        "Midjourney v6": 13
+      },
+      "A_fail_D_succ_total": 10,
+      "A_fail_D_succ_by_generator": {
+        "Midjourney v6": 7,
+        "SD3": 1,
+        "DALL-E 3": 1,
+        "SDXL": 1
+      }
+    },
+    "recall_matrix": {
+      "V5-A Spatial": {
+        "SD3": 91.0,
+        "Midjourney v6": 73.0,
+        "DALL-E 3": 79.0,
+        "SDXL": 74.0
+      },
+      "V5-B Frequency": {
+        "SD3": 17.0,
+        "Midjourney v6": 34.0,
+        "DALL-E 3": 28.0,
+        "SDXL": 9.0
+      },
+      "V5-C Hybrid": {
+        "SD3": 62.0,
+        "Midjourney v6": 66.0,
+        "DALL-E 3": 65.0,
+        "SDXL": 50.0
+      },
+      "V5-D Gated Residual": {
+        "SD3": 56.0,
+        "Midjourney v6": 67.0,
+        "DALL-E 3": 47.0,
+        "SDXL": 31.0
+      }
+    },
+    "fnr_matrix": {
+      "V5-A Spatial": {
+        "SD3": 9.0,
+        "Midjourney v6": 27.0,
+        "DALL-E 3": 21.0,
+        "SDXL": 26.0
+      },
+      "V5-B Frequency": {
+        "SD3": 83.0,
+        "Midjourney v6": 66.0,
+        "DALL-E 3": 72.0,
+        "SDXL": 91.0
+      },
+      "V5-C Hybrid": {
+        "SD3": 38.0,
+        "Midjourney v6": 34.0,
+        "DALL-E 3": 35.0,
+        "SDXL": 50.0
+      },
+      "V5-D Gated Residual": {
+        "SD3": 44.0,
+        "Midjourney v6": 33.0,
+        "DALL-E 3": 53.0,
+        "SDXL": 69.0
+      }
+    }
+  },
+  "confidence_error_analysis": {
+    "V5-A Spatial": {
+      "model": "V5-A Spatial",
+      "correct_mean_conf": 0.9454,
+      "correct_median_conf": 0.9983,
+      "incorrect_mean_conf": 0.907,
+      "incorrect_median_conf": 0.9821,
+      "errors_conf_ge_90": 184,
+      "errors_conf_ge_70": 229,
+      "correct_conf_lt_60": 17,
+      "real_fp_ge_90": 127,
+      "real_fp_70_to_89": 31,
+      "real_fp_50_to_69": 20,
+      "ai_fn_lt_10": 57,
+      "ai_fn_10_to_29": 14,
+      "ai_fn_30_to_49": 12
+    },
+    "V5-B Frequency": {
+      "model": "V5-B Frequency",
+      "correct_mean_conf": 0.9455,
+      "correct_median_conf": 0.997,
+      "incorrect_mean_conf": 0.9359,
+      "incorrect_median_conf": 0.996,
+      "errors_conf_ge_90": 283,
+      "errors_conf_ge_70": 335,
+      "correct_conf_lt_60": 13,
+      "real_fp_ge_90": 30,
+      "real_fp_70_to_89": 8,
+      "real_fp_50_to_69": 8,
+      "ai_fn_lt_10": 253,
+      "ai_fn_10_to_29": 44,
+      "ai_fn_30_to_49": 15
+    },
+    "V5-C Hybrid": {
+      "model": "V5-C Hybrid",
+      "correct_mean_conf": 0.9515,
+      "correct_median_conf": 0.9987,
+      "incorrect_mean_conf": 0.9197,
+      "incorrect_median_conf": 0.9944,
+      "errors_conf_ge_90": 214,
+      "errors_conf_ge_70": 252,
+      "correct_conf_lt_60": 11,
+      "real_fp_ge_90": 95,
+      "real_fp_70_to_89": 13,
+      "real_fp_50_to_69": 21,
+      "ai_fn_lt_10": 119,
+      "ai_fn_10_to_29": 25,
+      "ai_fn_30_to_49": 13
+    },
+    "V5-D Gated Residual": {
+      "model": "V5-D Gated Residual",
+      "correct_mean_conf": 0.9053,
+      "correct_median_conf": 0.9554,
+      "incorrect_mean_conf": 0.8561,
+      "incorrect_median_conf": 0.9176,
+      "errors_conf_ge_90": 157,
+      "errors_conf_ge_70": 239,
+      "correct_conf_lt_60": 19,
+      "real_fp_ge_90": 36,
+      "real_fp_70_to_89": 35,
+      "real_fp_50_to_69": 21,
+      "ai_fn_lt_10": 121,
+      "ai_fn_10_to_29": 47,
+      "ai_fn_30_to_49": 31
+    }
+  },
+  "top_20_real_false_positives": {
+    "V5-A Spatial": [
+      {
+        "candidate_id": "DEF_REAL_072",
+        "original_filename": "DEF_REAL_072_80976e070118.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_047",
+        "original_filename": "DEF_REAL_047_475b6334b6bb.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_132",
+        "original_filename": "DEF_REAL_132_cc732abf9f2c.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_076",
+        "original_filename": "DEF_REAL_076_ae6de0a4af2e.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_142",
+        "original_filename": "DEF_REAL_142_92decc6d4740.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_389",
+        "original_filename": "DEF_REAL_389_63fd80aa63b4.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_326",
+        "original_filename": "DEF_REAL_326_496904364001.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_251",
+        "original_filename": "DEF_REAL_251_b1415bae2962.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_140",
+        "original_filename": "DEF_REAL_140_d8be989c1fb3.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_361",
+        "original_filename": "DEF_REAL_361_c6c28e073dfd.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999999,
+        "raw_ai_probability": 0.999999
+      },
+      {
+        "candidate_id": "DEF_REAL_214",
+        "original_filename": "DEF_REAL_214_a404d5d3b903.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999999,
+        "raw_ai_probability": 0.999999
+      },
+      {
+        "candidate_id": "DEF_REAL_392",
+        "original_filename": "DEF_REAL_392_38c077aefa06.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999999,
+        "raw_ai_probability": 0.999999
+      },
+      {
+        "candidate_id": "DEF_REAL_043",
+        "original_filename": "DEF_REAL_043_207fec91631c.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999998,
+        "raw_ai_probability": 0.999998
+      },
+      {
+        "candidate_id": "DEF_REAL_382",
+        "original_filename": "DEF_REAL_382_60796f34021f.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999998,
+        "raw_ai_probability": 0.999998
+      },
+      {
+        "candidate_id": "DEF_REAL_182",
+        "original_filename": "DEF_REAL_182_e0750a34e0bc.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999996,
+        "raw_ai_probability": 0.999996
+      },
+      {
+        "candidate_id": "DEF_REAL_384",
+        "original_filename": "DEF_REAL_384_7b819677a5c6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999995,
+        "raw_ai_probability": 0.999995
+      },
+      {
+        "candidate_id": "DEF_REAL_396",
+        "original_filename": "DEF_REAL_396_7276f58b95e6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999993,
+        "raw_ai_probability": 0.999993
+      },
+      {
+        "candidate_id": "DEF_REAL_049",
+        "original_filename": "DEF_REAL_049_1e1f1c4c2115.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999989,
+        "raw_ai_probability": 0.999989
+      },
+      {
+        "candidate_id": "DEF_REAL_001",
+        "original_filename": "DEF_REAL_001_54f2df820f75.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999988,
+        "raw_ai_probability": 0.999988
+      },
+      {
+        "candidate_id": "DEF_REAL_300",
+        "original_filename": "DEF_REAL_300_9e64cc526368.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999987,
+        "raw_ai_probability": 0.999987
+      }
+    ],
+    "V5-B Frequency": [
+      {
+        "candidate_id": "DEF_REAL_394",
+        "original_filename": "DEF_REAL_394_43e14c9873dc.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999978,
+        "raw_ai_probability": 0.999978
+      },
+      {
+        "candidate_id": "DEF_REAL_069",
+        "original_filename": "DEF_REAL_069_473ee35beb43.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999915,
+        "raw_ai_probability": 0.999915
+      },
+      {
+        "candidate_id": "DEF_REAL_375",
+        "original_filename": "DEF_REAL_375_b03efe6d4557.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999849,
+        "raw_ai_probability": 0.999849
+      },
+      {
+        "candidate_id": "DEF_REAL_361",
+        "original_filename": "DEF_REAL_361_c6c28e073dfd.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999823,
+        "raw_ai_probability": 0.999823
+      },
+      {
+        "candidate_id": "DEF_REAL_015",
+        "original_filename": "DEF_REAL_015_6d20c6bfaecb.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999349,
+        "raw_ai_probability": 0.999349
+      },
+      {
+        "candidate_id": "DEF_REAL_377",
+        "original_filename": "DEF_REAL_377_4e075500e2c8.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999229,
+        "raw_ai_probability": 0.999229
+      },
+      {
+        "candidate_id": "DEF_REAL_371",
+        "original_filename": "DEF_REAL_371_a04ae077d78a.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.997945,
+        "raw_ai_probability": 0.997945
+      },
+      {
+        "candidate_id": "DEF_REAL_257",
+        "original_filename": "DEF_REAL_257_b12668ac9c50.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.997299,
+        "raw_ai_probability": 0.997299
+      },
+      {
+        "candidate_id": "DEF_REAL_255",
+        "original_filename": "DEF_REAL_255_1afe173738dd.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.990427,
+        "raw_ai_probability": 0.990427
+      },
+      {
+        "candidate_id": "DEF_REAL_249",
+        "original_filename": "DEF_REAL_249_944162863821.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.98991,
+        "raw_ai_probability": 0.98991
+      },
+      {
+        "candidate_id": "DEF_REAL_159",
+        "original_filename": "DEF_REAL_159_391a5f9c5229.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.988907,
+        "raw_ai_probability": 0.988907
+      },
+      {
+        "candidate_id": "DEF_REAL_206",
+        "original_filename": "DEF_REAL_206_6152b8fff6f7.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.986298,
+        "raw_ai_probability": 0.986298
+      },
+      {
+        "candidate_id": "DEF_REAL_263",
+        "original_filename": "DEF_REAL_263_37bcdc2c7814.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.982764,
+        "raw_ai_probability": 0.982764
+      },
+      {
+        "candidate_id": "DEF_REAL_286",
+        "original_filename": "DEF_REAL_286_65d5c9b5af7a.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.980006,
+        "raw_ai_probability": 0.980006
+      },
+      {
+        "candidate_id": "DEF_REAL_058",
+        "original_filename": "DEF_REAL_058_db9c7c91e3b7.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.979293,
+        "raw_ai_probability": 0.979293
+      },
+      {
+        "candidate_id": "DEF_REAL_175",
+        "original_filename": "DEF_REAL_175_d48ddc8ba6f2.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.977958,
+        "raw_ai_probability": 0.977958
+      },
+      {
+        "candidate_id": "DEF_REAL_326",
+        "original_filename": "DEF_REAL_326_496904364001.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.976838,
+        "raw_ai_probability": 0.976838
+      },
+      {
+        "candidate_id": "DEF_REAL_188",
+        "original_filename": "DEF_REAL_188_f3c402b85b9f.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.971048,
+        "raw_ai_probability": 0.971048
+      },
+      {
+        "candidate_id": "DEF_REAL_373",
+        "original_filename": "DEF_REAL_373_b06afc00ab59.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.970091,
+        "raw_ai_probability": 0.970091
+      },
+      {
+        "candidate_id": "DEF_REAL_384",
+        "original_filename": "DEF_REAL_384_7b819677a5c6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.969993,
+        "raw_ai_probability": 0.969993
+      }
+    ],
+    "V5-C Hybrid": [
+      {
+        "candidate_id": "DEF_REAL_132",
+        "original_filename": "DEF_REAL_132_cc732abf9f2c.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_346",
+        "original_filename": "DEF_REAL_346_a46327da1b60.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_094",
+        "original_filename": "DEF_REAL_094_11b18cf20cd8.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_230",
+        "original_filename": "DEF_REAL_230_d5f0a6570c41.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_177",
+        "original_filename": "DEF_REAL_177_e00a79e1c8f4.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_348",
+        "original_filename": "DEF_REAL_348_cb9dfa48dc55.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_361",
+        "original_filename": "DEF_REAL_361_c6c28e073dfd.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_326",
+        "original_filename": "DEF_REAL_326_496904364001.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_251",
+        "original_filename": "DEF_REAL_251_b1415bae2962.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_389",
+        "original_filename": "DEF_REAL_389_63fd80aa63b4.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 1.0,
+        "raw_ai_probability": 1.0
+      },
+      {
+        "candidate_id": "DEF_REAL_254",
+        "original_filename": "DEF_REAL_254_5a359debebc6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999999,
+        "raw_ai_probability": 0.999999
+      },
+      {
+        "candidate_id": "DEF_REAL_167",
+        "original_filename": "DEF_REAL_167_95f50b3def6e.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999998,
+        "raw_ai_probability": 0.999998
+      },
+      {
+        "candidate_id": "DEF_REAL_300",
+        "original_filename": "DEF_REAL_300_9e64cc526368.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999998,
+        "raw_ai_probability": 0.999998
+      },
+      {
+        "candidate_id": "DEF_REAL_205",
+        "original_filename": "DEF_REAL_205_ef6bf2a10b65.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999996,
+        "raw_ai_probability": 0.999996
+      },
+      {
+        "candidate_id": "DEF_REAL_072",
+        "original_filename": "DEF_REAL_072_80976e070118.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999994,
+        "raw_ai_probability": 0.999994
+      },
+      {
+        "candidate_id": "DEF_REAL_188",
+        "original_filename": "DEF_REAL_188_f3c402b85b9f.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999993,
+        "raw_ai_probability": 0.999993
+      },
+      {
+        "candidate_id": "DEF_REAL_163",
+        "original_filename": "DEF_REAL_163_f7ae7c75e8e7.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999991,
+        "raw_ai_probability": 0.999991
+      },
+      {
+        "candidate_id": "DEF_REAL_357",
+        "original_filename": "DEF_REAL_357_bf1b4ca71357.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999989,
+        "raw_ai_probability": 0.999989
+      },
+      {
+        "candidate_id": "DEF_REAL_185",
+        "original_filename": "DEF_REAL_185_552c78e0ca90.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999989,
+        "raw_ai_probability": 0.999989
+      },
+      {
+        "candidate_id": "DEF_REAL_084",
+        "original_filename": "DEF_REAL_084_485600da4f97.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.999987,
+        "raw_ai_probability": 0.999987
+      }
+    ],
+    "V5-D Gated Residual": [
+      {
+        "candidate_id": "DEF_REAL_389",
+        "original_filename": "DEF_REAL_389_63fd80aa63b4.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.995846,
+        "raw_ai_probability": 0.999994
+      },
+      {
+        "candidate_id": "DEF_REAL_177",
+        "original_filename": "DEF_REAL_177_e00a79e1c8f4.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.994924,
+        "raw_ai_probability": 0.999991
+      },
+      {
+        "candidate_id": "DEF_REAL_076",
+        "original_filename": "DEF_REAL_076_ae6de0a4af2e.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.991255,
+        "raw_ai_probability": 0.99997
+      },
+      {
+        "candidate_id": "DEF_REAL_396",
+        "original_filename": "DEF_REAL_396_7276f58b95e6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.991128,
+        "raw_ai_probability": 0.999969
+      },
+      {
+        "candidate_id": "DEF_REAL_188",
+        "original_filename": "DEF_REAL_188_f3c402b85b9f.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.986825,
+        "raw_ai_probability": 0.999924
+      },
+      {
+        "candidate_id": "DEF_REAL_171",
+        "original_filename": "DEF_REAL_171_0af5308a2beb.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.986315,
+        "raw_ai_probability": 0.999918
+      },
+      {
+        "candidate_id": "DEF_REAL_387",
+        "original_filename": "DEF_REAL_387_6ba29eeb5696.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.986291,
+        "raw_ai_probability": 0.999917
+      },
+      {
+        "candidate_id": "DEF_REAL_251",
+        "original_filename": "DEF_REAL_251_b1415bae2962.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.983205,
+        "raw_ai_probability": 0.99987
+      },
+      {
+        "candidate_id": "DEF_REAL_166",
+        "original_filename": "DEF_REAL_166_89afb2a881c9.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.982567,
+        "raw_ai_probability": 0.999858
+      },
+      {
+        "candidate_id": "DEF_REAL_084",
+        "original_filename": "DEF_REAL_084_485600da4f97.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.977115,
+        "raw_ai_probability": 0.99974
+      },
+      {
+        "candidate_id": "DEF_REAL_140",
+        "original_filename": "DEF_REAL_140_d8be989c1fb3.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.975189,
+        "raw_ai_probability": 0.999688
+      },
+      {
+        "candidate_id": "DEF_REAL_167",
+        "original_filename": "DEF_REAL_167_95f50b3def6e.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.974057,
+        "raw_ai_probability": 0.999655
+      },
+      {
+        "candidate_id": "DEF_REAL_245",
+        "original_filename": "DEF_REAL_245_402c41833e59.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.973936,
+        "raw_ai_probability": 0.999651
+      },
+      {
+        "candidate_id": "DEF_REAL_072",
+        "original_filename": "DEF_REAL_072_80976e070118.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.96694,
+        "raw_ai_probability": 0.999402
+      },
+      {
+        "candidate_id": "DEF_REAL_326",
+        "original_filename": "DEF_REAL_326_496904364001.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.966025,
+        "raw_ai_probability": 0.999364
+      },
+      {
+        "candidate_id": "DEF_REAL_384",
+        "original_filename": "DEF_REAL_384_7b819677a5c6.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.9656,
+        "raw_ai_probability": 0.999345
+      },
+      {
+        "candidate_id": "DEF_REAL_361",
+        "original_filename": "DEF_REAL_361_c6c28e073dfd.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.962502,
+        "raw_ai_probability": 0.999203
+      },
+      {
+        "candidate_id": "DEF_REAL_210",
+        "original_filename": "DEF_REAL_210_d78ddebe9fa9.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.960245,
+        "raw_ai_probability": 0.99909
+      },
+      {
+        "candidate_id": "DEF_REAL_049",
+        "original_filename": "DEF_REAL_049_1e1f1c4c2115.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.956023,
+        "raw_ai_probability": 0.998853
+      },
+      {
+        "candidate_id": "DEF_REAL_001",
+        "original_filename": "DEF_REAL_001_54f2df820f75.jpg",
+        "category": "REAL",
+        "source": "MS_COCO",
+        "calibrated_ai_probability": 0.954747,
+        "raw_ai_probability": 0.998775
+      }
+    ]
+  },
+  "longitudinal_comparison": [
+    {
+      "model": "V5-A Spatial",
+      "clean_v5_test_f1": 97.02,
+      "avg_controlled_robustness_f1": 76.49,
+      "external_benchmark_f1": 70.84,
+      "clean_to_external_delta": -26.18,
+      "robustness_to_external_delta": -5.65,
+      "clean_rank": 2,
+      "robustness_rank": 1,
+      "external_rank": 1,
+      "rank_change_clean_to_ext": "+1"
+    },
+    {
+      "model": "V5-B Frequency",
+      "clean_v5_test_f1": 90.65,
+      "avg_controlled_robustness_f1": 63.38,
+      "external_benchmark_f1": 32.96,
+      "clean_to_external_delta": -57.69,
+      "robustness_to_external_delta": -30.42,
+      "clean_rank": 4,
+      "robustness_rank": 4,
+      "external_rank": 4,
+      "rank_change_clean_to_ext": "0"
+    },
+    {
+      "model": "V5-C Hybrid",
+      "clean_v5_test_f1": 96.89,
+      "avg_controlled_robustness_f1": 71.79,
+      "external_benchmark_f1": 62.95,
+      "clean_to_external_delta": -33.94,
+      "robustness_to_external_delta": -8.84,
+      "clean_rank": 3,
+      "robustness_rank": 3,
+      "external_rank": 2,
+      "rank_change_clean_to_ext": "+1"
+    },
+    {
+      "model": "V5-D Gated Residual",
+      "clean_v5_test_f1": 97.17,
+      "avg_controlled_robustness_f1": 73.44,
+      "external_benchmark_f1": 58.01,
+      "clean_to_external_delta": -39.16,
+      "robustness_to_external_delta": -15.43,
+      "clean_rank": 1,
+      "robustness_rank": 2,
+      "external_rank": 3,
+      "rank_change_clean_to_ext": "-2"
+    }
+  ]
+}

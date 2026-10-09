@@ -1,0 +1,78 @@
+{
+  "CIFAKE_train": {
+    "total": 100000,
+    "real": 50000,
+    "ai": 50000,
+    "generator": "Stable Diffusion v1.4 (for AI), CIFAR-10 (for Real)",
+    "resolution": "32x32",
+    "current_role": "Training (V1 used 2k, V2 used 20k, V3 used 1k)"
+  },
+  "CIFAKE_test": {
+    "total": 20000,
+    "real": 10000,
+    "ai": 10000,
+    "generator": "Stable Diffusion v1.4 (AI), CIFAR-10 (Real)",
+    "resolution": "32x32",
+    "current_role": "Official Benchmark Test Split (MUST BE EXCLUDED FROM V5 TRAINING)"
+  },
+  "Tiny-GenImage_train": {
+    "total": 4000,
+    "real": 2000,
+    "ai": 2000,
+    "generator": {
+      "0": 2000,
+      "1": 286,
+      "2": 286,
+      "3": 286,
+      "4": 286,
+      "6": 286,
+      "7": 285,
+      "8": 285
+    },
+    "resolution": "Variable / High-res ImageNet",
+    "current_role": "Training (V3 sampled 1.6k, V4 sampled 3k)"
+  },
+  "Tiny-GenImage_val": {
+    "total": 1750,
+    "real": 875,
+    "ai": 875,
+    "generator": {
+      "0": 875,
+      "1": 125,
+      "2": 125,
+      "3": 125,
+      "4": 125,
+      "6": 125,
+      "7": 125,
+      "8": 125
+    },
+    "resolution": "Variable / High-res ImageNet",
+    "current_role": "Benchmark Evaluation (100 images sampled in V2 genimage_test; MUST BE HELD OUT)"
+  },
+  "dataset_v4": {
+    "train_total": 2837,
+    "train_real": 1368,
+    "train_ai": 1469,
+    "validation_total": 607,
+    "validation_real": 293,
+    "validation_ai": 314,
+    "test_total": 613,
+    "test_real": 296,
+    "test_ai": 317
+  },
+  "external_and_real_world": {
+    "external_test_total": 86,
+    "external_test_real": 49,
+    "external_test_ai": 37,
+    "real_world_total": 19,
+    "real_world_real": 9,
+    "real_world_ai": 10,
+    "current_role": "Historical Evaluation Benchmarks (MUST BE EXCLUDED)"
+  },
+  "manipulation": {
+    "manipulation_v1_images": 1619,
+    "dataset_manipulation_v2_images": 2078,
+    "manipulation_external_test_images": 2785,
+    "current_role": "Localized Inpainting / Manipulation (Separate research branch from whole-image Generation)"
+  }
+}

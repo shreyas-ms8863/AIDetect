@@ -1,0 +1,566 @@
+{
+  "benchmark_metadata": {
+    "benchmark_name": "Defactify External Benchmark v1",
+    "dataset_source": "Defactify_Image_Dataset (Validation Split)",
+    "dataset_commit": "787334f7857fa54f29027a7f09c30e895ad486ef",
+    "manifest_path": "diagnostic_outputs/external_benchmark_v1_manifest.csv",
+    "payloads_dir": "diagnostic_outputs/external_benchmark_payloads",
+    "total_images": 800,
+    "real_images": 400,
+    "ai_images": 400,
+    "generator_counts": {
+      "None_Authentic_Photograph": 400,
+      "Stable_Diffusion_3": 100,
+      "Midjourney_v6": 100,
+      "DALL-E_3": 100,
+      "Stable_Diffusion_XL": 100
+    },
+    "decision_threshold": 0.5,
+    "v5_d_calibration": {
+      "method": "temperature",
+      "temperature_T": 2.1983866642849734,
+      "source_config": "backend/models/v5/v5_d_calibration.json"
+    },
+    "device": "cuda",
+    "execution_duration_seconds": 26.9,
+    "timestamp": "2026-10-09T16:58:05Z"
+  },
+  "models": {
+    "V5-A Spatial": {
+      "model_name": "V5-A Spatial",
+      "is_calibrated": false,
+      "calibration_method": "Raw Softmax (Uncalibrated)",
+      "overall": {
+        "N": 800,
+        "accuracy": 0.67375,
+        "precision": 0.640404,
+        "recall": 0.7925,
+        "f1": 0.70838,
+        "balanced_accuracy": 0.67375,
+        "real_false_positive_rate": 0.445,
+        "ai_false_negative_rate": 0.2075,
+        "confusion_matrix": {
+          "TN": 222,
+          "FP": 178,
+          "FN": 83,
+          "TP": 317
+        }
+      },
+      "real_subset": {
+        "N": 400,
+        "correctly_classified_real": 222,
+        "false_positives": 178,
+        "false_positive_rate": 0.445,
+        "mean_ai_probability": 0.448612,
+        "median_ai_probability": 0.281386,
+        "percentage_ge_50": 44.5,
+        "percentage_ge_70": 39.5,
+        "percentage_ge_90": 31.75
+      },
+      "ai_subset": {
+        "N": 400,
+        "correctly_classified_ai": 317,
+        "false_negatives": 83,
+        "ai_recall": 0.7925,
+        "mean_ai_probability": 0.783156,
+        "median_ai_probability": 0.996865
+      },
+      "generator_specific": {
+        "Stable_Diffusion_3": {
+          "generator_name": "SD3",
+          "N": 100,
+          "accuracy": 0.626,
+          "precision": 0.33829,
+          "recall": 0.91,
+          "f1": 0.493225,
+          "balanced_accuracy": 0.7325,
+          "mean_ai_probability": 0.890508,
+          "median_ai_probability": 0.999803,
+          "false_negative_count": 9,
+          "false_negative_rate": 0.09,
+          "confusion_matrix_standalone": {
+            "TP": 91,
+            "FN": 9
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 222,
+            "FP": 178,
+            "FN": 9,
+            "TP": 91
+          }
+        },
+        "Midjourney_v6": {
+          "generator_name": "Midjourney v6",
+          "N": 100,
+          "accuracy": 0.59,
+          "precision": 0.290837,
+          "recall": 0.73,
+          "f1": 0.415954,
+          "balanced_accuracy": 0.6425,
+          "mean_ai_probability": 0.717642,
+          "median_ai_probability": 0.985151,
+          "false_negative_count": 27,
+          "false_negative_rate": 0.27,
+          "confusion_matrix_standalone": {
+            "TP": 73,
+            "FN": 27
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 222,
+            "FP": 178,
+            "FN": 27,
+            "TP": 73
+          }
+        },
+        "DALL-E_3": {
+          "generator_name": "DALL-E 3",
+          "N": 100,
+          "accuracy": 0.602,
+          "precision": 0.307393,
+          "recall": 0.79,
+          "f1": 0.442577,
+          "balanced_accuracy": 0.6725,
+          "mean_ai_probability": 0.792714,
+          "median_ai_probability": 0.998761,
+          "false_negative_count": 21,
+          "false_negative_rate": 0.21,
+          "confusion_matrix_standalone": {
+            "TP": 79,
+            "FN": 21
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 222,
+            "FP": 178,
+            "FN": 21,
+            "TP": 79
+          }
+        },
+        "Stable_Diffusion_XL": {
+          "generator_name": "SDXL",
+          "N": 100,
+          "accuracy": 0.592,
+          "precision": 0.293651,
+          "recall": 0.74,
+          "f1": 0.420455,
+          "balanced_accuracy": 0.6475,
+          "mean_ai_probability": 0.73176,
+          "median_ai_probability": 0.98541,
+          "false_negative_count": 26,
+          "false_negative_rate": 0.26,
+          "confusion_matrix_standalone": {
+            "TP": 74,
+            "FN": 26
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 222,
+            "FP": 178,
+            "FN": 26,
+            "TP": 74
+          }
+        }
+      }
+    },
+    "V5-B Frequency": {
+      "model_name": "V5-B Frequency",
+      "is_calibrated": false,
+      "calibration_method": "Raw Softmax (Uncalibrated)",
+      "overall": {
+        "N": 800,
+        "accuracy": 0.5525,
+        "precision": 0.656716,
+        "recall": 0.22,
+        "f1": 0.329588,
+        "balanced_accuracy": 0.5525,
+        "real_false_positive_rate": 0.115,
+        "ai_false_negative_rate": 0.78,
+        "confusion_matrix": {
+          "TN": 354,
+          "FP": 46,
+          "FN": 312,
+          "TP": 88
+        }
+      },
+      "real_subset": {
+        "N": 400,
+        "correctly_classified_real": 354,
+        "false_positives": 46,
+        "false_positive_rate": 0.115,
+        "mean_ai_probability": 0.130615,
+        "median_ai_probability": 0.002813,
+        "percentage_ge_50": 11.5,
+        "percentage_ge_70": 9.5,
+        "percentage_ge_90": 7.5
+      },
+      "ai_subset": {
+        "N": 400,
+        "correctly_classified_ai": 88,
+        "false_negatives": 312,
+        "ai_recall": 0.22,
+        "mean_ai_probability": 0.23276,
+        "median_ai_probability": 0.012219
+      },
+      "generator_specific": {
+        "Stable_Diffusion_3": {
+          "generator_name": "SD3",
+          "N": 100,
+          "accuracy": 0.742,
+          "precision": 0.269841,
+          "recall": 0.17,
+          "f1": 0.208589,
+          "balanced_accuracy": 0.5275,
+          "mean_ai_probability": 0.156995,
+          "median_ai_probability": 0.000651,
+          "false_negative_count": 83,
+          "false_negative_rate": 0.83,
+          "confusion_matrix_standalone": {
+            "TP": 17,
+            "FN": 83
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 354,
+            "FP": 46,
+            "FN": 83,
+            "TP": 17
+          }
+        },
+        "Midjourney_v6": {
+          "generator_name": "Midjourney v6",
+          "N": 100,
+          "accuracy": 0.776,
+          "precision": 0.425,
+          "recall": 0.34,
+          "f1": 0.377778,
+          "balanced_accuracy": 0.6125,
+          "mean_ai_probability": 0.382808,
+          "median_ai_probability": 0.261929,
+          "false_negative_count": 66,
+          "false_negative_rate": 0.66,
+          "confusion_matrix_standalone": {
+            "TP": 34,
+            "FN": 66
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 354,
+            "FP": 46,
+            "FN": 66,
+            "TP": 34
+          }
+        },
+        "DALL-E_3": {
+          "generator_name": "DALL-E 3",
+          "N": 100,
+          "accuracy": 0.764,
+          "precision": 0.378378,
+          "recall": 0.28,
+          "f1": 0.321839,
+          "balanced_accuracy": 0.5825,
+          "mean_ai_probability": 0.281858,
+          "median_ai_probability": 0.03095,
+          "false_negative_count": 72,
+          "false_negative_rate": 0.72,
+          "confusion_matrix_standalone": {
+            "TP": 28,
+            "FN": 72
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 354,
+            "FP": 46,
+            "FN": 72,
+            "TP": 28
+          }
+        },
+        "Stable_Diffusion_XL": {
+          "generator_name": "SDXL",
+          "N": 100,
+          "accuracy": 0.726,
+          "precision": 0.163636,
+          "recall": 0.09,
+          "f1": 0.116129,
+          "balanced_accuracy": 0.4875,
+          "mean_ai_probability": 0.109379,
+          "median_ai_probability": 0.000528,
+          "false_negative_count": 91,
+          "false_negative_rate": 0.91,
+          "confusion_matrix_standalone": {
+            "TP": 9,
+            "FN": 91
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 354,
+            "FP": 46,
+            "FN": 91,
+            "TP": 9
+          }
+        }
+      }
+    },
+    "V5-C Hybrid": {
+      "model_name": "V5-C Hybrid",
+      "is_calibrated": false,
+      "calibration_method": "Raw Softmax (Uncalibrated)",
+      "overall": {
+        "N": 800,
+        "accuracy": 0.6425,
+        "precision": 0.653226,
+        "recall": 0.6075,
+        "f1": 0.629534,
+        "balanced_accuracy": 0.6425,
+        "real_false_positive_rate": 0.3225,
+        "ai_false_negative_rate": 0.3925,
+        "confusion_matrix": {
+          "TN": 271,
+          "FP": 129,
+          "FN": 157,
+          "TP": 243
+        }
+      },
+      "real_subset": {
+        "N": 400,
+        "correctly_classified_real": 271,
+        "false_positives": 129,
+        "false_positive_rate": 0.3225,
+        "mean_ai_probability": 0.322395,
+        "median_ai_probability": 0.016654,
+        "percentage_ge_50": 32.25,
+        "percentage_ge_70": 27.0,
+        "percentage_ge_90": 23.75
+      },
+      "ai_subset": {
+        "N": 400,
+        "correctly_classified_ai": 243,
+        "false_negatives": 157,
+        "ai_recall": 0.6075,
+        "mean_ai_probability": 0.602452,
+        "median_ai_probability": 0.920554
+      },
+      "generator_specific": {
+        "Stable_Diffusion_3": {
+          "generator_name": "SD3",
+          "N": 100,
+          "accuracy": 0.666,
+          "precision": 0.324607,
+          "recall": 0.62,
+          "f1": 0.426117,
+          "balanced_accuracy": 0.64875,
+          "mean_ai_probability": 0.621479,
+          "median_ai_probability": 0.930494,
+          "false_negative_count": 38,
+          "false_negative_rate": 0.38,
+          "confusion_matrix_standalone": {
+            "TP": 62,
+            "FN": 38
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 271,
+            "FP": 129,
+            "FN": 38,
+            "TP": 62
+          }
+        },
+        "Midjourney_v6": {
+          "generator_name": "Midjourney v6",
+          "N": 100,
+          "accuracy": 0.674,
+          "precision": 0.338462,
+          "recall": 0.66,
+          "f1": 0.447458,
+          "balanced_accuracy": 0.66875,
+          "mean_ai_probability": 0.658175,
+          "median_ai_probability": 0.961477,
+          "false_negative_count": 34,
+          "false_negative_rate": 0.34,
+          "confusion_matrix_standalone": {
+            "TP": 66,
+            "FN": 34
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 271,
+            "FP": 129,
+            "FN": 34,
+            "TP": 66
+          }
+        },
+        "DALL-E_3": {
+          "generator_name": "DALL-E 3",
+          "N": 100,
+          "accuracy": 0.672,
+          "precision": 0.335052,
+          "recall": 0.65,
+          "f1": 0.442177,
+          "balanced_accuracy": 0.66375,
+          "mean_ai_probability": 0.639684,
+          "median_ai_probability": 0.973889,
+          "false_negative_count": 35,
+          "false_negative_rate": 0.35,
+          "confusion_matrix_standalone": {
+            "TP": 65,
+            "FN": 35
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 271,
+            "FP": 129,
+            "FN": 35,
+            "TP": 65
+          }
+        },
+        "Stable_Diffusion_XL": {
+          "generator_name": "SDXL",
+          "N": 100,
+          "accuracy": 0.642,
+          "precision": 0.27933,
+          "recall": 0.5,
+          "f1": 0.358423,
+          "balanced_accuracy": 0.58875,
+          "mean_ai_probability": 0.49047,
+          "median_ai_probability": 0.516291,
+          "false_negative_count": 50,
+          "false_negative_rate": 0.5,
+          "confusion_matrix_standalone": {
+            "TP": 50,
+            "FN": 50
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 271,
+            "FP": 129,
+            "FN": 50,
+            "TP": 50
+          }
+        }
+      }
+    },
+    "V5-D Gated Residual": {
+      "model_name": "V5-D Gated Residual",
+      "is_calibrated": true,
+      "calibration_method": "Temperature Scaling (T=2.198387)",
+      "overall": {
+        "N": 800,
+        "accuracy": 0.63625,
+        "precision": 0.686007,
+        "recall": 0.5025,
+        "f1": 0.580087,
+        "balanced_accuracy": 0.63625,
+        "real_false_positive_rate": 0.23,
+        "ai_false_negative_rate": 0.4975,
+        "confusion_matrix": {
+          "TN": 308,
+          "FP": 92,
+          "FN": 199,
+          "TP": 201
+        }
+      },
+      "real_subset": {
+        "N": 400,
+        "correctly_classified_real": 308,
+        "false_positives": 92,
+        "false_positive_rate": 0.23,
+        "mean_ai_probability": 0.252051,
+        "median_ai_probability": 0.064141,
+        "percentage_ge_50": 23.0,
+        "percentage_ge_70": 17.75,
+        "percentage_ge_90": 9.0
+      },
+      "ai_subset": {
+        "N": 400,
+        "correctly_classified_ai": 201,
+        "false_negatives": 199,
+        "ai_recall": 0.5025,
+        "mean_ai_probability": 0.508713,
+        "median_ai_probability": 0.517296
+      },
+      "generator_specific": {
+        "Stable_Diffusion_3": {
+          "generator_name": "SD3",
+          "N": 100,
+          "accuracy": 0.728,
+          "precision": 0.378378,
+          "recall": 0.56,
+          "f1": 0.451613,
+          "balanced_accuracy": 0.665,
+          "mean_ai_probability": 0.571967,
+          "median_ai_probability": 0.688607,
+          "false_negative_count": 44,
+          "false_negative_rate": 0.44,
+          "confusion_matrix_standalone": {
+            "TP": 56,
+            "FN": 44
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 308,
+            "FP": 92,
+            "FN": 44,
+            "TP": 56
+          }
+        },
+        "Midjourney_v6": {
+          "generator_name": "Midjourney v6",
+          "N": 100,
+          "accuracy": 0.75,
+          "precision": 0.421384,
+          "recall": 0.67,
+          "f1": 0.517375,
+          "balanced_accuracy": 0.72,
+          "mean_ai_probability": 0.634314,
+          "median_ai_probability": 0.842855,
+          "false_negative_count": 33,
+          "false_negative_rate": 0.33,
+          "confusion_matrix_standalone": {
+            "TP": 67,
+            "FN": 33
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 308,
+            "FP": 92,
+            "FN": 33,
+            "TP": 67
+          }
+        },
+        "DALL-E_3": {
+          "generator_name": "DALL-E 3",
+          "N": 100,
+          "accuracy": 0.71,
+          "precision": 0.338129,
+          "recall": 0.47,
+          "f1": 0.393305,
+          "balanced_accuracy": 0.62,
+          "mean_ai_probability": 0.477992,
+          "median_ai_probability": 0.373007,
+          "false_negative_count": 53,
+          "false_negative_rate": 0.53,
+          "confusion_matrix_standalone": {
+            "TP": 47,
+            "FN": 53
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 308,
+            "FP": 92,
+            "FN": 53,
+            "TP": 47
+          }
+        },
+        "Stable_Diffusion_XL": {
+          "generator_name": "SDXL",
+          "N": 100,
+          "accuracy": 0.678,
+          "precision": 0.252033,
+          "recall": 0.31,
+          "f1": 0.278027,
+          "balanced_accuracy": 0.54,
+          "mean_ai_probability": 0.350577,
+          "median_ai_probability": 0.151517,
+          "false_negative_count": 69,
+          "false_negative_rate": 0.69,
+          "confusion_matrix_standalone": {
+            "TP": 31,
+            "FN": 69
+          },
+          "confusion_matrix_with_real_baseline": {
+            "TN": 308,
+            "FP": 92,
+            "FN": 69,
+            "TP": 31
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "dataset_audit": {
+    "total_validation_samples": 9000,
+    "real_samples": 4500,
+    "ai_samples": 4500,
+    "fit_samples": 4500,
+    "eval_samples": 4500
+  },
+  "fitted_parameters": {
+    "temperature_T": 2.1983866642849734,
+    "platt_A": 0.45495835201834406,
+    "platt_B": 0.07698962228988993
+  },
+  "selected_method": "temperature",
+  "evaluation_metrics": {
+    "raw": {
+      "accuracy": 0.973778,
+      "precision": 0.974622,
+      "recall": 0.972889,
+      "f1": 0.973754,
+      "roc_auc": 0.997168,
+      "nll": 0.11626,
+      "brier": 0.022778,
+      "ece": 0.019685,
+      "mce": 0.23123,
+      "reliability_bins": [
+        {
+          "bin_idx": 1,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 2208,
+          "mean_predicted_prob": 0.0015,
+          "empirical_true_freq": 0.0199
+        },
+        {
+          "bin_idx": 2,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 20,
+          "mean_predicted_prob": 0.1453,
+          "empirical_true_freq": 0.35
+        },
+        {
+          "bin_idx": 3,
+          "bin_lower": 0.2,
+          "bin_upper": 0.3,
+          "count": 9,
+          "mean_predicted_prob": 0.2428,
+          "empirical_true_freq": 0.4444
+        },
+        {
+          "bin_idx": 4,
+          "bin_lower": 0.3,
+          "bin_upper": 0.4,
+          "count": 10,
+          "mean_predicted_prob": 0.3524,
+          "empirical_true_freq": 0.5
+        },
+        {
+          "bin_idx": 5,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 7,
+          "mean_predicted_prob": 0.4511,
+          "empirical_true_freq": 0.1429
+        },
+        {
+          "bin_idx": 6,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6,
+          "count": 12,
+          "mean_predicted_prob": 0.5588,
+          "empirical_true_freq": 0.4167
+        },
+        {
+          "bin_idx": 7,
+          "bin_lower": 0.6,
+          "bin_upper": 0.7,
+          "count": 8,
+          "mean_predicted_prob": 0.6467,
+          "empirical_true_freq": 0.625
+        },
+        {
+          "bin_idx": 8,
+          "bin_lower": 0.7,
+          "bin_upper": 0.8,
+          "count": 8,
+          "mean_predicted_prob": 0.7645,
+          "empirical_true_freq": 0.5
+        },
+        {
+          "bin_idx": 9,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 14,
+          "mean_predicted_prob": 0.854,
+          "empirical_true_freq": 0.7143
+        },
+        {
+          "bin_idx": 10,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 2204,
+          "mean_predicted_prob": 0.9986,
+          "empirical_true_freq": 0.9823
+        }
+      ]
+    },
+    "temperature": {
+      "accuracy": 0.973778,
+      "precision": 0.974622,
+      "recall": 0.972889,
+      "f1": 0.973754,
+      "roc_auc": 0.997168,
+      "nll": 0.072624,
+      "brier": 0.020232,
+      "ece": 0.004744,
+      "mce": 0.083192,
+      "reliability_bins": [
+        {
+          "bin_idx": 1,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 2132,
+          "mean_predicted_prob": 0.0111,
+          "empirical_true_freq": 0.0108
+        },
+        {
+          "bin_idx": 2,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 49,
+          "mean_predicted_prob": 0.1395,
+          "empirical_true_freq": 0.2653
+        },
+        {
+          "bin_idx": 3,
+          "bin_lower": 0.2,
+          "bin_upper": 0.3,
+          "count": 36,
+          "mean_predicted_prob": 0.2477,
+          "empirical_true_freq": 0.3056
+        },
+        {
+          "bin_idx": 4,
+          "bin_lower": 0.3,
+          "bin_upper": 0.4,
+          "count": 20,
+          "mean_predicted_prob": 0.3468,
+          "empirical_true_freq": 0.4
+        },
+        {
+          "bin_idx": 5,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 17,
+          "mean_predicted_prob": 0.4502,
+          "empirical_true_freq": 0.3529
+        },
+        {
+          "bin_idx": 6,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6,
+          "count": 20,
+          "mean_predicted_prob": 0.5435,
+          "empirical_true_freq": 0.5
+        },
+        {
+          "bin_idx": 7,
+          "bin_lower": 0.6,
+          "bin_upper": 0.7,
+          "count": 17,
+          "mean_predicted_prob": 0.6564,
+          "empirical_true_freq": 0.5882
+        },
+        {
+          "bin_idx": 8,
+          "bin_lower": 0.7,
+          "bin_upper": 0.8,
+          "count": 28,
+          "mean_predicted_prob": 0.7586,
+          "empirical_true_freq": 0.6429
+        },
+        {
+          "bin_idx": 9,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 49,
+          "mean_predicted_prob": 0.852,
+          "empirical_true_freq": 0.8163
+        },
+        {
+          "bin_idx": 10,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 2132,
+          "mean_predicted_prob": 0.988,
+          "empirical_true_freq": 0.9902
+        }
+      ]
+    },
+    "platt": {
+      "accuracy": 0.973778,
+      "precision": 0.974199,
+      "recall": 0.973333,
+      "f1": 0.973766,
+      "roc_auc": 0.997168,
+      "nll": 0.072604,
+      "brier": 0.020246,
+      "ece": 0.004764,
+      "mce": 0.085065,
+      "reliability_bins": [
+        {
+          "bin_idx": 1,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 2129,
+          "mean_predicted_prob": 0.0118,
+          "empirical_true_freq": 0.0108
+        },
+        {
+          "bin_idx": 2,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 52,
+          "mean_predicted_prob": 0.1462,
+          "empirical_true_freq": 0.25
+        },
+        {
+          "bin_idx": 3,
+          "bin_lower": 0.2,
+          "bin_upper": 0.3,
+          "count": 32,
+          "mean_predicted_prob": 0.2562,
+          "empirical_true_freq": 0.2812
+        },
+        {
+          "bin_idx": 4,
+          "bin_lower": 0.3,
+          "bin_upper": 0.4,
+          "count": 21,
+          "mean_predicted_prob": 0.3471,
+          "empirical_true_freq": 0.4286
+        },
+        {
+          "bin_idx": 5,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 18,
+          "mean_predicted_prob": 0.4546,
+          "empirical_true_freq": 0.3333
+        },
+        {
+          "bin_idx": 6,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6,
+          "count": 19,
+          "mean_predicted_prob": 0.5511,
+          "empirical_true_freq": 0.4737
+        },
+        {
+          "bin_idx": 7,
+          "bin_lower": 0.6,
+          "bin_upper": 0.7,
+          "count": 16,
+          "mean_predicted_prob": 0.6522,
+          "empirical_true_freq": 0.5625
+        },
+        {
+          "bin_idx": 8,
+          "bin_lower": 0.7,
+          "bin_upper": 0.8,
+          "count": 28,
+          "mean_predicted_prob": 0.7581,
+          "empirical_true_freq": 0.6429
+        },
+        {
+          "bin_idx": 9,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 48,
+          "mean_predicted_prob": 0.8525,
+          "empirical_true_freq": 0.7917
+        },
+        {
+          "bin_idx": 10,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 2137,
+          "mean_predicted_prob": 0.9887,
+          "empirical_true_freq": 0.9902
+        }
+      ]
+    }
+  }
+}

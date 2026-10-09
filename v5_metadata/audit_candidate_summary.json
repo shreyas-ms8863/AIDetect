@@ -1,0 +1,7 @@
+{
+  "total_unique_candidates": 103145,
+  "real_count": 52161,
+  "ai_count": 50984,
+  "blacklist_size": 22431,
+  "collisions_excluded": 828
+}

@@ -1,0 +1,795 @@
+<USER_REQUEST>
+AIDetect — Phase 23: Independent Labeled Manipulation Benchmark Validation
+
+OBJECTIVE
+
+Conduct the next research phase required to determine whether the Phase 21 multi-view finding generalizes beyond the internal manipulation_v1 benchmark.
+
+Phase 21 found:
+
+Native manipulation recall:
+98.70% (152/154)
+
+16:9 reflect-pad:
+99.35% (153/154)
+
+One native false negative was recovered by the 16:9 view.
+
+Phase 22 independently validated only source-image specificity because PIE-Bench contains authentic source images without manipulated counterparts.
+
+Phase 23 must therefore obtain or identify a legitimate, independently labeled manipulation benchmark and evaluate:
+
+NATIVE
+vs
+16:9 REFLECT PADDING
+vs
+OTHER VIEWS
+
+The central research question is:
+
+"Does 16:9 reflect-padding provide complementary manipulation evidence on an independent labeled dataset without requiring retraining or threshold optimization?"
+
+==================================================
+1. ABSOLUTE PRODUCTION FREEZE
+==================================================
+
+DO NOT:
+
+- retrain any model
+- fine-tune any model
+- modify model weights
+- modify architecture
+- modify calibration
+- optimize thresholds
+- modify forensic_decision_engine.py
+- modify forensic_inference.py
+- modify backend/main.py
+- modify frontend
+- modify production preprocessing
+- add multi-view inference to production
+- replace the current FFT pipeline
+- overwrite Phase 18
+- overwrite Phase 19
+- overwrite Phase 20
+- overwrite Phase 21
+- overwrite Phase 22
+
+Create NEW research scripts and artifacts only.
+
+==================================================
+2. FROZEN MODEL
+==================================================
+
+Use ONLY:
+
+models/manipulation_frequency_resnet50_v1.pth
+
+SHA-256:
+
+8bd929125f379c3abdb71ca2249b2252482122973b4225b80a9ab65c68c86889
+
+Verify SHA-256 before evaluation.
+
+Use the exact frozen production manipulation preprocessing:
+
+native RGB [0,1]
+→ fft2
+→ fftshift
+→ abs
+→ log1p
+→ per-channel minmax
+→ bilinear resize 224×224
+→ ImageNet normalization
+
+Do not alter this pipeline.
+
+Fixed manipulation decision threshold:
+
+P(MANIPULATED) >= 0.50
+
+No threshold tuning.
+
+==================================================
+3. DATASET DISCOVERY — CRITICAL
+==================================================
+
+First inspect the local project for an independently labeled manipulation dataset.
+
+Search:
+
+- manipulation_external_test/
+- datasets/
+- data/
+- backend/
+- project Library if applicable
+- any manifests already downloaded
+- any existing paired manipulation datasets
+
+Potential candidates may include:
+
+- MagicBrush
+- InstructPix2Pix
+- Diffusion-generated editing benchmarks
+- paired image-editing datasets
+- other legitimate manipulation datasets already available locally
+
+IMPORTANT:
+
+Do NOT assume a dataset is labeled merely because it contains edited images.
+
+For a dataset to qualify as the PRIMARY Phase 23 benchmark, it must provide:
+
+1. original/authentic image
+2. manipulated/edited counterpart
+3. reliable pairing
+4. reliable binary labels
+5. identifiable manipulation type/category where available
+6. no training overlap with the frozen manipulation model's training data
+7. no overlap with manipulation_v1
+8. no overlap with dataset_v4
+9. no overlap with Phase 21 test data
+10. no overlap with Phase 22 PIE-Bench source images where applicable
+
+If an appropriate dataset already exists locally, use it.
+
+If no suitable dataset exists locally:
+
+DO NOT silently fabricate a dataset.
+
+Identify the best legitimate public candidate and document exactly what is missing.
+
+If external download is required, use only a publicly available dataset with documented provenance/licensing and download only the minimum required subset.
+
+DO NOT download a huge dataset unnecessarily.
+
+==================================================
+4. DATASET INDEPENDENCE AUDIT
+==================================================
+
+Before inference perform:
+
+SHA-256 exact duplicate audit.
+
+Perceptual dHash audit.
+
+Compare against:
+
+manipulation_v1/
+dataset_v4/
+manipulation_external_test/pie_bench/
+backend/external_test/
+backend/real_world_test/
+Phase 21 benchmark images
+
+Report:
+
+Total candidate images
+Original count
+Manipulated count
+Pairs
+Exact duplicates
+Perceptual duplicates
+Excluded leakage
+Final independent count
+
+If a sample overlaps a development dataset:
+
+EXCLUDE IT.
+
+Do not merely mention the overlap.
+
+==================================================
+5. PAIRED DATASET STRUCTURE
+==================================================
+
+Create a clean evaluation manifest.
+
+Required fields:
+
+sample_id
+pair_id
+original_path
+manipulated_path
+ground_truth
+category
+generator_or_editor_if_available
+width
+height
+aspect_ratio
+source_dataset
+
+Labels:
+
+ORIGINAL_REAL = 0
+AI_MANIPULATED = 1
+
+Do not alter source images.
+
+==================================================
+6. DATASET BALANCE
+==================================================
+
+Report:
+
+Original count
+Manipulated count
+Class balance
+
+If the dataset is severely imbalanced:
+
+DO NOT artificially duplicate samples.
+
+Report the imbalance and use:
+
+- class-specific recall
+- balanced accuracy
+- macro F1
+
+alongside accuracy.
+
+==================================================
+7. PRIMARY EVALUATION VIEWS
+==================================================
+
+Evaluate every independent image under:
+
+VIEW A:
+Native/original
+
+VIEW B:
+16:9 reflect padding
+
+VIEW C:
+1:1 reflect padding
+
+VIEW D:
+9:16 reflect padding
+
+VIEW E:
+0.4586 reflect padding
+
+Do NOT use cropping as the primary experiment.
+
+The primary comparison is:
+
+NATIVE vs 16:9
+
+==================================================
+8. OPTIONAL JPEG CONDITIONS
+==================================================
+
+Do NOT make JPEG the primary experiment.
+
+Only if the dataset and compute budget allow, add:
+
+Native JPEG Q95
+Native JPEG Q75
+
+These are secondary robustness tests.
+
+Do not allow them to distract from the primary validation question.
+
+==================================================
+9. REQUIRED METRICS
+==================================================
+
+For EVERY view calculate:
+
+Accuracy
+Balanced Accuracy
+Precision
+Recall
+F1
+Macro Precision
+Macro Recall
+Macro F1
+
+Separately:
+
+REAL recall
+MANIPULATION recall
+FPR
+FNR
+
+Also:
+
+Mean P(MANIP)
+Median P(MANIP)
+Standard deviation
+
+Primary metric:
+
+MANIPULATION RECALL
+
+Secondary:
+
+Macro F1
+FPR
+Balanced Accuracy
+
+==================================================
+10. FALSE-NEGATIVE RECOVERY
+==================================================
+
+This is a major Phase 23 analysis.
+
+For every manipulated image that is:
+
+Native = FALSE NEGATIVE
+
+check:
+
+16:9
+1:1
+9:16
+0.4586
+
+Determine:
+
+recovered?
+probability change?
+which view recovered it?
+
+Create:
+
+Native FN
+→ recovered by 16:9
+→ recovered by 1:1
+→ recovered by 9:16
+→ recovered by 0.4586
+
+Also calculate:
+
+Native FN count
+16:9 recovered count
+16:9 recovery rate
+other-view recovery counts
+
+==================================================
+11. FALSE-POSITIVE ANALYSIS
+==================================================
+
+For every authentic image determine:
+
+Native prediction
+16:9 prediction
+1:1 prediction
+9:16 prediction
+0.4586 prediction
+
+Calculate:
+
+native FP
+16:9 FP
+new FPs
+cleared FPs
+
+Especially calculate:
+
+ΔFPR = FPR(16:9) - FPR(native)
+
+The goal is NOT simply maximum recall.
+
+The important tradeoff is:
+
+additional TP
+vs
+additional FP.
+
+==================================================
+12. MULTI-VIEW FUSION
+==================================================
+
+Only after evaluating single views, evaluate deterministic fusion.
+
+Use:
+
+Native + 16:9 Max
+
+Native + all padded views Max
+
+Native + 16:9 Mean
+
+Native + all padded views Mean
+
+Fixed threshold:
+
+0.50
+
+No threshold optimization.
+
+Calculate:
+
+Accuracy
+Balanced Accuracy
+Manipulation recall
+Real recall
+FPR
+FNR
+Macro F1
+
+Do not call this a trained model.
+
+Call it:
+
+deterministic multi-view inference
+or
+multi-view evidence aggregation.
+
+==================================================
+13. FUSION ABLATION
+==================================================
+
+For the best-performing fusion set perform leave-one-view-out analysis.
+
+Example:
+
+Native + 1:1 + 9:16 + 0.4586 + 16:9
+
+Remove:
+
+1:1
+9:16
+0.4586
+16:9
+
+Calculate performance change.
+
+This determines whether the Phase 21 16:9 observation is reproducible.
+
+==================================================
+14. CATEGORY ANALYSIS
+==================================================
+
+If category labels exist, calculate manipulation recall for:
+
+inpainting
+face modification
+object insertion
+object replacement
+object removal
+background replacement
+
+and any additional legitimate categories.
+
+For each:
+
+Native recall
+16:9 recall
+Δ recall
+native FN
+16:9 recovered FN
+
+Do not invent category labels.
+
+==================================================
+15. GENERATOR / EDITOR ANALYSIS
+==================================================
+
+If metadata identifies the manipulation method, analyze:
+
+- editor
+- generator
+- model
+- source domain
+
+For each legitimate group calculate:
+
+Native recall
+16:9 recall
+Δ recall
+
+This is important because Phase 21 may have recovered an internal-dataset-specific pattern.
+
+Do not claim generator generalization if the dataset contains only one editing system.
+
+==================================================
+16. PAIRED STATISTICAL TEST
+==================================================
+
+Because every image is evaluated under multiple views, use paired testing.
+
+Primary:
+
+Native P(MANIP)
+vs
+16:9 P(MANIP)
+
+Use:
+
+Wilcoxon signed-rank test.
+
+Report:
+
+n
+mean shift
+median shift
+W statistic
+p-value
+effect size where practical
+
+Also compare:
+
+Native classification
+vs
+16:9 classification
+
+using an appropriate paired categorical test where useful.
+
+If many comparisons are performed, use appropriate multiple-comparison correction.
+
+Do not confuse statistical significance with meaningful performance improvement.
+
+==================================================
+17. PHASE 21 REPLICATION TEST
+==================================================
+
+Create this table:
+
+Metric | Phase 21 | Phase 23
+
+Native manipulation recall
+16:9 manipulation recall
+Δ recall
+Native FPR
+16:9 FPR
+Native macro F1
+16:9 macro F1
+Native mean P(M)
+16:9 mean P(M)
+Native FN
+16:9 recovered FN
+
+Then explicitly answer:
+
+Does the direction of the Phase 21 effect replicate?
+
+Does the magnitude replicate?
+
+Does the false-positive behavior replicate?
+
+==================================================
+18. HYPOTHESES
+==================================================
+
+Evaluate:
+
+H1:
+16:9 reflect padding improves manipulation recall on an independent labeled dataset.
+
+H2:
+16:9 recovers native false negatives.
+
+H3:
+The improvement does not cause a substantial FPR increase.
+
+H4:
+The effect generalizes across manipulation categories.
+
+H5:
+The effect is reproducible across editing/generation sources.
+
+For each:
+
+SUPPORTED
+PARTIALLY SUPPORTED
+NOT SUPPORTED
+INCONCLUSIVE
+
+Do not force positive conclusions.
+
+==================================================
+19. VISUALIZATIONS
+==================================================
+
+Generate:
+
+1. Native vs 16:9 recall
+2. All-view recall comparison
+3. Native vs 16:9 FPR
+4. Native vs 16:9 macro F1
+5. False-negative recovery
+6. Probability shift distribution
+7. Category comparison
+8. Generator/editor comparison if metadata exists
+9. Phase 21 vs Phase 23 replication
+10. Fusion comparison
+11. Ablation comparison
+
+Use publication-quality figures.
+
+Do not overwrite previous phase figures.
+
+==================================================
+20. OUTPUT DIRECTORY
+==================================================
+
+Create:
+
+backend/phase23_results/
+
+Save:
+
+phase23_external_labeled_results.csv
+phase23_summary.json
+phase23_report.md
+phase23_hashes.json
+phase23_environment.json
+phase23_manifest.csv
+
+Plots:
+
+native_vs_16x9_recall.png
+all_view_recall.png
+native_vs_16x9_fpr.png
+macro_f1_comparison.png
+false_negative_recovery.png
+probability_shift.png
+category_comparison.png
+generator_comparison.png
+phase21_vs_phase23.png
+fusion_comparison.png
+ablation_comparison.png
+
+Only create generator/category plots if the metadata supports them.
+
+==================================================
+21. IMPORTANT — IF NO VALID DATASET IS AVAILABLE
+==================================================
+
+If no independent labeled manipulation dataset can be obtained or identified:
+
+DO NOT fabricate one.
+
+DO NOT use PIE-Bench as if it contained manipulated labels.
+
+DO NOT calculate recall from prompt categories.
+
+Instead:
+
+Create:
+
+backend/phase23_results/phase23_dataset_gap_report.md
+
+Document:
+
+- datasets inspected
+- why they do not satisfy the requirements
+- what ground truth is missing
+- what dataset is required
+- exact recommended next acquisition
+
+Then STOP.
+
+Do not perform a fake Phase 23 evaluation.
+
+==================================================
+22. PRODUCTION SAFETY AUDIT
+==================================================
+
+Verify unchanged:
+
+Manipulation model SHA:
+8bd929125f379c3abdb71ca2249b2252482122973b4225b80a9ab65c68c86889
+
+Generation model SHA:
+2f106288c53ac8728f581f87e49848fc616cb7c30db52a42dec1342cc5d74dbf
+
+Calibration SHA:
+30e1da6e2ca709cc6113d0d6726db01aef8a127e627869f195449da52571b1ec
+
+Verify:
+
+forensic_decision_engine.py unchanged
+forensic_inference.py unchanged
+backend/main.py unchanged
+frontend unchanged
+Phase 18 unchanged
+Phase 19 unchanged
+Phase 20 unchanged
+Phase 21 unchanged
+Phase 22 unchanged
+
+Run existing tests/smoke tests if practical.
+
+==================================================
+23. FINAL REPORT STRUCTURE
+==================================================
+
+phase23_report.md:
+
+1. Objective
+2. Research question
+3. Dataset discovery
+4. Dataset provenance
+5. Independence/leakage audit
+6. Ground-truth validity
+7. Frozen model
+8. Preprocessing
+9. Experimental protocol
+10. Native results
+11. 16:9 results
+12. Other-view results
+13. False-negative recovery
+14. False-positive analysis
+15. Fusion results
+16. Ablation
+17. Category analysis
+18. Generator/editor analysis
+19. Statistical analysis
+20. Phase 21 replication
+21. Hypothesis evaluation
+22. Limitations
+23. Scientific interpretation
+24. Production implications
+25. Next experiment
+26. Integrity verification
+
+==================================================
+24. FINAL SUMMARY
+==================================================
+
+At the end print:
+
+Dataset:
+Total images:
+Independent images:
+Original:
+Manipulated:
+Pairs:
+
+Native:
+Manipulation recall:
+Real recall:
+FPR:
+Macro F1:
+
+16:9:
+Manipulation recall:
+Real recall:
+FPR:
+Macro F1:
+
+Δ Recall:
+Additional TP:
+Additional FP:
+
+Native FN:
+16:9 recovered FN:
+
+Best view:
+Best fusion:
+
+Phase 21 effect replicated:
+YES / NO / PARTIALLY / INCONCLUSIVE
+
+H1:
+H2:
+H3:
+H4:
+H5:
+
+Production files changed:
+YES/NO
+
+MOST IMPORTANT:
+
+Do not claim independent generalization unless the dataset genuinely provides independent manipulated-image ground truth.
+
+If a valid benchmark cannot be obtained, stop honestly and create the dataset-gap report instead.
+
+Run the complete valid experiment and generate all applicable artifacts.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-03T14:06:38+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\Shreyas\OneDrive\Desktop\AIDetect\backend\run_phase20_compression_study.py (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\Shreyas\OneDrive\Desktop\AIDetect\backend\forensic_decision_engine.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Shreyas\OneDrive\Desktop\AIDetect\frontend\src\App.tsx (LANGUAGE_UNSPECIFIED)
+- c:\Users\Shreyas\OneDrive\Desktop\AIDetect\frontend\src\App.css (LANGUAGE_UNSPECIFIED)
+- c:\Users\Shreyas\OneDrive\Desktop\AIDetect\backend\evaluate_app_models_v2.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Shreyas\OneDrive\Desktop\AIDetect\backend\check_checkpoint.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

@@ -1,0 +1,71 @@
+{
+  "test_samples": 9000,
+  "models": {
+    "V5-A Spatial": {
+      "best_validation_f1": null,
+      "test_metrics": {
+        "accuracy": 0.9702222222222222,
+        "precision": 0.9716897012929113,
+        "recall": 0.9686666666666667,
+        "f1": 0.9701758290674384,
+        "true_positive": 4359,
+        "true_negative": 4373,
+        "false_positive": 127,
+        "false_negative": 141,
+        "total": 9000
+      }
+    },
+    "V5-B Frequency": {
+      "best_validation_f1": null,
+      "test_metrics": {
+        "accuracy": 0.9065555555555556,
+        "precision": 0.9068267734044919,
+        "recall": 0.9062222222222223,
+        "f1": 0.9065243970212293,
+        "true_positive": 4078,
+        "true_negative": 4081,
+        "false_positive": 419,
+        "false_negative": 422,
+        "total": 9000
+      }
+    },
+    "V5-C Hybrid": {
+      "best_validation_f1": 0.9714793030740206,
+      "test_metrics": {
+        "accuracy": 0.9687777777777777,
+        "precision": 0.9663939862922839,
+        "recall": 0.9713333333333334,
+        "f1": 0.9688573645129115,
+        "true_positive": 4371,
+        "true_negative": 4348,
+        "false_positive": 152,
+        "false_negative": 129,
+        "total": 9000
+      }
+    },
+    "V5-D Gated Residual": {
+      "best_validation_f1": 0.9742904841402338,
+      "test_metrics": {
+        "accuracy": 0.9717777777777777,
+        "precision": 0.9730392156862745,
+        "recall": 0.9704444444444444,
+        "f1": 0.9717400979083222,
+        "true_positive": 4367,
+        "true_negative": 4379,
+        "false_positive": 121,
+        "false_negative": 133,
+        "total": 9000
+      }
+    }
+  },
+  "methodology": {
+    "test_split": "V5 frozen final test",
+    "test_size": 9000,
+    "class_mapping": {
+      "REAL": 0,
+      "AI": 1
+    },
+    "test_evaluated_after_training": true,
+    "training_performed_during_evaluation": false
+  }
+}

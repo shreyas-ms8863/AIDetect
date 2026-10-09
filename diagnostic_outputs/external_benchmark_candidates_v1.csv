@@ -1,0 +1,804 @@
+category,initial_rank,global_idx,shard_filename,row_in_shard,label_a,label_b,caption,orig_path,source,generator
+REAL,1,6635,validation-00001-of-00002.parquet,2135,0,0,A fire hydrant on a cart with a hose attached to it.,image_6635.jpg,MS_COCO,None_Authentic_Photograph
+REAL,2,8220,validation-00001-of-00002.parquet,3720,0,0,An office desk with several monitors and birthday balloons,image_8220.jpg,MS_COCO,None_Authentic_Photograph
+REAL,3,2564,validation-00000-of-00002.parquet,2564,0,0,A blue table sitting inside of a restaurant with a menu on top of it.,image_2564.jpg,MS_COCO,None_Authentic_Photograph
+REAL,4,2541,validation-00000-of-00002.parquet,2541,0,0,a living room with a tv on top of a stand with a guitars sitting next to ,image_2541.jpg,MS_COCO,None_Authentic_Photograph
+REAL,5,2717,validation-00000-of-00002.parquet,2717,0,0,A scene featuring a shepard woman is juxtaposed colorful shapes,image_2717.jpg,MS_COCO,None_Authentic_Photograph
+REAL,6,5190,validation-00001-of-00002.parquet,690,0,0,Two red and yellow trains parked next to each other.,image_5190.jpg,MS_COCO,None_Authentic_Photograph
+REAL,7,6352,validation-00001-of-00002.parquet,1852,0,0,A train sitting on a track in a field near a bridge.,image_6352.jpg,MS_COCO,None_Authentic_Photograph
+REAL,8,4545,validation-00001-of-00002.parquet,45,0,0,"A kitchen with a stove, oven, cabinets and blender.",image_4545.jpg,MS_COCO,None_Authentic_Photograph
+REAL,9,7618,validation-00001-of-00002.parquet,3118,0,0,Two zebras and a giraffe in a zoo enclosure. ,image_7618.jpg,MS_COCO,None_Authentic_Photograph
+REAL,10,1639,validation-00000-of-00002.parquet,1639,0,0,People walking outside of a red brick building.,image_1639.jpg,MS_COCO,None_Authentic_Photograph
+REAL,11,5377,validation-00001-of-00002.parquet,877,0,0,Two brown horses standing in front of a red brick building.,image_5377.jpg,MS_COCO,None_Authentic_Photograph
+REAL,12,8603,validation-00001-of-00002.parquet,4103,0,0,"A car parked on the dirt, with a bunch of airplanes behind it.",image_8603.jpg,MS_COCO,None_Authentic_Photograph
+REAL,13,4364,validation-00000-of-00002.parquet,4364,0,0,"A man, a woman and a child ride a motorbike together in front of a small building.",image_4364.jpg,MS_COCO,None_Authentic_Photograph
+REAL,14,8328,validation-00001-of-00002.parquet,3828,0,0,A giraffe trying to cross a dirt road quickly.,image_8328.jpg,MS_COCO,None_Authentic_Photograph
+REAL,15,440,validation-00000-of-00002.parquet,440,0,0,A close up image of a street sign letting people know where they are. ,image_440.jpg,MS_COCO,None_Authentic_Photograph
+REAL,16,7599,validation-00001-of-00002.parquet,3099,0,0,a couple of chairs that are at a table,image_7599.jpg,MS_COCO,None_Authentic_Photograph
+REAL,17,8953,validation-00001-of-00002.parquet,4453,0,0,A women using sports equipment on the water.,image_8953.jpg,MS_COCO,None_Authentic_Photograph
+REAL,18,3703,validation-00000-of-00002.parquet,3703,0,0,a little bathroom with just a toilet in it,image_3703.jpg,MS_COCO,None_Authentic_Photograph
+REAL,19,2623,validation-00000-of-00002.parquet,2623,0,0,Three sheep are standing on a rock of a hill. ,image_2623.jpg,MS_COCO,None_Authentic_Photograph
+REAL,20,318,validation-00000-of-00002.parquet,318,0,0,The motorcycle racer leans down to the road while making a turn. ,image_318.jpg,MS_COCO,None_Authentic_Photograph
+REAL,21,7117,validation-00001-of-00002.parquet,2617,0,0,A giraffe walking in a grassy area next to trees.,image_7117.jpg,MS_COCO,None_Authentic_Photograph
+REAL,22,6698,validation-00001-of-00002.parquet,2198,0,0,Some people are riding in a coach on a sunny day.,image_6698.jpg,MS_COCO,None_Authentic_Photograph
+REAL,23,7065,validation-00001-of-00002.parquet,2565,0,0,A sink under a large mirror in a bathroom.,image_7065.jpg,MS_COCO,None_Authentic_Photograph
+REAL,24,7492,validation-00001-of-00002.parquet,2992,0,0,A teddy bear sitting on top of an arch.,image_7492.jpg,MS_COCO,None_Authentic_Photograph
+REAL,25,8546,validation-00001-of-00002.parquet,4046,0,0,"two benches, a small statue and some street signs stand between a street curb and the brick facade of a large building. ",image_8546.jpg,MS_COCO,None_Authentic_Photograph
+REAL,26,2615,validation-00000-of-00002.parquet,2615,0,0,Woman holding a purse and walking a dog passing in front of a big building. ,image_2615.jpg,MS_COCO,None_Authentic_Photograph
+REAL,27,8724,validation-00001-of-00002.parquet,4224,0,0,An airport filled with planes sitting on tarmacs.,image_8724.jpg,MS_COCO,None_Authentic_Photograph
+REAL,28,8841,validation-00001-of-00002.parquet,4341,0,0,A small giraffe laying in the sand by a fence,image_8841.jpg,MS_COCO,None_Authentic_Photograph
+REAL,29,7400,validation-00001-of-00002.parquet,2900,0,0,a cake decorated with an airplane has lit candles in it,image_7400.jpg,MS_COCO,None_Authentic_Photograph
+REAL,30,7690,validation-00001-of-00002.parquet,3190,0,0,a couple of red light and a green light ,image_7690.jpg,MS_COCO,None_Authentic_Photograph
+REAL,31,6481,validation-00001-of-00002.parquet,1981,0,0,A white car parked in a parking space.,image_6481.jpg,MS_COCO,None_Authentic_Photograph
+REAL,32,3741,validation-00000-of-00002.parquet,3741,0,0,Cars stopped at an intersection on a dark night,image_3741.jpg,MS_COCO,None_Authentic_Photograph
+REAL,33,7702,validation-00001-of-00002.parquet,3202,0,0,a close up of a bench with a dog laying on the ground,image_7702.jpg,MS_COCO,None_Authentic_Photograph
+REAL,34,6249,validation-00001-of-00002.parquet,1749,0,0,A renovated propeller airplane flying in a blue sky,image_6249.jpg,MS_COCO,None_Authentic_Photograph
+REAL,35,1373,validation-00000-of-00002.parquet,1373,0,0,A towel that is on a rack in a bathroom.,image_1373.jpg,MS_COCO,None_Authentic_Photograph
+REAL,36,2153,validation-00000-of-00002.parquet,2153,0,0,A toilet that is sitting in a bathroom with the light on.,image_2153.jpg,MS_COCO,None_Authentic_Photograph
+REAL,37,2568,validation-00000-of-00002.parquet,2568,0,0,A bunch of people gathered together in a very big crowd.,image_2568.jpg,MS_COCO,None_Authentic_Photograph
+REAL,38,2591,validation-00000-of-00002.parquet,2591,0,0,Motorcycles driving down a wide city street nearing a white building.,image_2591.jpg,MS_COCO,None_Authentic_Photograph
+REAL,39,6588,validation-00001-of-00002.parquet,2088,0,0,China Airlines plain on the ground at an airport with baggage cars nearby.,image_6588.jpg,MS_COCO,None_Authentic_Photograph
+REAL,40,476,validation-00000-of-00002.parquet,476,0,0,Five sheep peeking out of a wall and eating hay on the ground.,image_476.jpg,MS_COCO,None_Authentic_Photograph
+REAL,41,8382,validation-00001-of-00002.parquet,3882,0,0,a bird is standing on a green bench,image_8382.jpg,MS_COCO,None_Authentic_Photograph
+REAL,42,2652,validation-00000-of-00002.parquet,2652,0,0,A bus that is driving on the street.,image_2652.jpg,MS_COCO,None_Authentic_Photograph
+REAL,43,8033,validation-00001-of-00002.parquet,3533,0,0,Posted signs point the way through a parking garage.,image_8033.jpg,MS_COCO,None_Authentic_Photograph
+REAL,44,5206,validation-00001-of-00002.parquet,706,0,0,A couple of traffic lights hanging over a city street.,image_5206.jpg,MS_COCO,None_Authentic_Photograph
+REAL,45,6460,validation-00001-of-00002.parquet,1960,0,0,A crashed airplane is shown with its front missing. ,image_6460.jpg,MS_COCO,None_Authentic_Photograph
+REAL,46,2204,validation-00000-of-00002.parquet,2204,0,0,A zoo keeper on a scale holding a giraffe with a me gusta face ,image_2204.jpg,MS_COCO,None_Authentic_Photograph
+REAL,47,2240,validation-00000-of-00002.parquet,2240,0,0,A bus stop is decorated with blue brochures.,image_2240.jpg,MS_COCO,None_Authentic_Photograph
+REAL,48,1927,validation-00000-of-00002.parquet,1927,0,0,Two giraffe standing next to each other in a zoo.,image_1927.jpg,MS_COCO,None_Authentic_Photograph
+REAL,49,4516,validation-00001-of-00002.parquet,16,0,0,A white car parked next to a parking meter in front of a parking garage. ,image_4516.jpg,MS_COCO,None_Authentic_Photograph
+REAL,50,6013,validation-00001-of-00002.parquet,1513,0,0,the people are standing on a train track ,image_6013.jpg,MS_COCO,None_Authentic_Photograph
+REAL,51,3791,validation-00000-of-00002.parquet,3791,0,0,a bunch of motorcycles are parked together outside,image_3791.jpg,MS_COCO,None_Authentic_Photograph
+REAL,52,3304,validation-00000-of-00002.parquet,3304,0,0,Several men standing outside of small airplane with man retrieving luggage from cart.,image_3304.jpg,MS_COCO,None_Authentic_Photograph
+REAL,53,6778,validation-00001-of-00002.parquet,2278,0,0,This zoo exhibit is home to a large group of girrafes,image_6778.jpg,MS_COCO,None_Authentic_Photograph
+REAL,54,7763,validation-00001-of-00002.parquet,3263,0,0,An orange striped tabby cat laying on top of a red vehicle's wheel.,image_7763.jpg,MS_COCO,None_Authentic_Photograph
+REAL,55,3338,validation-00000-of-00002.parquet,3338,0,0,A bicycle on a road with a motor bike at the front,image_3338.jpg,MS_COCO,None_Authentic_Photograph
+REAL,56,4178,validation-00000-of-00002.parquet,4178,0,0,A yellow and brown bird perched on a leaf on top of a grass covered field.,image_4178.jpg,MS_COCO,None_Authentic_Photograph
+REAL,57,311,validation-00000-of-00002.parquet,311,0,0,Two Mallards float and drink water in a shallow pool.,image_311.jpg,MS_COCO,None_Authentic_Photograph
+REAL,58,2968,validation-00000-of-00002.parquet,2968,0,0,some people are running on a road and a green and white sign,image_2968.jpg,MS_COCO,None_Authentic_Photograph
+REAL,59,1960,validation-00000-of-00002.parquet,1960,0,0,A walking street sign under traffic light covered with stickers,image_1960.jpg,MS_COCO,None_Authentic_Photograph
+REAL,60,5510,validation-00001-of-00002.parquet,1010,0,0,A white toilet sitting in a bathroom next to a white wall.,image_5510.jpg,MS_COCO,None_Authentic_Photograph
+REAL,61,3896,validation-00000-of-00002.parquet,3896,0,0,A red fire hydrant sitting on the side of a road.,image_3896.jpg,MS_COCO,None_Authentic_Photograph
+REAL,62,3368,validation-00000-of-00002.parquet,3368,0,0,Doorway view of a bathroom that includes a toilet and tub.,image_3368.jpg,MS_COCO,None_Authentic_Photograph
+REAL,63,2955,validation-00000-of-00002.parquet,2955,0,0,The large green train is approaching a platform.,image_2955.jpg,MS_COCO,None_Authentic_Photograph
+REAL,64,430,validation-00000-of-00002.parquet,430,0,0,Several green buses parked in a parking lot with people walking by,image_430.jpg,MS_COCO,None_Authentic_Photograph
+REAL,65,4937,validation-00001-of-00002.parquet,437,0,0,A large airliner jet flying through the blue sky.,image_4937.jpg,MS_COCO,None_Authentic_Photograph
+REAL,66,3003,validation-00000-of-00002.parquet,3003,0,0,A large white sheep cake sitting on top of a foil plate.,image_3003.jpg,MS_COCO,None_Authentic_Photograph
+REAL,67,1935,validation-00000-of-00002.parquet,1935,0,0,A picture of an older man cutting a turkey on the counter.,image_1935.jpg,MS_COCO,None_Authentic_Photograph
+REAL,68,6554,validation-00001-of-00002.parquet,2054,0,0,a view of an air plane wing in the air ,image_6554.jpg,MS_COCO,None_Authentic_Photograph
+REAL,69,7479,validation-00001-of-00002.parquet,2979,0,0,there is a police man that is talking to people ,image_7479.jpg,MS_COCO,None_Authentic_Photograph
+REAL,70,1105,validation-00000-of-00002.parquet,1105,0,0,A busy city street filled with traffic at night.,image_1105.jpg,MS_COCO,None_Authentic_Photograph
+REAL,71,1913,validation-00000-of-00002.parquet,1913,0,0,A beautiful woman sitting on a bench next to a body of water.,image_1913.jpg,MS_COCO,None_Authentic_Photograph
+REAL,72,5132,validation-00001-of-00002.parquet,632,0,0,An adorable caleco cat sitting underneath a bicycle.,image_5132.jpg,MS_COCO,None_Authentic_Photograph
+REAL,73,4838,validation-00001-of-00002.parquet,338,0,0,It will be a long wait for the truck before the buses leave the area.,image_4838.jpg,MS_COCO,None_Authentic_Photograph
+REAL,74,1789,validation-00000-of-00002.parquet,1789,0,0,a  man shearing the wool off a sheep ,image_1789.jpg,MS_COCO,None_Authentic_Photograph
+REAL,75,4320,validation-00000-of-00002.parquet,4320,0,0,A room filled with furniture and curtains on top of carpet.,image_4320.jpg,MS_COCO,None_Authentic_Photograph
+REAL,76,7998,validation-00001-of-00002.parquet,3498,0,0,Two motorcycles parked on the side of the road.,image_7998.jpg,MS_COCO,None_Authentic_Photograph
+REAL,77,3990,validation-00000-of-00002.parquet,3990,0,0,A sink is under a mirror with bottles of soap and lotion.,image_3990.jpg,MS_COCO,None_Authentic_Photograph
+REAL,78,3172,validation-00000-of-00002.parquet,3172,0,0,a park bench in the midst of flowers and greenery ,image_3172.jpg,MS_COCO,None_Authentic_Photograph
+REAL,79,2823,validation-00000-of-00002.parquet,2823,0,0,A couple of people sitting on top of a wooden bench.,image_2823.jpg,MS_COCO,None_Authentic_Photograph
+REAL,80,5664,validation-00001-of-00002.parquet,1164,0,0,there is a man wearing a suit sitting on a street bench,image_5664.jpg,MS_COCO,None_Authentic_Photograph
+REAL,81,6204,validation-00001-of-00002.parquet,1704,0,0,a black and white cat a chair and some bicycles,image_6204.jpg,MS_COCO,None_Authentic_Photograph
+REAL,82,143,validation-00000-of-00002.parquet,143,0,0,A flock of birds sitting on top of a large rock.,image_143.jpg,MS_COCO,None_Authentic_Photograph
+REAL,83,1491,validation-00000-of-00002.parquet,1491,0,0,A tall building with a massive clock on it's face.,image_1491.jpg,MS_COCO,None_Authentic_Photograph
+REAL,84,4858,validation-00001-of-00002.parquet,358,0,0,People standing in front of building holding protest signs.,image_4858.jpg,MS_COCO,None_Authentic_Photograph
+REAL,85,4966,validation-00001-of-00002.parquet,466,0,0,A children play area absent of any children.,image_4966.jpg,MS_COCO,None_Authentic_Photograph
+REAL,86,420,validation-00000-of-00002.parquet,420,0,0,A fighter jet is flying through a clear sky.,image_420.jpg,MS_COCO,None_Authentic_Photograph
+REAL,87,3667,validation-00000-of-00002.parquet,3667,0,0,A blurry motion picture of a person doing a wheelie on a motorcycle.,image_3667.jpg,MS_COCO,None_Authentic_Photograph
+REAL,88,5629,validation-00001-of-00002.parquet,1129,0,0,A plane that is flying in the air.,image_5629.jpg,MS_COCO,None_Authentic_Photograph
+REAL,89,4617,validation-00001-of-00002.parquet,117,0,0,A busy city street filled with cars at night,image_4617.jpg,MS_COCO,None_Authentic_Photograph
+REAL,90,5637,validation-00001-of-00002.parquet,1137,0,0,Two people who are in the street on motorcycles.,image_5637.jpg,MS_COCO,None_Authentic_Photograph
+REAL,91,6577,validation-00001-of-00002.parquet,2077,0,0,Lamps are the only lighting in this kitchen. ,image_6577.jpg,MS_COCO,None_Authentic_Photograph
+REAL,92,1569,validation-00000-of-00002.parquet,1569,0,0,A black cat is sitting on the bench and turning back its head. ,image_1569.jpg,MS_COCO,None_Authentic_Photograph
+REAL,93,1713,validation-00000-of-00002.parquet,1713,0,0,A man handing another man something inside of a room.,image_1713.jpg,MS_COCO,None_Authentic_Photograph
+REAL,94,8450,validation-00001-of-00002.parquet,3950,0,0,A shiny black motorcycle with gleaming chrome is parked on a city sidewalk.,image_8450.jpg,MS_COCO,None_Authentic_Photograph
+REAL,95,6368,validation-00001-of-00002.parquet,1868,0,0,A woman taking a selfie while brushing her teeth with a tooth brush.,image_6368.jpg,MS_COCO,None_Authentic_Photograph
+REAL,96,2923,validation-00000-of-00002.parquet,2923,0,0,The sturdy bridge serves as a  train trestle ,image_2923.jpg,MS_COCO,None_Authentic_Photograph
+REAL,97,2588,validation-00000-of-00002.parquet,2588,0,0,a giraffe standing on a sandy beach in front of some rocks,image_2588.jpg,MS_COCO,None_Authentic_Photograph
+REAL,98,701,validation-00000-of-00002.parquet,701,0,0,People are eating at an outdoor cafe at tables with red umbrella tops.,image_701.jpg,MS_COCO,None_Authentic_Photograph
+REAL,99,6922,validation-00001-of-00002.parquet,2422,0,0,A street scene with many people on motorbikes. ,image_6922.jpg,MS_COCO,None_Authentic_Photograph
+REAL,100,2404,validation-00000-of-00002.parquet,2404,0,0,A kitchen counter top filled with appliances and a wooden shelf..,image_2404.jpg,MS_COCO,None_Authentic_Photograph
+REAL,101,5958,validation-00001-of-00002.parquet,1458,0,0,A bus driving down a street next to a lush green forest.,image_5958.jpg,MS_COCO,None_Authentic_Photograph
+REAL,102,4385,validation-00000-of-00002.parquet,4385,0,0,a walk in shower with a seat next to a white sink.,image_4385.jpg,MS_COCO,None_Authentic_Photograph
+REAL,103,6742,validation-00001-of-00002.parquet,2242,0,0,A very tall giraffe walks through the trees.,image_6742.jpg,MS_COCO,None_Authentic_Photograph
+REAL,104,6478,validation-00001-of-00002.parquet,1978,0,0,A black and white cat is sitting on the bathroom sink.,image_6478.jpg,MS_COCO,None_Authentic_Photograph
+REAL,105,3032,validation-00000-of-00002.parquet,3032,0,0,The people are riding motor cycles down the street.,image_3032.jpg,MS_COCO,None_Authentic_Photograph
+REAL,106,269,validation-00000-of-00002.parquet,269,0,0,Street signs for 92nd and Bayview in front of utility wires against the sky.,image_269.jpg,MS_COCO,None_Authentic_Photograph
+REAL,107,377,validation-00000-of-00002.parquet,377,0,0,a toilet sits next to a shower an sink ,image_377.jpg,MS_COCO,None_Authentic_Photograph
+REAL,108,6876,validation-00001-of-00002.parquet,2376,0,0,Two young men are looking at a computer screen. ,image_6876.jpg,MS_COCO,None_Authentic_Photograph
+REAL,109,117,validation-00000-of-00002.parquet,117,0,0,Three giraffes are feeding from white buckets that are hanging from a fence.,image_117.jpg,MS_COCO,None_Authentic_Photograph
+REAL,110,5273,validation-00001-of-00002.parquet,773,0,0,The single propelleor airplane slowly takes off from the airport.,image_5273.jpg,MS_COCO,None_Authentic_Photograph
+REAL,111,2936,validation-00000-of-00002.parquet,2936,0,0,A man walking across a street near a traffic light.,image_2936.jpg,MS_COCO,None_Authentic_Photograph
+REAL,112,7922,validation-00001-of-00002.parquet,3422,0,0,A small bathroom with a toilet and shower.,image_7922.jpg,MS_COCO,None_Authentic_Photograph
+REAL,113,4578,validation-00001-of-00002.parquet,78,0,0,A woman sitting on a bench with cars behind her.,image_4578.jpg,MS_COCO,None_Authentic_Photograph
+REAL,114,1428,validation-00000-of-00002.parquet,1428,0,0,"A bathroom area with a  sink, cabinets and a tub.",image_1428.jpg,MS_COCO,None_Authentic_Photograph
+REAL,115,718,validation-00000-of-00002.parquet,718,0,0,"Many sheep grazing in a large, green pasture.",image_718.jpg,MS_COCO,None_Authentic_Photograph
+REAL,116,2590,validation-00000-of-00002.parquet,2590,0,0,A shower door with a white towel hanging from it.,image_2590.jpg,MS_COCO,None_Authentic_Photograph
+REAL,117,4972,validation-00001-of-00002.parquet,472,0,0,A white stove top oven sitting inside of a kitchen.,image_4972.jpg,MS_COCO,None_Authentic_Photograph
+REAL,118,1002,validation-00000-of-00002.parquet,1002,0,0, Quaint kitchen with a wooden dining table ,image_1002.jpg,MS_COCO,None_Authentic_Photograph
+REAL,119,649,validation-00000-of-00002.parquet,649,0,0,A woman in white shirt climbing onto an elephant.,image_649.jpg,MS_COCO,None_Authentic_Photograph
+REAL,120,6497,validation-00001-of-00002.parquet,1997,0,0,Inside a tram waiting to go out the door. ,image_6497.jpg,MS_COCO,None_Authentic_Photograph
+REAL,121,5964,validation-00001-of-00002.parquet,1464,0,0,"Sparse narrow kitchen, used, but neat, all in white.",image_5964.jpg,MS_COCO,None_Authentic_Photograph
+REAL,122,8406,validation-00001-of-00002.parquet,3906,0,0,There are multiple pictures of the same man standing in the kitchen,image_8406.jpg,MS_COCO,None_Authentic_Photograph
+REAL,123,8570,validation-00001-of-00002.parquet,4070,0,0,The parrot is perched on a tree limb.,image_8570.jpg,MS_COCO,None_Authentic_Photograph
+REAL,124,2545,validation-00000-of-00002.parquet,2545,0,0,A small TV on the hard wood floor of a building,image_2545.jpg,MS_COCO,None_Authentic_Photograph
+REAL,125,851,validation-00000-of-00002.parquet,851,0,0,A house boat along the water has bicycles on deck.,image_851.jpg,MS_COCO,None_Authentic_Photograph
+REAL,126,7381,validation-00001-of-00002.parquet,2881,0,0,A group of three dummy heads covered in hats.,image_7381.jpg,MS_COCO,None_Authentic_Photograph
+REAL,127,7752,validation-00001-of-00002.parquet,3252,0,0,The train rides down the tracks near a huge building in the city.,image_7752.jpg,MS_COCO,None_Authentic_Photograph
+REAL,128,4664,validation-00001-of-00002.parquet,164,0,0,A kitchen sink sitting inside of a white counter.,image_4664.jpg,MS_COCO,None_Authentic_Photograph
+REAL,129,7153,validation-00001-of-00002.parquet,2653,0,0,a little kid that is eating a big cake,image_7153.jpg,MS_COCO,None_Authentic_Photograph
+REAL,130,2825,validation-00000-of-00002.parquet,2825,0,0,A white toilet filled with bags of garbage.,image_2825.jpg,MS_COCO,None_Authentic_Photograph
+REAL,131,7447,validation-00001-of-00002.parquet,2947,0,0,A huge group of scattered out sheep are in the field. ,image_7447.jpg,MS_COCO,None_Authentic_Photograph
+REAL,132,484,validation-00000-of-00002.parquet,484,0,0,The oriental signs are pointing in all directions.,image_484.jpg,MS_COCO,None_Authentic_Photograph
+REAL,133,6037,validation-00001-of-00002.parquet,1537,0,0,a wood bench sitting in a park with three people sitting on it ,image_6037.jpg,MS_COCO,None_Authentic_Photograph
+REAL,134,8952,validation-00001-of-00002.parquet,4452,0,0,A lone toilet sits in a large bathroom.,image_8952.jpg,MS_COCO,None_Authentic_Photograph
+REAL,135,3477,validation-00000-of-00002.parquet,3477,0,0,A couple of giraffe standing next to each other on a field.,image_3477.jpg,MS_COCO,None_Authentic_Photograph
+REAL,136,67,validation-00000-of-00002.parquet,67,0,0,A young man with a hat on trying to eat a banana. ,image_67.jpg,MS_COCO,None_Authentic_Photograph
+REAL,137,3023,validation-00000-of-00002.parquet,3023,0,0,A fire hydrant that has been painted many colors in a tropical area.,image_3023.jpg,MS_COCO,None_Authentic_Photograph
+REAL,138,2184,validation-00000-of-00002.parquet,2184,0,0,A view from a window high up in the sky.,image_2184.jpg,MS_COCO,None_Authentic_Photograph
+REAL,139,6015,validation-00001-of-00002.parquet,1515,0,0,"A bathroom scene with a toilet, sink and a suitcase.",image_6015.jpg,MS_COCO,None_Authentic_Photograph
+REAL,140,1685,validation-00000-of-00002.parquet,1685,0,0,Motor bike taking a fast turn on a track.,image_1685.jpg,MS_COCO,None_Authentic_Photograph
+REAL,141,7066,validation-00001-of-00002.parquet,2566,0,0,this is a street with a brick building,image_7066.jpg,MS_COCO,None_Authentic_Photograph
+REAL,142,1680,validation-00000-of-00002.parquet,1680,0,0,Two racing motorcycles and riders racing at a track.,image_1680.jpg,MS_COCO,None_Authentic_Photograph
+REAL,143,8852,validation-00001-of-00002.parquet,4352,0,0,A big bathroom with a couch a bathtub in the middle of the room. ,image_8852.jpg,MS_COCO,None_Authentic_Photograph
+REAL,144,1474,validation-00000-of-00002.parquet,1474,0,0,A large white sheep and two baby black sheep in barn,image_1474.jpg,MS_COCO,None_Authentic_Photograph
+REAL,145,3548,validation-00000-of-00002.parquet,3548,0,0,"A kitchen area with a refrigerator, dishwasher and cabinets.",image_3548.jpg,MS_COCO,None_Authentic_Photograph
+REAL,146,7854,validation-00001-of-00002.parquet,3354,0,0,A dog standing next to an address marker and a woman holding an umbrella.,image_7854.jpg,MS_COCO,None_Authentic_Photograph
+REAL,147,4242,validation-00000-of-00002.parquet,4242,0,0,Traffic signal on wall attached to cement structure.,image_4242.jpg,MS_COCO,None_Authentic_Photograph
+REAL,148,6029,validation-00001-of-00002.parquet,1529,0,0,A street sign with a one way arrow on it.,image_6029.jpg,MS_COCO,None_Authentic_Photograph
+REAL,149,2004,validation-00000-of-00002.parquet,2004,0,0,A fire hydrant is on the corner of the street.,image_2004.jpg,MS_COCO,None_Authentic_Photograph
+REAL,150,4803,validation-00001-of-00002.parquet,303,0,0,A bathroom has a sink and a bathtub.,image_4803.jpg,MS_COCO,None_Authentic_Photograph
+REAL,151,8166,validation-00001-of-00002.parquet,3666,0,0,A man is hugging two sheep in an enclosed area.,image_8166.jpg,MS_COCO,None_Authentic_Photograph
+REAL,152,7144,validation-00001-of-00002.parquet,2644,0,0,A group of sheep being led around the water. ,image_7144.jpg,MS_COCO,None_Authentic_Photograph
+REAL,153,5905,validation-00001-of-00002.parquet,1405,0,0,Two small birds on a plate which is sitting on the floor.,image_5905.jpg,MS_COCO,None_Authentic_Photograph
+REAL,154,8801,validation-00001-of-00002.parquet,4301,0,0,A white and red traffic sign on top of a metal pole.,image_8801.jpg,MS_COCO,None_Authentic_Photograph
+REAL,155,3192,validation-00000-of-00002.parquet,3192,0,0,Public toilet with the lid up and a garbage can nearby. ,image_3192.jpg,MS_COCO,None_Authentic_Photograph
+REAL,156,8572,validation-00001-of-00002.parquet,4072,0,0,A clean white toilet with the toilet seat up.,image_8572.jpg,MS_COCO,None_Authentic_Photograph
+REAL,157,6927,validation-00001-of-00002.parquet,2427,0,0,An open beige toilet with some sort of meter across the seat.,image_6927.jpg,MS_COCO,None_Authentic_Photograph
+REAL,158,1033,validation-00000-of-00002.parquet,1033,0,0,A bird standing alone in the water looking,image_1033.jpg,MS_COCO,None_Authentic_Photograph
+REAL,159,2213,validation-00000-of-00002.parquet,2213,0,0,"Six old men, four sitting on a bench and two standing, conversing.",image_2213.jpg,MS_COCO,None_Authentic_Photograph
+REAL,160,268,validation-00000-of-00002.parquet,268,0,0,A red train traveling through a rural countryside.,image_268.jpg,MS_COCO,None_Authentic_Photograph
+REAL,161,2551,validation-00000-of-00002.parquet,2551,0,0,a fire hydrant sitting next to a sidewalk with trees and an apartment building in the  background,image_2551.jpg,MS_COCO,None_Authentic_Photograph
+REAL,162,2161,validation-00000-of-00002.parquet,2161,0,0,A double red bus parked on a street.,image_2161.jpg,MS_COCO,None_Authentic_Photograph
+REAL,163,6175,validation-00001-of-00002.parquet,1675,0,0,A kitchen area with a dining table and counter.,image_6175.jpg,MS_COCO,None_Authentic_Photograph
+REAL,164,8434,validation-00001-of-00002.parquet,3934,0,0,A service vehicle sits on a tarmac in front of a jet. ,image_8434.jpg,MS_COCO,None_Authentic_Photograph
+REAL,165,573,validation-00000-of-00002.parquet,573,0,0,A red motorcycle parked on a sidewalk near multi-story buildings.,image_573.jpg,MS_COCO,None_Authentic_Photograph
+REAL,166,590,validation-00000-of-00002.parquet,590,0,0,A brown kitchen table with four chairs next to a counter.,image_590.jpg,MS_COCO,None_Authentic_Photograph
+REAL,167,8948,validation-00001-of-00002.parquet,4448,0,0,2 motorcycles stand next to each other on the street.,image_8948.jpg,MS_COCO,None_Authentic_Photograph
+REAL,168,6279,validation-00001-of-00002.parquet,1779,0,0,Two ducks floating together on a body of water. ,image_6279.jpg,MS_COCO,None_Authentic_Photograph
+REAL,169,5874,validation-00001-of-00002.parquet,1374,0,0,The motorcycle procession made their way down the crowded street.,image_5874.jpg,MS_COCO,None_Authentic_Photograph
+REAL,170,2347,validation-00000-of-00002.parquet,2347,0,0,A person with a camera taking a picture.,image_2347.jpg,MS_COCO,None_Authentic_Photograph
+REAL,171,1554,validation-00000-of-00002.parquet,1554,0,0,The green bus has a large front window and a yellow license plate.,image_1554.jpg,MS_COCO,None_Authentic_Photograph
+REAL,172,6565,validation-00001-of-00002.parquet,2065,0,0,A group of sheep standing in the road.,image_6565.jpg,MS_COCO,None_Authentic_Photograph
+REAL,173,3040,validation-00000-of-00002.parquet,3040,0,0,A couple of cats sleeping on a car hood.,image_3040.jpg,MS_COCO,None_Authentic_Photograph
+REAL,174,4290,validation-00000-of-00002.parquet,4290,0,0,A group of people standing in front of an airplane.,image_4290.jpg,MS_COCO,None_Authentic_Photograph
+REAL,175,752,validation-00000-of-00002.parquet,752,0,0,A white bus route sign hanging from the side of a black pole.,image_752.jpg,MS_COCO,None_Authentic_Photograph
+REAL,176,1482,validation-00000-of-00002.parquet,1482,0,0,Red and yellow fire hydrant with the lid off.,image_1482.jpg,MS_COCO,None_Authentic_Photograph
+REAL,177,6622,validation-00001-of-00002.parquet,2122,0,0,"A post with several street signs on it, including the name.",image_6622.jpg,MS_COCO,None_Authentic_Photograph
+REAL,178,4182,validation-00000-of-00002.parquet,4182,0,0,A tiger cat sitting in a bathroom sink next to a tub.,image_4182.jpg,MS_COCO,None_Authentic_Photograph
+REAL,179,2938,validation-00000-of-00002.parquet,2938,0,0,THERE IS A TOILET THAT IS DECORATED ,image_2938.jpg,MS_COCO,None_Authentic_Photograph
+REAL,180,7815,validation-00001-of-00002.parquet,3315,0,0,A shower equipped for a physically challenged person with a shower chair,image_7815.jpg,MS_COCO,None_Authentic_Photograph
+REAL,181,1701,validation-00000-of-00002.parquet,1701,0,0,A man sitting on a bench on top of a pier.,image_1701.jpg,MS_COCO,None_Authentic_Photograph
+REAL,182,3537,validation-00000-of-00002.parquet,3537,0,0,A laptop and some computers on a desk.,image_3537.jpg,MS_COCO,None_Authentic_Photograph
+REAL,183,1244,validation-00000-of-00002.parquet,1244,0,0,a car is sitting at a red light in traffic,image_1244.jpg,MS_COCO,None_Authentic_Photograph
+REAL,184,168,validation-00000-of-00002.parquet,168,0,0,A man doing something to a kitchen window.,image_168.jpg,MS_COCO,None_Authentic_Photograph
+REAL,185,7893,validation-00001-of-00002.parquet,3393,0,0,A window in a kitchen filled with green plants.,image_7893.jpg,MS_COCO,None_Authentic_Photograph
+REAL,186,4944,validation-00001-of-00002.parquet,444,0,0,A view of a bathroom with a huge pipe behind it.,image_4944.jpg,MS_COCO,None_Authentic_Photograph
+REAL,187,6005,validation-00001-of-00002.parquet,1505,0,0,a tub toilet sink and medicine cabinet and door,image_6005.jpg,MS_COCO,None_Authentic_Photograph
+REAL,188,2349,validation-00000-of-00002.parquet,2349,0,0,"stop sign that says no vehicles past posts in front of building
+",image_2349.jpg,MS_COCO,None_Authentic_Photograph
+REAL,189,6399,validation-00001-of-00002.parquet,1899,0,0,A small bird is perched on a leafless twig.,image_6399.jpg,MS_COCO,None_Authentic_Photograph
+REAL,190,8094,validation-00001-of-00002.parquet,3594,0,0,A giraffe is standing between two trees and some rocks. ,image_8094.jpg,MS_COCO,None_Authentic_Photograph
+REAL,191,3519,validation-00000-of-00002.parquet,3519,0,0,A green stop light that is hanging above the street.,image_3519.jpg,MS_COCO,None_Authentic_Photograph
+REAL,192,5376,validation-00001-of-00002.parquet,876,0,0,A toddler sitting on a living room floor surrounded by toys.,image_5376.jpg,MS_COCO,None_Authentic_Photograph
+REAL,193,7955,validation-00001-of-00002.parquet,3455,0,0,A man driving a luggage cart sitting on top of a runway.,image_7955.jpg,MS_COCO,None_Authentic_Photograph
+REAL,194,7963,validation-00001-of-00002.parquet,3463,0,0,The view from the commercial airplane includes the wing and mountains and water. ,image_7963.jpg,MS_COCO,None_Authentic_Photograph
+REAL,195,5735,validation-00001-of-00002.parquet,1235,0,0,A motorcycle sitting in a parking lot showing a green lawn in the mirrors.,image_5735.jpg,MS_COCO,None_Authentic_Photograph
+REAL,196,938,validation-00000-of-00002.parquet,938,0,0,A giraffe standing next to a stone wall.,image_938.jpg,MS_COCO,None_Authentic_Photograph
+REAL,197,5535,validation-00001-of-00002.parquet,1035,0,0,The bowl of a white porcelain bidet with the seat raised.,image_5535.jpg,MS_COCO,None_Authentic_Photograph
+REAL,198,1867,validation-00000-of-00002.parquet,1867,0,0,a bathroom with a toilet and a bath tub,image_1867.jpg,MS_COCO,None_Authentic_Photograph
+REAL,199,4619,validation-00001-of-00002.parquet,119,0,0,A stop sign with a persons thighs on it,image_4619.jpg,MS_COCO,None_Authentic_Photograph
+REAL,200,2485,validation-00000-of-00002.parquet,2485,0,0,A little girl is mixing in a  kitchen bowl while standing on a chair.,image_2485.jpg,MS_COCO,None_Authentic_Photograph
+REAL,201,5902,validation-00001-of-00002.parquet,1402,0,0,"A kitchen area with sink, dishwasher and refrigerator.",image_5902.jpg,MS_COCO,None_Authentic_Photograph
+REAL,202,3684,validation-00000-of-00002.parquet,3684,0,0,A bathroom filled with urinals mounted on a wall side by side.,image_3684.jpg,MS_COCO,None_Authentic_Photograph
+REAL,203,2562,validation-00000-of-00002.parquet,2562,0,0,a public transit bus parked with its doors open,image_2562.jpg,MS_COCO,None_Authentic_Photograph
+REAL,204,2838,validation-00000-of-00002.parquet,2838,0,0,A green and yellow train riding down the train tracks. ,image_2838.jpg,MS_COCO,None_Authentic_Photograph
+REAL,205,7060,validation-00001-of-00002.parquet,2560,0,0,A view of a kitchen shows large and small appliances and pans on the cabinets.,image_7060.jpg,MS_COCO,None_Authentic_Photograph
+REAL,206,5722,validation-00001-of-00002.parquet,1222,0,0,a sign showing stop on the street besides buildings,image_5722.jpg,MS_COCO,None_Authentic_Photograph
+REAL,207,1150,validation-00000-of-00002.parquet,1150,0,0,Three giraffes crossing dirt road into dry field,image_1150.jpg,MS_COCO,None_Authentic_Photograph
+REAL,208,4125,validation-00000-of-00002.parquet,4125,0,0,There is no pattern to these four photos.,image_4125.jpg,MS_COCO,None_Authentic_Photograph
+REAL,209,2190,validation-00000-of-00002.parquet,2190,0,0,A kitchen filled with furniture and a stove top oven.,image_2190.jpg,MS_COCO,None_Authentic_Photograph
+REAL,210,5170,validation-00001-of-00002.parquet,670,0,0,The authentic Midwestern kitchen has elements similar to a  pottery studio.,image_5170.jpg,MS_COCO,None_Authentic_Photograph
+REAL,211,398,validation-00000-of-00002.parquet,398,0,0,A long counter holding an assortment of coffee related items.,image_398.jpg,MS_COCO,None_Authentic_Photograph
+REAL,212,6983,validation-00001-of-00002.parquet,2483,0,0,A bench that sits in the grass with rocks cemented to the ground,image_6983.jpg,MS_COCO,None_Authentic_Photograph
+REAL,213,4674,validation-00001-of-00002.parquet,174,0,0,A field filled with purple flowers and green plants.,image_4674.jpg,MS_COCO,None_Authentic_Photograph
+REAL,214,8643,validation-00001-of-00002.parquet,4143,0,0,a long passenger bus turning the corner by a building ,image_8643.jpg,MS_COCO,None_Authentic_Photograph
+REAL,215,1644,validation-00000-of-00002.parquet,1644,0,0,There is a one way street at the corner of Henry St. and Love La.,image_1644.jpg,MS_COCO,None_Authentic_Photograph
+REAL,216,2157,validation-00000-of-00002.parquet,2157,0,0,a public transit bus on a city street,image_2157.jpg,MS_COCO,None_Authentic_Photograph
+REAL,217,7264,validation-00001-of-00002.parquet,2764,0,0,a group of guys showing off a cow to an audience. ,image_7264.jpg,MS_COCO,None_Authentic_Photograph
+REAL,218,2882,validation-00000-of-00002.parquet,2882,0,0,A man and a woman dressed up by a park bench.,image_2882.jpg,MS_COCO,None_Authentic_Photograph
+REAL,219,8030,validation-00001-of-00002.parquet,3530,0,0,A man sitting on a motor bike smiling with a friend close to him,image_8030.jpg,MS_COCO,None_Authentic_Photograph
+REAL,220,1217,validation-00000-of-00002.parquet,1217,0,0,A person standing on a loading platform next to a  train.,image_1217.jpg,MS_COCO,None_Authentic_Photograph
+REAL,221,7366,validation-00001-of-00002.parquet,2866,0,0,red and yellow train on a train track,image_7366.jpg,MS_COCO,None_Authentic_Photograph
+REAL,222,5580,validation-00001-of-00002.parquet,1080,0,0,A hot tub sitting under a window in a room.,image_5580.jpg,MS_COCO,None_Authentic_Photograph
+REAL,223,4558,validation-00001-of-00002.parquet,58,0,0,People are in a circle at a table on laptops.,image_4558.jpg,MS_COCO,None_Authentic_Photograph
+REAL,224,3471,validation-00000-of-00002.parquet,3471,0,0,A white and blue bus passing a street intersection.,image_3471.jpg,MS_COCO,None_Authentic_Photograph
+REAL,225,1332,validation-00000-of-00002.parquet,1332,0,0,A bird is perched on the arm of a bench. ,image_1332.jpg,MS_COCO,None_Authentic_Photograph
+REAL,226,2728,validation-00000-of-00002.parquet,2728,0,0,A red and white striped bus traveling past a store.,image_2728.jpg,MS_COCO,None_Authentic_Photograph
+REAL,227,153,validation-00000-of-00002.parquet,153,0,0,An old fashioned stove top oven with pots sitting on top of it.,image_153.jpg,MS_COCO,None_Authentic_Photograph
+REAL,228,348,validation-00000-of-00002.parquet,348,0,0,Woman walking on train platform as train filled with passengers prepares to leave.,image_348.jpg,MS_COCO,None_Authentic_Photograph
+REAL,229,7204,validation-00001-of-00002.parquet,2704,0,0,A blue love seat sitting on a trailer attached to a bike.,image_7204.jpg,MS_COCO,None_Authentic_Photograph
+REAL,230,8334,validation-00001-of-00002.parquet,3834,0,0,A traffic light sitting next to the side of a building.,image_8334.jpg,MS_COCO,None_Authentic_Photograph
+REAL,231,6361,validation-00001-of-00002.parquet,1861,0,0,A little girl in a pink shirt standing near a blue metal sculpture.,image_6361.jpg,MS_COCO,None_Authentic_Photograph
+REAL,232,2605,validation-00000-of-00002.parquet,2605,0,0,Two giraffe snuggling each other's neck on a field.,image_2605.jpg,MS_COCO,None_Authentic_Photograph
+REAL,233,4426,validation-00000-of-00002.parquet,4426,0,0,A banana sitting on top of a sidewalk near a street.,image_4426.jpg,MS_COCO,None_Authentic_Photograph
+REAL,234,6814,validation-00001-of-00002.parquet,2314,0,0,A little girl holding a brown stuffed animal.,image_6814.jpg,MS_COCO,None_Authentic_Photograph
+REAL,235,6044,validation-00001-of-00002.parquet,1544,0,0,An airplane on a runway getting some work done.,image_6044.jpg,MS_COCO,None_Authentic_Photograph
+REAL,236,6276,validation-00001-of-00002.parquet,1776,0,0,the wall is green and there is a pot on the stove,image_6276.jpg,MS_COCO,None_Authentic_Photograph
+REAL,237,8078,validation-00001-of-00002.parquet,3578,0,0,two people on a snowy surface with a sky background,image_8078.jpg,MS_COCO,None_Authentic_Photograph
+REAL,238,7408,validation-00001-of-00002.parquet,2908,0,0,A computer desk with a desktop and laptop computer. ,image_7408.jpg,MS_COCO,None_Authentic_Photograph
+REAL,239,7406,validation-00001-of-00002.parquet,2906,0,0,Two giraffes standing near each other in the zoo. ,image_7406.jpg,MS_COCO,None_Authentic_Photograph
+REAL,240,8700,validation-00001-of-00002.parquet,4200,0,0,A dog is in a bathroom with chewed toilet paper.  ,image_8700.jpg,MS_COCO,None_Authentic_Photograph
+REAL,241,3787,validation-00000-of-00002.parquet,3787,0,0,"A group of pigeons, swans and ducks clustering around water. ",image_3787.jpg,MS_COCO,None_Authentic_Photograph
+REAL,242,6373,validation-00001-of-00002.parquet,1873,0,0,a train sits on a railroad track as a metal awning covers it,image_6373.jpg,MS_COCO,None_Authentic_Photograph
+REAL,243,5076,validation-00001-of-00002.parquet,576,0,0,A fire hose sitting on top of a man hole cover near a yellow post.,image_5076.jpg,MS_COCO,None_Authentic_Photograph
+REAL,244,562,validation-00000-of-00002.parquet,562,0,0,A building with a tall clock tower with a green top.,image_562.jpg,MS_COCO,None_Authentic_Photograph
+REAL,245,3228,validation-00000-of-00002.parquet,3228,0,0,A fire hydrant painted so that it has a face on it.,image_3228.jpg,MS_COCO,None_Authentic_Photograph
+REAL,246,3206,validation-00000-of-00002.parquet,3206,0,0,A giraffe is leaning over a fence looking at people.,image_3206.jpg,MS_COCO,None_Authentic_Photograph
+REAL,247,8081,validation-00001-of-00002.parquet,3581,0,0,A library is ready for summer reading along the bookcases.,image_8081.jpg,MS_COCO,None_Authentic_Photograph
+REAL,248,6982,validation-00001-of-00002.parquet,2482,0,0,A giraffe is standing near some large boulders.,image_6982.jpg,MS_COCO,None_Authentic_Photograph
+REAL,249,7012,validation-00001-of-00002.parquet,2512,0,0,there is a old rusted train sitting on the ground,image_7012.jpg,MS_COCO,None_Authentic_Photograph
+REAL,250,3840,validation-00000-of-00002.parquet,3840,0,0,A bus stop and bench  on a street corner.,image_3840.jpg,MS_COCO,None_Authentic_Photograph
+REAL,251,6178,validation-00001-of-00002.parquet,1678,0,0,A road sign next to a parking lot that reads FLAMING LIPS ALLEY.,image_6178.jpg,MS_COCO,None_Authentic_Photograph
+REAL,252,1677,validation-00000-of-00002.parquet,1677,0,0,Two boys are standing in front of a train with backpacks. ,image_1677.jpg,MS_COCO,None_Authentic_Photograph
+REAL,253,8055,validation-00001-of-00002.parquet,3555,0,0,A person taking a selfie in a bathroom mirror.,image_8055.jpg,MS_COCO,None_Authentic_Photograph
+REAL,254,3816,validation-00000-of-00002.parquet,3816,0,0,a man is crossing the street and there is a yellow traffic light,image_3816.jpg,MS_COCO,None_Authentic_Photograph
+REAL,255,6250,validation-00001-of-00002.parquet,1750,0,0,A motorcycle is parked on the sidewalk outside a tattoo shop.,image_6250.jpg,MS_COCO,None_Authentic_Photograph
+REAL,256,5931,validation-00001-of-00002.parquet,1431,0,0,A yellow school bus parked  near a tree.,image_5931.jpg,MS_COCO,None_Authentic_Photograph
+REAL,257,2296,validation-00000-of-00002.parquet,2296,0,0,A dog wearing sunglasses sitting inside a car. ,image_2296.jpg,MS_COCO,None_Authentic_Photograph
+REAL,258,3575,validation-00000-of-00002.parquet,3575,0,0,A grey bird on beach with water and pier in the background.,image_3575.jpg,MS_COCO,None_Authentic_Photograph
+REAL,259,5894,validation-00001-of-00002.parquet,1394,0,0,They are standing next to some stylish motorcycles.,image_5894.jpg,MS_COCO,None_Authentic_Photograph
+REAL,260,6900,validation-00001-of-00002.parquet,2400,0,0,Rows of motor bikes and helmets in a city,image_6900.jpg,MS_COCO,None_Authentic_Photograph
+REAL,261,6819,validation-00001-of-00002.parquet,2319,0,0,A stove with a frying pan and a teapot on it.,image_6819.jpg,MS_COCO,None_Authentic_Photograph
+REAL,262,1473,validation-00000-of-00002.parquet,1473,0,0,A girl in a pink jacket on a bicycle passes a man in a blue cap on a bicycle.,image_1473.jpg,MS_COCO,None_Authentic_Photograph
+REAL,263,3646,validation-00000-of-00002.parquet,3646,0,0,A clean kitchen is shown with and without a center island.,image_3646.jpg,MS_COCO,None_Authentic_Photograph
+REAL,264,5870,validation-00001-of-00002.parquet,1370,0,0,The mens bathroom has a urinal and a stall. ,image_5870.jpg,MS_COCO,None_Authentic_Photograph
+REAL,265,8678,validation-00001-of-00002.parquet,4178,0,0,A man on a motorcycle waits at the traffic light,image_8678.jpg,MS_COCO,None_Authentic_Photograph
+REAL,266,6895,validation-00001-of-00002.parquet,2395,0,0,A large black bird wings spread flying over the woods,image_6895.jpg,MS_COCO,None_Authentic_Photograph
+REAL,267,3583,validation-00000-of-00002.parquet,3583,0,0,A merry go round with lots of colorful giraffe and other animals.,image_3583.jpg,MS_COCO,None_Authentic_Photograph
+REAL,268,1282,validation-00000-of-00002.parquet,1282,0,0,The person is riding her bicycle down the road.,image_1282.jpg,MS_COCO,None_Authentic_Photograph
+REAL,269,6406,validation-00001-of-00002.parquet,1906,0,0,A close-up of a one-way street with many cars and motorcycles.,image_6406.jpg,MS_COCO,None_Authentic_Photograph
+REAL,270,5471,validation-00001-of-00002.parquet,971,0,0,A white toilet on the ground by some junk.,image_5471.jpg,MS_COCO,None_Authentic_Photograph
+REAL,271,2198,validation-00000-of-00002.parquet,2198,0,0,A bright white enamel bathroom with a checked floor.,image_2198.jpg,MS_COCO,None_Authentic_Photograph
+REAL,272,361,validation-00000-of-00002.parquet,361,0,0,a toilet seat in a bathroom with the lid down.,image_361.jpg,MS_COCO,None_Authentic_Photograph
+REAL,273,1906,validation-00000-of-00002.parquet,1906,0,0,A group of people sitting at a bar as a man prepares food.,image_1906.jpg,MS_COCO,None_Authentic_Photograph
+REAL,274,8685,validation-00001-of-00002.parquet,4185,0,0,A herd of sheep grazing in a pasture.,image_8685.jpg,MS_COCO,None_Authentic_Photograph
+REAL,275,5094,validation-00001-of-00002.parquet,594,0,0,a train sitting on a train track at a stop.,image_5094.jpg,MS_COCO,None_Authentic_Photograph
+REAL,276,7557,validation-00001-of-00002.parquet,3057,0,0,A bathroom with a tub and his and her sinks.,image_7557.jpg,MS_COCO,None_Authentic_Photograph
+REAL,277,8591,validation-00001-of-00002.parquet,4091,0,0,A bicycle is parked near a body of water.,image_8591.jpg,MS_COCO,None_Authentic_Photograph
+REAL,278,7182,validation-00001-of-00002.parquet,2682,0,0,A white bathroom sink sitting under a mirror.,image_7182.jpg,MS_COCO,None_Authentic_Photograph
+REAL,279,2253,validation-00000-of-00002.parquet,2253,0,0,a couple of ssigns on a pole by a building,image_2253.jpg,MS_COCO,None_Authentic_Photograph
+REAL,280,8157,validation-00001-of-00002.parquet,3657,0,0,A man and a woman on a motorcycle in helmets.,image_8157.jpg,MS_COCO,None_Authentic_Photograph
+REAL,281,7109,validation-00001-of-00002.parquet,2609,0,0,Two sheep standing next to each other in a field.,image_7109.jpg,MS_COCO,None_Authentic_Photograph
+REAL,282,7810,validation-00001-of-00002.parquet,3310,0,0,A large flock of birds flying over the ocean.,image_7810.jpg,MS_COCO,None_Authentic_Photograph
+REAL,283,7376,validation-00001-of-00002.parquet,2876,0,0,The van is driving down the street in traffic.,image_7376.jpg,MS_COCO,None_Authentic_Photograph
+REAL,284,4312,validation-00000-of-00002.parquet,4312,0,0,A street sign for Jack Kerouac (Adler) Road,image_4312.jpg,MS_COCO,None_Authentic_Photograph
+REAL,285,1445,validation-00000-of-00002.parquet,1445,0,0,A chair and table with two monitor screens,image_1445.jpg,MS_COCO,None_Authentic_Photograph
+REAL,286,3784,validation-00000-of-00002.parquet,3784,0,0,There is a wooden decoration on the desk. ,image_3784.jpg,MS_COCO,None_Authentic_Photograph
+REAL,287,1204,validation-00000-of-00002.parquet,1204,0,0,this bathroom has a green tub and a toilet chair,image_1204.jpg,MS_COCO,None_Authentic_Photograph
+REAL,288,7540,validation-00001-of-00002.parquet,3040,0,0,People standing outside a train at a snowy train stop.,image_7540.jpg,MS_COCO,None_Authentic_Photograph
+REAL,289,502,validation-00000-of-00002.parquet,502,0,0,a big giraffe walks next to some zebras ,image_502.jpg,MS_COCO,None_Authentic_Photograph
+REAL,290,8470,validation-00001-of-00002.parquet,3970,0,0,A man with camera taking a photo of sheep ,image_8470.jpg,MS_COCO,None_Authentic_Photograph
+REAL,291,3653,validation-00000-of-00002.parquet,3653,0,0,a car is stopped in the street for people to cross,image_3653.jpg,MS_COCO,None_Authentic_Photograph
+REAL,292,6862,validation-00001-of-00002.parquet,2362,0,0,"There is a tub, a sink, and a shower inside a bathroom.",image_6862.jpg,MS_COCO,None_Authentic_Photograph
+REAL,293,610,validation-00000-of-00002.parquet,610,0,0,An airplane flying in a blue sky with it's landing gear down.,image_610.jpg,MS_COCO,None_Authentic_Photograph
+REAL,294,7652,validation-00001-of-00002.parquet,3152,0,0,A man wearing a green shirt on top of a tennis court.,image_7652.jpg,MS_COCO,None_Authentic_Photograph
+REAL,295,4790,validation-00001-of-00002.parquet,290,0,0,A floodway sign sitting on the side of a road in a field.,image_4790.jpg,MS_COCO,None_Authentic_Photograph
+REAL,296,5956,validation-00001-of-00002.parquet,1456,0,0,A woman holding shears in one hand a tile in the other.,image_5956.jpg,MS_COCO,None_Authentic_Photograph
+REAL,297,4861,validation-00001-of-00002.parquet,361,0,0,a kitchen with a big sink and a rack for the pots,image_4861.jpg,MS_COCO,None_Authentic_Photograph
+REAL,298,7574,validation-00001-of-00002.parquet,3074,0,0,People waiting to cross a busy street at night.,image_7574.jpg,MS_COCO,None_Authentic_Photograph
+REAL,299,6832,validation-00001-of-00002.parquet,2332,0,0,A bench next to a tree in a park. ,image_6832.jpg,MS_COCO,None_Authentic_Photograph
+REAL,300,4989,validation-00001-of-00002.parquet,489,0,0,A metal motorcycle parked on top of a metal grate.,image_4989.jpg,MS_COCO,None_Authentic_Photograph
+REAL,301,2353,validation-00000-of-00002.parquet,2353,0,0,A small train traveling past a building surrounded by a fence.,image_2353.jpg,MS_COCO,None_Authentic_Photograph
+REAL,302,3287,validation-00000-of-00002.parquet,3287,0,0,A man standing in a  kitchen preparing food.,image_3287.jpg,MS_COCO,None_Authentic_Photograph
+REAL,303,8959,validation-00001-of-00002.parquet,4459,0,0,A person holding a surfboard while standing in the ocean.,image_8959.jpg,MS_COCO,None_Authentic_Photograph
+REAL,304,6613,validation-00001-of-00002.parquet,2113,0,0,Four giraffes standing behind a short wall with trees behind them. ,image_6613.jpg,MS_COCO,None_Authentic_Photograph
+REAL,305,2050,validation-00000-of-00002.parquet,2050,0,0,A giraffe eating grass from a stick near a bridge.,image_2050.jpg,MS_COCO,None_Authentic_Photograph
+REAL,306,2233,validation-00000-of-00002.parquet,2233,0,0,Red and black motorcycle parked near large 4 story building.,image_2233.jpg,MS_COCO,None_Authentic_Photograph
+REAL,307,8931,validation-00001-of-00002.parquet,4431,0,0,A patch of wild flowers growing next to a stop sign.,image_8931.jpg,MS_COCO,None_Authentic_Photograph
+REAL,308,6185,validation-00001-of-00002.parquet,1685,0,0,A parakeet sits atop a person's hand next to a keyboard.,image_6185.jpg,MS_COCO,None_Authentic_Photograph
+REAL,309,4336,validation-00000-of-00002.parquet,4336,0,0,a ath room with a toilet a bath tub and a sink,image_4336.jpg,MS_COCO,None_Authentic_Photograph
+REAL,310,2080,validation-00000-of-00002.parquet,2080,0,0,An ornate set of towers n an old church.,image_2080.jpg,MS_COCO,None_Authentic_Photograph
+REAL,311,2603,validation-00000-of-00002.parquet,2603,0,0,The men are working on the yellow fire hydrant. ,image_2603.jpg,MS_COCO,None_Authentic_Photograph
+REAL,312,7432,validation-00001-of-00002.parquet,2932,0,0,The white paint is chipping off of the guard rail.,image_7432.jpg,MS_COCO,None_Authentic_Photograph
+REAL,313,2585,validation-00000-of-00002.parquet,2585,0,0,Someone is holding a bird up to a book. ,image_2585.jpg,MS_COCO,None_Authentic_Photograph
+REAL,314,3830,validation-00000-of-00002.parquet,3830,0,0,A woman standing in front of a kitchen sink on display.,image_3830.jpg,MS_COCO,None_Authentic_Photograph
+REAL,315,6611,validation-00001-of-00002.parquet,2111,0,0,A close up view of an orange and other fruit. ,image_6611.jpg,MS_COCO,None_Authentic_Photograph
+REAL,316,4165,validation-00000-of-00002.parquet,4165,0,0,Group of horses in a field with a pinto in the foreground.,image_4165.jpg,MS_COCO,None_Authentic_Photograph
+REAL,317,4232,validation-00000-of-00002.parquet,4232,0,0,A lot of broccoli sitting in a bowl,image_4232.jpg,MS_COCO,None_Authentic_Photograph
+REAL,318,4625,validation-00001-of-00002.parquet,125,0,0,A small train with writing all over it passes through an intersection.,image_4625.jpg,MS_COCO,None_Authentic_Photograph
+REAL,319,1611,validation-00000-of-00002.parquet,1611,0,0,A brown cow stands at the edge of a roadway.,image_1611.jpg,MS_COCO,None_Authentic_Photograph
+REAL,320,6544,validation-00001-of-00002.parquet,2044,0,0,A road sign on top of a stop sign ,image_6544.jpg,MS_COCO,None_Authentic_Photograph
+REAL,321,5577,validation-00001-of-00002.parquet,1077,0,0,A crowded street has a number of street signs.,image_5577.jpg,MS_COCO,None_Authentic_Photograph
+REAL,322,7046,validation-00001-of-00002.parquet,2546,0,0,The people on the motorcycles are racing on the track,image_7046.jpg,MS_COCO,None_Authentic_Photograph
+REAL,323,4102,validation-00000-of-00002.parquet,4102,0,0,A person wearing a helmet is riding a motorcycle on a dirt road. ,image_4102.jpg,MS_COCO,None_Authentic_Photograph
+REAL,324,5089,validation-00001-of-00002.parquet,589,0,0,A giraffe is walking up a grassy and rocky hill.,image_5089.jpg,MS_COCO,None_Authentic_Photograph
+REAL,325,4902,validation-00001-of-00002.parquet,402,0,0,"Bathroom with white fixtures, tiles and corner shower.",image_4902.jpg,MS_COCO,None_Authentic_Photograph
+REAL,326,8735,validation-00001-of-00002.parquet,4235,0,0,a man is standing in the woods wearing a hat and glasses,image_8735.jpg,MS_COCO,None_Authentic_Photograph
+REAL,327,518,validation-00000-of-00002.parquet,518,0,0,Fancy traffic light with arrows and a mirror.,image_518.jpg,MS_COCO,None_Authentic_Photograph
+REAL,328,8559,validation-00001-of-00002.parquet,4059,0,0,The bus and the car are driving down the street.,image_8559.jpg,MS_COCO,None_Authentic_Photograph
+REAL,329,1658,validation-00000-of-00002.parquet,1658,0,0,A train is pulling in to a train station.,image_1658.jpg,MS_COCO,None_Authentic_Photograph
+REAL,330,1783,validation-00000-of-00002.parquet,1783,0,0,A counter filled with lots of clutter in a  kitchen.,image_1783.jpg,MS_COCO,None_Authentic_Photograph
+REAL,331,8915,validation-00001-of-00002.parquet,4415,0,0,a person in a kitchen preparing food on a pan,image_8915.jpg,MS_COCO,None_Authentic_Photograph
+REAL,332,5415,validation-00001-of-00002.parquet,915,0,0,a gray cat is seen laying on top of a blue tube,image_5415.jpg,MS_COCO,None_Authentic_Photograph
+REAL,333,8969,validation-00001-of-00002.parquet,4469,0,0,a plane flys through the grey sky ,image_8969.jpg,MS_COCO,None_Authentic_Photograph
+REAL,334,5945,validation-00001-of-00002.parquet,1445,0,0,Group of people flying a blight kite with smiley faces on it. ,image_5945.jpg,MS_COCO,None_Authentic_Photograph
+REAL,335,3258,validation-00000-of-00002.parquet,3258,0,0,Many street signs are located within close vicinity of each other,image_3258.jpg,MS_COCO,None_Authentic_Photograph
+REAL,336,6018,validation-00001-of-00002.parquet,1518,0,0,some people are riding motorcycles down the street,image_6018.jpg,MS_COCO,None_Authentic_Photograph
+REAL,337,1378,validation-00000-of-00002.parquet,1378,0,0,A bathroom sink sitting underneath a mirror mounted on it's wall.,image_1378.jpg,MS_COCO,None_Authentic_Photograph
+REAL,338,643,validation-00000-of-00002.parquet,643,0,0,A lamp with a shade sitting on top of an older model television.,image_643.jpg,MS_COCO,None_Authentic_Photograph
+REAL,339,4114,validation-00000-of-00002.parquet,4114,0,0,a number of sheep in a field next to a truck,image_4114.jpg,MS_COCO,None_Authentic_Photograph
+REAL,340,3539,validation-00000-of-00002.parquet,3539,0,0,a person in a bathroom having a reflection in the mirror,image_3539.jpg,MS_COCO,None_Authentic_Photograph
+REAL,341,1028,validation-00000-of-00002.parquet,1028,0,0,A bird flying in the ocean with the sun in the background.,image_1028.jpg,MS_COCO,None_Authentic_Photograph
+REAL,342,3267,validation-00000-of-00002.parquet,3267,0,0,A bathroom with a toilet and a bathtub with a safety rail.,image_3267.jpg,MS_COCO,None_Authentic_Photograph
+REAL,343,6449,validation-00001-of-00002.parquet,1949,0,0,A wooden park bench overlooking a valley full of trees.,image_6449.jpg,MS_COCO,None_Authentic_Photograph
+REAL,344,6998,validation-00001-of-00002.parquet,2498,0,0,A red motorcycle is on the sidewalk in front of a business with ads on the windows.,image_6998.jpg,MS_COCO,None_Authentic_Photograph
+REAL,345,6591,validation-00001-of-00002.parquet,2091,0,0,A plane parked on the tarmac with with a connection for loading attached to it.,image_6591.jpg,MS_COCO,None_Authentic_Photograph
+REAL,346,5955,validation-00001-of-00002.parquet,1455,0,0,This intersection has more pedestrians than vehicles near it.,image_5955.jpg,MS_COCO,None_Authentic_Photograph
+REAL,347,1746,validation-00000-of-00002.parquet,1746,0,0,Signs posted in front of a municipal complex.,image_1746.jpg,MS_COCO,None_Authentic_Photograph
+REAL,348,5237,validation-00001-of-00002.parquet,737,0,0,assorted cars and buses sitting in a parking lot,image_5237.jpg,MS_COCO,None_Authentic_Photograph
+REAL,349,2305,validation-00000-of-00002.parquet,2305,0,0,A green road sign with a bike painted on it.,image_2305.jpg,MS_COCO,None_Authentic_Photograph
+REAL,350,7104,validation-00001-of-00002.parquet,2604,0,0,there is a street sign that is on the street,image_7104.jpg,MS_COCO,None_Authentic_Photograph
+REAL,351,165,validation-00000-of-00002.parquet,165,0,0,A red train traveling past a train station with red cars.,image_165.jpg,MS_COCO,None_Authentic_Photograph
+REAL,352,3330,validation-00000-of-00002.parquet,3330,0,0,The view from an airplane window looking down on clouds and mountains.,image_3330.jpg,MS_COCO,None_Authentic_Photograph
+REAL,353,1296,validation-00000-of-00002.parquet,1296,0,0,A double decker bus travelling on a city street.,image_1296.jpg,MS_COCO,None_Authentic_Photograph
+REAL,354,6268,validation-00001-of-00002.parquet,1768,0,0,A couple of sheep grazing on the side of a road.,image_6268.jpg,MS_COCO,None_Authentic_Photograph
+REAL,355,5628,validation-00001-of-00002.parquet,1128,0,0,A large giraffe standing next to a man pushing a bail of hay on a cart.,image_5628.jpg,MS_COCO,None_Authentic_Photograph
+REAL,356,4921,validation-00001-of-00002.parquet,421,0,0,Two motorcycles sitting in a trailer that's being pulled behind an RV.,image_4921.jpg,MS_COCO,None_Authentic_Photograph
+REAL,357,3781,validation-00000-of-00002.parquet,3781,0,0,A bus parked at a bus stop on a city block.,image_3781.jpg,MS_COCO,None_Authentic_Photograph
+REAL,358,5690,validation-00001-of-00002.parquet,1190,0,0,a bunch of motorcycles are parked on the street together,image_5690.jpg,MS_COCO,None_Authentic_Photograph
+REAL,359,3785,validation-00000-of-00002.parquet,3785,0,0,A sink with a tooth brush and some other items.,image_3785.jpg,MS_COCO,None_Authentic_Photograph
+REAL,360,1114,validation-00000-of-00002.parquet,1114,0,0,A giraffe grazing from shrubs next to the road,image_1114.jpg,MS_COCO,None_Authentic_Photograph
+REAL,361,4347,validation-00000-of-00002.parquet,4347,0,0,a brown and white cat sitting in a bathroom sink ,image_4347.jpg,MS_COCO,None_Authentic_Photograph
+REAL,362,5710,validation-00001-of-00002.parquet,1210,0,0,A city street sign warning of a hill in different languages.,image_5710.jpg,MS_COCO,None_Authentic_Photograph
+REAL,363,6913,validation-00001-of-00002.parquet,2413,0,0,A plane with people watching it and people near it. ,image_6913.jpg,MS_COCO,None_Authentic_Photograph
+REAL,364,7253,validation-00001-of-00002.parquet,2753,0,0,Two cat lying on a floor playing with each other,image_7253.jpg,MS_COCO,None_Authentic_Photograph
+REAL,365,6555,validation-00001-of-00002.parquet,2055,0,0,A bath tub sitting next to a toilet under a window.,image_6555.jpg,MS_COCO,None_Authentic_Photograph
+REAL,366,5482,validation-00001-of-00002.parquet,982,0,0,A woman standing next to a red scooter near a shelf.,image_5482.jpg,MS_COCO,None_Authentic_Photograph
+REAL,367,510,validation-00000-of-00002.parquet,510,0,0,A bus passes several people riding their bicycles.,image_510.jpg,MS_COCO,None_Authentic_Photograph
+REAL,368,4292,validation-00000-of-00002.parquet,4292,0,0,A big commercial plane flying high in the sky.,image_4292.jpg,MS_COCO,None_Authentic_Photograph
+REAL,369,296,validation-00000-of-00002.parquet,296,0,0,A black refrigerator freezer sitting next to a dishwasher.,image_296.jpg,MS_COCO,None_Authentic_Photograph
+REAL,370,7697,validation-00001-of-00002.parquet,3197,0,0,People are waiting on a corner to cross a street. ,image_7697.jpg,MS_COCO,None_Authentic_Photograph
+REAL,371,899,validation-00000-of-00002.parquet,899,0,0,A bathroom has a floating toilet and sink and a walk-in shower.,image_899.jpg,MS_COCO,None_Authentic_Photograph
+REAL,372,6844,validation-00001-of-00002.parquet,2344,0,0,"A bathroom with a sink, a fan and a mirrored medicine chest.",image_6844.jpg,MS_COCO,None_Authentic_Photograph
+REAL,373,6781,validation-00001-of-00002.parquet,2281,0,0,A large kitchen with a stove and a sink.,image_6781.jpg,MS_COCO,None_Authentic_Photograph
+REAL,374,5923,validation-00001-of-00002.parquet,1423,0,0,A traffic light at an intersection with a skyscraper in the background.,image_5923.jpg,MS_COCO,None_Authentic_Photograph
+REAL,375,6316,validation-00001-of-00002.parquet,1816,0,0,A man is herding some sheep and with a black dog. ,image_6316.jpg,MS_COCO,None_Authentic_Photograph
+REAL,376,4907,validation-00001-of-00002.parquet,407,0,0,a group of people getting off a parked bus,image_4907.jpg,MS_COCO,None_Authentic_Photograph
+REAL,377,7363,validation-00001-of-00002.parquet,2863,0,0,A herd of sheep walking across a snow covered field.,image_7363.jpg,MS_COCO,None_Authentic_Photograph
+REAL,378,8899,validation-00001-of-00002.parquet,4399,0,0,A sign on Dunmore Court warns pet owners to keep their dogs off the median.,image_8899.jpg,MS_COCO,None_Authentic_Photograph
+REAL,379,8627,validation-00001-of-00002.parquet,4127,0,0,A bicycle and a motorcycle parked near a door on a narrow street.,image_8627.jpg,MS_COCO,None_Authentic_Photograph
+REAL,380,1063,validation-00000-of-00002.parquet,1063,0,0,A small sport utility vehicle that is loaded down with a bunch of luggage. ,image_1063.jpg,MS_COCO,None_Authentic_Photograph
+REAL,381,8154,validation-00001-of-00002.parquet,3654,0,0,A cat lying next to someone sitting on a bench.,image_8154.jpg,MS_COCO,None_Authentic_Photograph
+REAL,382,7476,validation-00001-of-00002.parquet,2976,0,0,A humming bird mid flight preparing to land on a tree ,image_7476.jpg,MS_COCO,None_Authentic_Photograph
+REAL,383,6248,validation-00001-of-00002.parquet,1748,0,0,A red stop sign under a green street sign.,image_6248.jpg,MS_COCO,None_Authentic_Photograph
+REAL,384,5786,validation-00001-of-00002.parquet,1286,0,0,this bathroom has a black table and a white animal house,image_5786.jpg,MS_COCO,None_Authentic_Photograph
+REAL,385,4959,validation-00001-of-00002.parquet,459,0,0,A beautiful woman with a blue fro brushing her teeth with a giant toothbrush.,image_4959.jpg,MS_COCO,None_Authentic_Photograph
+REAL,386,2235,validation-00000-of-00002.parquet,2235,0,0,A busy city street at night time as some people cross the street.,image_2235.jpg,MS_COCO,None_Authentic_Photograph
+REAL,387,7006,validation-00001-of-00002.parquet,2506,0,0,The reflection of a woman carrying a bag over each shoulder in a mirror.,image_7006.jpg,MS_COCO,None_Authentic_Photograph
+REAL,388,7116,validation-00001-of-00002.parquet,2616,0,0,a shelf with a bunch of stuff on it,image_7116.jpg,MS_COCO,None_Authentic_Photograph
+REAL,389,2163,validation-00000-of-00002.parquet,2163,0,0,Two people on motorbike passing by a clock facade.,image_2163.jpg,MS_COCO,None_Authentic_Photograph
+REAL,390,6068,validation-00001-of-00002.parquet,1568,0,0,A group of four street signs stacked on top of each other.,image_6068.jpg,MS_COCO,None_Authentic_Photograph
+REAL,391,3761,validation-00000-of-00002.parquet,3761,0,0,a bathroom with a sink and a toilet,image_3761.jpg,MS_COCO,None_Authentic_Photograph
+REAL,392,5886,validation-00001-of-00002.parquet,1386,0,0,A group of street signs casting a shadow on a white wall.,image_5886.jpg,MS_COCO,None_Authentic_Photograph
+REAL,393,7619,validation-00001-of-00002.parquet,3119,0,0,Modern espresso machine on counter in residential kitchen.,image_7619.jpg,MS_COCO,None_Authentic_Photograph
+REAL,394,3578,validation-00000-of-00002.parquet,3578,0,0,A man rides a silver motorcycle down the street in town.,image_3578.jpg,MS_COCO,None_Authentic_Photograph
+REAL,395,7733,validation-00001-of-00002.parquet,3233,0,0,A hotdog is sitting with fries in a paper car on a plate.,image_7733.jpg,MS_COCO,None_Authentic_Photograph
+REAL,396,3854,validation-00000-of-00002.parquet,3854,0,0,A large cat laying next to a large orange pumpkin.,image_3854.jpg,MS_COCO,None_Authentic_Photograph
+REAL,397,1545,validation-00000-of-00002.parquet,1545,0,0,A person is racing around a track on a motorcycle.,image_1545.jpg,MS_COCO,None_Authentic_Photograph
+REAL,398,8254,validation-00001-of-00002.parquet,3754,0,0,People using their laptops in the backseat of a car.,image_8254.jpg,MS_COCO,None_Authentic_Photograph
+REAL,399,8718,validation-00001-of-00002.parquet,4218,0,0,An animal that is on a tree eating some food.,image_8718.jpg,MS_COCO,None_Authentic_Photograph
+REAL,400,4673,validation-00001-of-00002.parquet,173,0,0,A red double decker bus parked in front of a tall building.,image_4673.jpg,MS_COCO,None_Authentic_Photograph
+SD3,1,595,validation-00000-of-00002.parquet,595,1,3,A sheep standing in the middle of a field.,image_595.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,2,695,validation-00000-of-00002.parquet,695,1,3,Guy sitting on ground in the middle of the street with traffic light behind him,image_695.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,3,4693,validation-00001-of-00002.parquet,193,1,3,A blue and yellow fire hydrant sitting on the side of a road.,image_4693.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,4,8414,validation-00001-of-00002.parquet,3914,1,3,Many street signs are located within close vicinity of each other,image_8414.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,5,4710,validation-00001-of-00002.parquet,210,1,3,A small aircraft parked on a grass field,image_4710.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,6,3145,validation-00000-of-00002.parquet,3145,1,3,A woman sitting on a bench with cars behind her.,image_3145.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,7,2767,validation-00000-of-00002.parquet,2767,1,3,A bird sitting on top of a table at a restaurant.,image_2767.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,8,4203,validation-00000-of-00002.parquet,4203,1,3,Three giraffes are feeding from white buckets that are hanging from a fence.,image_4203.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,9,6777,validation-00001-of-00002.parquet,2277,1,3,Three mass transit trains underneath an overpass at a train stop.,image_6777.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,10,5848,validation-00001-of-00002.parquet,1348,1,3,A train pulling into a train station next to a tall building.,image_5848.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,11,5901,validation-00001-of-00002.parquet,1401,1,3,Two giraffe standing next to a chain link fence.,image_5901.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,12,3584,validation-00000-of-00002.parquet,3584,1,3,A herd of deer walking across a rocky hillside.,image_3584.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,13,2186,validation-00000-of-00002.parquet,2186,1,3,A man rides a silver motorcycle down the street in town.,image_2186.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,14,84,validation-00000-of-00002.parquet,84,1,3,A view of a kitchen shows large and small appliances and pans on the cabinets.,image_84.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,15,421,validation-00000-of-00002.parquet,421,1,3,A train on bridge passing over water with city in the background.,image_421.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,16,5016,validation-00001-of-00002.parquet,516,1,3,A white toilet sitting in a bathroom next to a sink.,image_5016.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,17,1448,validation-00000-of-00002.parquet,1448,1,3,The bluebird is just sitting quietly on the branch.,image_1448.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,18,2927,validation-00000-of-00002.parquet,2927,1,3,"A white sign is displayed, reading Bart Ba.",image_2927.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,19,2791,validation-00000-of-00002.parquet,2791,1,3,A close up of a street pole with no parking signs.,image_2791.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,20,8494,validation-00001-of-00002.parquet,3994,1,3,Two young men are looking at a computer screen. ,image_8494.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,21,7951,validation-00001-of-00002.parquet,3451,1,3,A giraffe leaning up to a tree to chew on a branch.,image_7951.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,22,7338,validation-00001-of-00002.parquet,2838,1,3,a view of an air plane wing in the air ,image_7338.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,23,4597,validation-00001-of-00002.parquet,97,1,3,Two giraffe standing next to each other on a lush green field.,image_4597.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,24,3979,validation-00000-of-00002.parquet,3979,1,3,He does have control of the motorcycle while pulling a wheelie.,image_3979.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,25,7894,validation-00001-of-00002.parquet,3394,1,3,A white airplane is parked on a green runway.,image_7894.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,26,403,validation-00000-of-00002.parquet,403,1,3,The bus and the car are driving down the street.,image_403.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,27,8686,validation-00001-of-00002.parquet,4186,1,3,This is a view of mountains of a airplane.,image_8686.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,28,4440,validation-00000-of-00002.parquet,4440,1,3,A group of people that are outside of an airplane.,image_4440.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,29,6341,validation-00001-of-00002.parquet,1841,1,3,The Stop sign has been hit and is leaning to the side.,image_6341.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,30,4408,validation-00000-of-00002.parquet,4408,1,3,A double red bus parked on a street.,image_4408.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,31,25,validation-00000-of-00002.parquet,25,1,3,A giraffe looking for food between large rocks.,image_25.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,32,628,validation-00000-of-00002.parquet,628,1,3,A seagull standing near a body of water. ,image_628.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,33,1515,validation-00000-of-00002.parquet,1515,1,3,Two sheep grazing the field in a mountainous area. ,image_1515.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,34,8656,validation-00001-of-00002.parquet,4156,1,3,A railroad train passing a field of cows,image_8656.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,35,4531,validation-00001-of-00002.parquet,31,1,3,A couple of cats standing on top of a desk.,image_4531.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,36,5330,validation-00001-of-00002.parquet,830,1,3,some people are riding motorcycles down the street,image_5330.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,37,2275,validation-00000-of-00002.parquet,2275,1,3,An open door and a cat inside a house.,image_2275.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,38,89,validation-00000-of-00002.parquet,89,1,3,Airplanes on landing strips waiting to take off.,image_89.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,39,192,validation-00000-of-00002.parquet,192,1,3,A white and blue bus passing a street intersection.,image_192.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,40,1983,validation-00000-of-00002.parquet,1983,1,3,"A bathroom scene with a toilet, sink and a suitcase.",image_1983.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,41,6474,validation-00001-of-00002.parquet,1974,1,3,a kitchen counter covered with cleaning supplies and other items,image_6474.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,42,5009,validation-00001-of-00002.parquet,509,1,3,a girraf standing in a grassy field next to a forrest,image_5009.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,43,4630,validation-00001-of-00002.parquet,130,1,3,Photo of airplane wing as the plane flies in the blue sky.,image_4630.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,44,7701,validation-00001-of-00002.parquet,3201,1,3,A cat laying next to a bike with a large tire.,image_7701.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,45,290,validation-00000-of-00002.parquet,290,1,3,A sleeping area of a train car with a seat belt buckle.,image_290.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,46,3151,validation-00000-of-00002.parquet,3151,1,3,A blue bus driving down a curvy street.,image_3151.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,47,8410,validation-00001-of-00002.parquet,3910,1,3,an image  of people outside playing frisbee,image_8410.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,48,245,validation-00000-of-00002.parquet,245,1,3,The people are feeding the giraffe at the zoo.,image_245.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,49,6292,validation-00001-of-00002.parquet,1792,1,3,An animal that is on a tree eating some food.,image_6292.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,50,4967,validation-00001-of-00002.parquet,467,1,3,A Delta aircraft is parked at a terminal while maintenance men attend to it.,image_4967.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,51,739,validation-00000-of-00002.parquet,739,1,3,there is a small bird sitting on the ledge of a building,image_739.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,52,2867,validation-00000-of-00002.parquet,2867,1,3,A white sink sitting underneath a mirror in a bathroom.,image_2867.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,53,0,validation-00000-of-00002.parquet,0,1,3,a toilet sits next to a shower an sink ,image_0.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,54,6833,validation-00001-of-00002.parquet,2333,1,3,A big commercial plane flying high in the sky.,image_6833.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,55,3248,validation-00000-of-00002.parquet,3248,1,3,A kitchen filled with furniture and a stove top oven.,image_3248.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,56,2033,validation-00000-of-00002.parquet,2033,1,3,A man on a motorcycle riding in the desert.,image_2033.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,57,1595,validation-00000-of-00002.parquet,1595,1,3,a couple of red light and a green light ,image_1595.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,58,4316,validation-00000-of-00002.parquet,4316,1,3,A white stove top oven sitting inside of a kitchen.,image_4316.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,59,4785,validation-00001-of-00002.parquet,285,1,3,A double decker bus travelling on a city street.,image_4785.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,60,1969,validation-00000-of-00002.parquet,1969,1,3,A grey bird on beach with water and pier in the background.,image_1969.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,61,7666,validation-00001-of-00002.parquet,3166,1,3,A door with a sticker of a cat door on it,image_7666.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,62,1310,validation-00000-of-00002.parquet,1310,1,3,A white toilet sitting inside of a bathroom.,image_1310.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,63,6416,validation-00001-of-00002.parquet,1916,1,3,"a sidewalk with a fence, street signs, and a lot of trees along it ",image_6416.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,64,6593,validation-00001-of-00002.parquet,2093,1,3,A man and woman are riding down the street in a parade wearing patriotic hats.,image_6593.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,65,1059,validation-00000-of-00002.parquet,1059,1,3,People standing in front of building holding protest signs.,image_1059.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,66,2952,validation-00000-of-00002.parquet,2952,1,3,A car stopped at a traffic light with it's brake lights on.,image_2952.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,67,2217,validation-00000-of-00002.parquet,2217,1,3,A cat crawling into a white toilet seat.,image_2217.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,68,924,validation-00000-of-00002.parquet,924,1,3,a cute baby giraffe standing next to a bigger giraffe ,image_924.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,69,4130,validation-00000-of-00002.parquet,4130,1,3,A large propeller airplane sitting on top of a tarmac.,image_4130.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,70,6450,validation-00001-of-00002.parquet,1950,1,3,A man cleaning up a mess on a street with a red fire hydrant.,image_6450.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,71,2081,validation-00000-of-00002.parquet,2081,1,3,The mirror above a bathroom sink is shattered.,image_2081.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,72,5721,validation-00001-of-00002.parquet,1221,1,3,"A stop sign posted in a foreign language
+",image_5721.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,73,8058,validation-00001-of-00002.parquet,3558,1,3,The giraffe is sitting in the middle of the grass alone,image_8058.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,74,164,validation-00000-of-00002.parquet,164,1,3,A young boy stands next to a row of parked motorcycles.,image_164.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,75,3083,validation-00000-of-00002.parquet,3083,1,3,a street a street light a traffic light and some trees,image_3083.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,76,4124,validation-00000-of-00002.parquet,4124,1,3,"A dirty bathroom features a toilet with a blue seat, a tub and a waste paper basket.",image_4124.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,77,8308,validation-00001-of-00002.parquet,3808,1,3,The motorcycle procession made their way down the crowded street.,image_8308.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,78,8980,validation-00001-of-00002.parquet,4480,1,3,There are four sheep in the grassy field. ,image_8980.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,79,8371,validation-00001-of-00002.parquet,3871,1,3,Railway crossing sign and vacant train tracks and road,image_8371.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,80,962,validation-00000-of-00002.parquet,962,1,3,A giraffe stands beneath a tree beside a marina.,image_962.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,81,5769,validation-00001-of-00002.parquet,1269,1,3,A modern flatscreen television sits upon a nostalgic console model.,image_5769.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,82,8553,validation-00001-of-00002.parquet,4053,1,3,A sink with a tooth brush and some other items.,image_8553.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,83,5520,validation-00001-of-00002.parquet,1020,1,3,Old motor bike sitting on display in a museum. ,image_5520.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,84,4231,validation-00000-of-00002.parquet,4231,1,3,The large green train is approaching a platform.,image_4231.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,85,2248,validation-00000-of-00002.parquet,2248,1,3,A car is carrying several bikes on a bike rack.,image_2248.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,86,4282,validation-00000-of-00002.parquet,4282,1,3,a black and white cat a chair and some bicycles,image_4282.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,87,8823,validation-00001-of-00002.parquet,4323,1,3,"Cabinets, a sink, a dishwasher and a microwave in a kitchen.",image_8823.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,88,5171,validation-00001-of-00002.parquet,671,1,3,Public toilet with the lid up and a garbage can nearby. ,image_5171.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,89,7393,validation-00001-of-00002.parquet,2893,1,3,A group of people riding on the back of motor bikes.,image_7393.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,90,5112,validation-00001-of-00002.parquet,612,1,3,A man driving a car across an airport runway.,image_5112.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,91,4306,validation-00000-of-00002.parquet,4306,1,3,A guy sitting on his motorcycle while a woman stands beside him,image_4306.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,92,3727,validation-00000-of-00002.parquet,3727,1,3,a gray bird about to perch on a branch,image_3727.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,93,2065,validation-00000-of-00002.parquet,2065,1,3,A bathroom has a floating toilet and sink and a walk-in shower.,image_2065.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,94,7045,validation-00001-of-00002.parquet,2545,1,3,A person standing on a loading platform next to a  train.,image_7045.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,95,1748,validation-00000-of-00002.parquet,1748,1,3,A woman taking a selfie while brushing her teeth with a tooth brush.,image_1748.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,96,5056,validation-00001-of-00002.parquet,556,1,3,a person standing on a side walk underneath a traffic light,image_5056.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,97,2745,validation-00000-of-00002.parquet,2745,1,3,a cloudy sky during a day with some overcast,image_2745.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,98,5616,validation-00001-of-00002.parquet,1116,1,3,A motor bike stationary in a parking lot.,image_5616.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,99,8440,validation-00001-of-00002.parquet,3940,1,3,A man riding a motor cycle down a race track.,image_8440.jpg,Defactify_SD3,Stable_Diffusion_3
+SD3,100,647,validation-00000-of-00002.parquet,647,1,3,a baby giraffe sniffs an adult giraffe ,image_647.jpg,Defactify_SD3,Stable_Diffusion_3
+MIDJOURNEY_V6,1,8674,validation-00001-of-00002.parquet,4174,1,5,People standing outside a train at a snowy train stop.,image_8674.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,2,2977,validation-00000-of-00002.parquet,2977,1,5,A lamp with a shade sitting on top of an older model television.,image_2977.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,3,4250,validation-00000-of-00002.parquet,4250,1,5,A train on bridge passing over water with city in the background.,image_4250.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,4,4399,validation-00000-of-00002.parquet,4399,1,5,a bunch of motorcycles are parked on the street together,image_4399.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,5,3800,validation-00000-of-00002.parquet,3800,1,5,a pink hat and a cellphone on some weaved basket,image_3800.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,6,8425,validation-00001-of-00002.parquet,3925,1,5,A woman holding a piece of chocolate cake at a table.,image_8425.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,7,7870,validation-00001-of-00002.parquet,3370,1,5,A picture of two people sitting on a bench.,image_7870.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,8,2600,validation-00000-of-00002.parquet,2600,1,5,A runway has many old-fashioned planes and helicopters. ,image_2600.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,9,1806,validation-00000-of-00002.parquet,1806,1,5,"A street sign above mailboxes in a snowy, icy winter scene.",image_1806.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,10,5210,validation-00001-of-00002.parquet,710,1,5,A bare kitchen in the midst of a paint job.,image_5210.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,11,3945,validation-00000-of-00002.parquet,3945,1,5,Man taking a photograph of a black and silver motorcycle. ,image_3945.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,12,6413,validation-00001-of-00002.parquet,1913,1,5,this is a cat on a chair with a hat,image_6413.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,13,2120,validation-00000-of-00002.parquet,2120,1,5,"There is a tub, a sink, and a shower inside a bathroom.",image_2120.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,14,8416,validation-00001-of-00002.parquet,3916,1,5,there is a old rusted train sitting on the ground,image_8416.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,15,6546,validation-00001-of-00002.parquet,2046,1,5,A toilet and container in a small room.,image_6546.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,16,7580,validation-00001-of-00002.parquet,3080,1,5,A city street at night filled with lots of traffic.,image_7580.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,17,2721,validation-00000-of-00002.parquet,2721,1,5,"2 people take a stroll, as a stop sign looms in the foreground.",image_2721.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,18,2765,validation-00000-of-00002.parquet,2765,1,5,A living room with a couch next to a  table and a lamp.,image_2765.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,19,5803,validation-00001-of-00002.parquet,1303,1,5,A metal pole with two blue street signs mounted two the top of it.,image_5803.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,20,3716,validation-00000-of-00002.parquet,3716,1,5,there is a cat that is standing near the water,image_3716.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,21,3835,validation-00000-of-00002.parquet,3835,1,5,Giraffes and zebra watching a zookeeper in their enclosure.,image_3835.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,22,2937,validation-00000-of-00002.parquet,2937,1,5,A row of United States Army military fighter jets.,image_2937.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,23,1512,validation-00000-of-00002.parquet,1512,1,5,A person standing in the kitchen holding a ladle above a bowl while reading a book.,image_1512.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,24,7255,validation-00001-of-00002.parquet,2755,1,5,A person flipping of a parking meter on the side of a road.,image_7255.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,25,272,validation-00000-of-00002.parquet,272,1,5,a yellow and blue fire hydrant by the curb,image_272.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,26,3921,validation-00000-of-00002.parquet,3921,1,5,A man with a red neck tie and a gray jacket.,image_3921.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,27,1510,validation-00000-of-00002.parquet,1510,1,5,This but has a movie advertisement on the back.,image_1510.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,28,1224,validation-00000-of-00002.parquet,1224,1,5,An airplane flying through the gray sky with smoke pouring out it's back.,image_1224.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,29,3705,validation-00000-of-00002.parquet,3705,1,5,A blurry motion picture of a person doing a wheelie on a motorcycle.,image_3705.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,30,2953,validation-00000-of-00002.parquet,2953,1,5,A motor bike stationary in a parking lot.,image_2953.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,31,7051,validation-00001-of-00002.parquet,2551,1,5,A bathroom sink sitting underneath a mirror mounted on it's wall.,image_7051.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,32,8264,validation-00001-of-00002.parquet,3764,1,5,Two brown horses standing in front of a red brick building.,image_8264.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,33,6168,validation-00001-of-00002.parquet,1668,1,5,A blue double decker bus driving down a street.,image_6168.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,34,2607,validation-00000-of-00002.parquet,2607,1,5,A yellow and blue bus parked at the end of a street.,image_2607.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,35,5772,validation-00001-of-00002.parquet,1272,1,5,People walking outside of a red brick building.,image_5772.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,36,1541,validation-00000-of-00002.parquet,1541,1,5,The red fire hydrant is next to a caution partition.,image_1541.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,37,1635,validation-00000-of-00002.parquet,1635,1,5,Two buses driving by people in a city.,image_1635.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,38,5706,validation-00001-of-00002.parquet,1206,1,5,A person is racing around a track on a motorcycle.,image_5706.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,39,2426,validation-00000-of-00002.parquet,2426,1,5,A black refrigerator freezer sitting next to a dishwasher.,image_2426.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,40,7123,validation-00001-of-00002.parquet,2623,1,5,a toilet sits next to a shower an sink ,image_7123.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,41,5214,validation-00001-of-00002.parquet,714,1,5,A group of scattered sheep move down a country path.,image_5214.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,42,7590,validation-00001-of-00002.parquet,3090,1,5,A shop that has many bikes of all kinds. ,image_7590.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,43,5563,validation-00001-of-00002.parquet,1063,1,5,The trolley is picking up passengers along the road.,image_5563.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,44,6371,validation-00001-of-00002.parquet,1871,1,5,A number of benches at the beach and a boat in the sea,image_6371.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,45,4274,validation-00000-of-00002.parquet,4274,1,5,a close up of a bowl with wood and screws inside,image_4274.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,46,5463,validation-00001-of-00002.parquet,963,1,5,A man poses with a yellow bicycle and a banana. ,image_5463.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,47,3851,validation-00000-of-00002.parquet,3851,1,5,A chair and table with two monitor screens,image_3851.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,48,2759,validation-00000-of-00002.parquet,2759,1,5,A sink is under a mirror with bottles of soap and lotion.,image_2759.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,49,6919,validation-00001-of-00002.parquet,2419,1,5,A lone toilet sits in a large bathroom.,image_6919.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,50,3123,validation-00000-of-00002.parquet,3123,1,5,"The bathroom has white and green tiles on the wall, and green tiles on the floor, along with a white porcelain toilette, and a white garden style tub with a shower hook up.",image_3123.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,51,1284,validation-00000-of-00002.parquet,1284,1,5,A group of people on mopeds in a busy street.,image_1284.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,52,8508,validation-00001-of-00002.parquet,4008,1,5,A toilet in a restroom next to a toilet paper dispenser,image_8508.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,53,48,validation-00000-of-00002.parquet,48,1,5,A pair of giraffe walking around in a zoo exhibit.,image_48.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,54,2111,validation-00000-of-00002.parquet,2111,1,5,A bright white enamel bathroom with a checked floor.,image_2111.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,55,3426,validation-00000-of-00002.parquet,3426,1,5,a bathroom with a sink and a toilet,image_3426.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,56,7615,validation-00001-of-00002.parquet,3115,1,5,Three red double decker buses parked side by side.,image_7615.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,57,660,validation-00000-of-00002.parquet,660,1,5,An American Airlines airplane is sitting on the runway,image_660.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,58,3612,validation-00000-of-00002.parquet,3612,1,5,Two toilets that are sitting on a tile floor.,image_3612.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,59,3946,validation-00000-of-00002.parquet,3946,1,5,"A close up of a fire hydrant, near a house.",image_3946.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,60,1368,validation-00000-of-00002.parquet,1368,1,5,A three way sign is posted on an outdoor pole.,image_1368.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,61,487,validation-00000-of-00002.parquet,487,1,5,A large kitchen with a stove and a sink.,image_487.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,62,1395,validation-00000-of-00002.parquet,1395,1,5,A large black bird wings spread flying over the woods,image_1395.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,63,8471,validation-00001-of-00002.parquet,3971,1,5,This intersection has more pedestrians than vehicles near it.,image_8471.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,64,4363,validation-00000-of-00002.parquet,4363,1,5,A large giraffe standing next to a man pushing a bail of hay on a cart.,image_4363.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,65,3166,validation-00000-of-00002.parquet,3166,1,5,A dog is in a bathroom with chewed toilet paper.  ,image_3166.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,66,6994,validation-00001-of-00002.parquet,2494,1,5,A white and red traffic sign on top of a metal pole.,image_6994.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,67,2499,validation-00000-of-00002.parquet,2499,1,5,A group of people riding on the back of a tour bus,image_2499.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,68,1898,validation-00000-of-00002.parquet,1898,1,5,A city with a river in the middle with boats docked,image_1898.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,69,8804,validation-00001-of-00002.parquet,4304,1,5,Two men walking through a field next to a large jet liner.,image_8804.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,70,6796,validation-00001-of-00002.parquet,2296,1,5,The cat is sitting beneath a motor bike.,image_6796.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,71,7388,validation-00001-of-00002.parquet,2888,1,5,A couple of cats sleeping on a car hood.,image_7388.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,72,437,validation-00000-of-00002.parquet,437,1,5,A metal sink with a cupboard of knives sitting on it. ,image_437.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,73,6375,validation-00001-of-00002.parquet,1875,1,5,A bathroom with two sinks and a shower.,image_6375.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,74,1651,validation-00000-of-00002.parquet,1651,1,5,Motorcycles driving down a wide city street nearing a white building.,image_1651.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,75,7192,validation-00001-of-00002.parquet,2692,1,5,"A picture of two giraffes, fairly close to a road, with a bus traveling up it.",image_7192.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,76,5618,validation-00001-of-00002.parquet,1118,1,5,A large long train on a steel track near a barn.,image_5618.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,77,2085,validation-00000-of-00002.parquet,2085,1,5,A room filled with furniture and curtains on top of carpet.,image_2085.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,78,4586,validation-00001-of-00002.parquet,86,1,5,A herd of buffalo grazing on grass next to the ocean.,image_4586.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,79,926,validation-00000-of-00002.parquet,926,1,5,A train coming on the tracks  on a sunny day ,image_926.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,80,1404,validation-00000-of-00002.parquet,1404,1,5,A messy kitchen with pots and pans laying around.,image_1404.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,81,4679,validation-00001-of-00002.parquet,179,1,5,A black toilet sitting next to a white bath tub.,image_4679.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,82,1776,validation-00000-of-00002.parquet,1776,1,5,A wet rain soaked street surrounded by buildings and trees,image_1776.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,83,4272,validation-00000-of-00002.parquet,4272,1,5,A cat laying on the ground next to a woman's shoes.,image_4272.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,84,6242,validation-00001-of-00002.parquet,1742,1,5,a plane flying high above the earth ,image_6242.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,85,356,validation-00000-of-00002.parquet,356,1,5,A young man is sitting on his blue motorcycle. ,image_356.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,86,1132,validation-00000-of-00002.parquet,1132,1,5,A very plain and undecorated bathroom with a sink and a toilet.,image_1132.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,87,7103,validation-00001-of-00002.parquet,2603,1,5,A group of people walking on a street and sidewalk.,image_7103.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,88,4519,validation-00001-of-00002.parquet,19,1,5,"a sidewalk with a fence, street signs, and a lot of trees along it ",image_4519.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,89,8292,validation-00001-of-00002.parquet,3792,1,5,A wooden park bench overlooking a valley full of trees.,image_8292.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,90,5602,validation-00001-of-00002.parquet,1102,1,5,A train traveling down a train track next to a big tree,image_5602.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,91,6010,validation-00001-of-00002.parquet,1510,1,5,A silver rusted looking fire hydrant sitting in the middle of a walkway.,image_6010.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,92,7021,validation-00001-of-00002.parquet,2521,1,5,"A bathroom with a sink, a fan and a mirrored medicine chest.",image_7021.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,93,802,validation-00000-of-00002.parquet,802,1,5,A group of bikers riding on the back of motorcycles.,image_802.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,94,8380,validation-00001-of-00002.parquet,3880,1,5,People walk by a row of parked motorcycles. ,image_8380.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,95,3993,validation-00000-of-00002.parquet,3993,1,5,A green street sign hanging from a metal pole.,image_3993.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,96,4737,validation-00001-of-00002.parquet,237,1,5,A big bathroom with a couch a bathtub in the middle of the room. ,image_4737.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,97,1459,validation-00000-of-00002.parquet,1459,1,5,there are many motorcycles that are parked by each other,image_1459.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,98,6762,validation-00001-of-00002.parquet,2262,1,5,a  man shearing the wool off a sheep ,image_6762.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,99,4728,validation-00001-of-00002.parquet,228,1,5,An airport filled with planes sitting on tarmacs.,image_4728.jpg,Defactify_Midjourney_v6,Midjourney_v6
+MIDJOURNEY_V6,100,5311,validation-00001-of-00002.parquet,811,1,5,A kitchen counter top filled with appliances and a wooden shelf..,image_5311.jpg,Defactify_Midjourney_v6,Midjourney_v6
+DALLE_3,1,57,validation-00000-of-00002.parquet,57,1,4,A three way sign is posted on an outdoor pole.,image_57.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,2,352,validation-00000-of-00002.parquet,352,1,4,A room filled with furniture and curtains on top of carpet.,image_352.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,3,3934,validation-00000-of-00002.parquet,3934,1,4,A giraffe looking at something in some bush.,image_3934.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,4,8300,validation-00001-of-00002.parquet,3800,1,4,A giraffe running across a large dirt field.,image_8300.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,5,4092,validation-00000-of-00002.parquet,4092,1,4,a girraf standing in a grassy field next to a forrest,image_4092.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,6,5075,validation-00001-of-00002.parquet,575,1,4,A stop sign in the middle of the road,image_5075.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,7,5742,validation-00001-of-00002.parquet,1242,1,4,Several planes lined up on the tarmac at the airport.,image_5742.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,8,6147,validation-00001-of-00002.parquet,1647,1,4,Two giraffe standing next to each other on a lush green field.,image_6147.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,9,7592,validation-00001-of-00002.parquet,3092,1,4,two train on a track near a building ,image_7592.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,10,1559,validation-00000-of-00002.parquet,1559,1,4,Four giraffes huddling around a tree inside a fenced area.,image_1559.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,11,1856,validation-00000-of-00002.parquet,1856,1,4,a giraffe standing on a sandy beach in front of some rocks,image_1856.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,12,7080,validation-00001-of-00002.parquet,2580,1,4,"A kitchen area with sink, dishwasher and refrigerator.",image_7080.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,13,1035,validation-00000-of-00002.parquet,1035,1,4,Several buses and cars driving down a busy street.,image_1035.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,14,2643,validation-00000-of-00002.parquet,2643,1,4,A group of four street signs stacked on top of each other.,image_2643.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,15,3538,validation-00000-of-00002.parquet,3538,1,4,A double decker bus stopped at an intersection.,image_3538.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,16,7617,validation-00001-of-00002.parquet,3117,1,4,A giraffe is standing near some large boulders.,image_7617.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,17,2156,validation-00000-of-00002.parquet,2156,1,4,A number of benches at the beach and a boat in the sea,image_2156.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,18,6214,validation-00001-of-00002.parquet,1714,1,4,A group of people riding on a cart traveling down a street.,image_6214.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,19,544,validation-00000-of-00002.parquet,544,1,4,The dog is outside barking at the sheep.,image_544.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,20,3419,validation-00000-of-00002.parquet,3419,1,4,A man stands beside his motorcycle in front of a store.,image_3419.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,21,4660,validation-00001-of-00002.parquet,160,1,4,A fire station with a flag pole in front of it.,image_4660.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,22,8896,validation-00001-of-00002.parquet,4396,1,4,A man and a woman in wedding attire feeding a giraffe.,image_8896.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,23,2644,validation-00000-of-00002.parquet,2644,1,4,A counter filled with lots of clutter in a  kitchen.,image_2644.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,24,4027,validation-00000-of-00002.parquet,4027,1,4,A bathroom with a large white sink and a door.,image_4027.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,25,6035,validation-00001-of-00002.parquet,1535,1,4,A large kitchen with a stove and a sink.,image_6035.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,26,4071,validation-00000-of-00002.parquet,4071,1,4,A city bus is slowly making its way down a very crowded street. ,image_4071.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,27,748,validation-00000-of-00002.parquet,748,1,4,"A white colored vanity area with a mirror, sink and double light on the wall above the mirror.",image_748.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,28,4155,validation-00000-of-00002.parquet,4155,1,4,A small bird is perched on a leafless twig.,image_4155.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,29,2434,validation-00000-of-00002.parquet,2434,1,4,A plane parked on the tarmac with with a connection for loading attached to it.,image_2434.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,30,6456,validation-00001-of-00002.parquet,1956,1,4,a guy sitting on a motor cycle next to some trees,image_6456.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,31,7603,validation-00001-of-00002.parquet,3103,1,4,the bench is completely covered in snow so is the tree,image_7603.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,32,982,validation-00000-of-00002.parquet,982,1,4,A dog standing next to an address marker and a woman holding an umbrella.,image_982.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,33,8670,validation-00001-of-00002.parquet,4170,1,4,there is a street sign that is on the street,image_8670.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,34,6881,validation-00001-of-00002.parquet,2381,1,4,A bathroom with a frame on wall and sink,image_6881.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,35,3142,validation-00000-of-00002.parquet,3142,1,4,a little kid that is eating a big cake,image_3142.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,36,3883,validation-00000-of-00002.parquet,3883,1,4,A girl chatting with a mother goat while her baby goat looks on.,image_3883.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,37,8688,validation-00001-of-00002.parquet,4188,1,4,A giraffe that has its legs spread out.,image_8688.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,38,4771,validation-00001-of-00002.parquet,271,1,4,Two small airplanes parked on a lush green field.,image_4771.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,39,4909,validation-00001-of-00002.parquet,409,1,4,Three giraffes are feeding from white buckets that are hanging from a fence.,image_4909.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,40,8286,validation-00001-of-00002.parquet,3786,1,4,A modern flatscreen television sits upon a nostalgic console model.,image_8286.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,41,6520,validation-00001-of-00002.parquet,2020,1,4,A black and white cat is sitting on the bathroom sink.,image_6520.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,42,6245,validation-00001-of-00002.parquet,1745,1,4,A woman holding a piece of chocolate cake at a table.,image_6245.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,43,3423,validation-00000-of-00002.parquet,3423,1,4,there are many young boys that are playing baseball,image_3423.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,44,5047,validation-00001-of-00002.parquet,547,1,4,A man and a woman greet a giraffe over a fence.,image_5047.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,45,8945,validation-00001-of-00002.parquet,4445,1,4,A foot pushing a flush button in a blue tiled bathroom.,image_8945.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,46,1099,validation-00000-of-00002.parquet,1099,1,4,A white sink sitting underneath a mirror in a bathroom.,image_1099.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,47,3351,validation-00000-of-00002.parquet,3351,1,4,A giraffe sitting on a rocky dirt and grass covered ground.,image_3351.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,48,4964,validation-00001-of-00002.parquet,464,1,4,A white airplane is parked on a green runway.,image_4964.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,49,2187,validation-00000-of-00002.parquet,2187,1,4,A white toilet under a window next to a sink.,image_2187.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,50,1189,validation-00000-of-00002.parquet,1189,1,4,A motorcycle that is on the ground sideways.,image_1189.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,51,1341,validation-00000-of-00002.parquet,1341,1,4,a long passenger bus turning the corner by a building ,image_1341.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,52,2920,validation-00000-of-00002.parquet,2920,1,4,A white toilet sitting in between tiled walls.,image_2920.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,53,8131,validation-00001-of-00002.parquet,3631,1,4,A group of people standing on the outside of a building.,image_8131.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,54,5521,validation-00001-of-00002.parquet,1021,1,4,A bathroom with towels draped of the curtain rod ,image_5521.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,55,6141,validation-00001-of-00002.parquet,1641,1,4,A man in shirt and tie holding an umbrella.,image_6141.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,56,323,validation-00000-of-00002.parquet,323,1,4,A bench sitting next to the ocean with purple bows on it.,image_323.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,57,1085,validation-00000-of-00002.parquet,1085,1,4,this bathroom has a green tub and a toilet chair,image_1085.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,58,7712,validation-00001-of-00002.parquet,3212,1,4,A small white plane sitting on top of the ocean.,image_7712.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,59,8192,validation-00001-of-00002.parquet,3692,1,4,a toilet seat in a bathroom with the lid down.,image_8192.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,60,2686,validation-00000-of-00002.parquet,2686,1,4,A dog wearing sunglasses sitting inside a car. ,image_2686.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,61,2398,validation-00000-of-00002.parquet,2398,1,4,A very plain and undecorated bathroom with a sink and a toilet.,image_2398.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,62,3400,validation-00000-of-00002.parquet,3400,1,4,A photo of a bus driving down the road.,image_3400.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,63,3129,validation-00000-of-00002.parquet,3129,1,4,The oriental signs are pointing in all directions.,image_3129.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,64,1330,validation-00000-of-00002.parquet,1330,1,4,Comical picture messages are on the restroom wall.,image_1330.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,65,972,validation-00000-of-00002.parquet,972,1,4,A car that is slightly driven off the road.,image_972.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,66,4366,validation-00000-of-00002.parquet,4366,1,4,Many street signs are located within close vicinity of each other,image_4366.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,67,2270,validation-00000-of-00002.parquet,2270,1,4,A kitchen with wooden floors surrounded by windows.,image_2270.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,68,8070,validation-00001-of-00002.parquet,3570,1,4,A white sink sitting under a bathroom mirror.,image_8070.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,69,8468,validation-00001-of-00002.parquet,3968,1,4,A woman sitting in a car holding a smart phone.,image_8468.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,70,3335,validation-00000-of-00002.parquet,3335,1,4,this is a street with a brick building,image_3335.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,71,3262,validation-00000-of-00002.parquet,3262,1,4,A group of cars on a city a street.,image_3262.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,72,8356,validation-00001-of-00002.parquet,3856,1,4,The mirror above a bathroom sink is shattered.,image_8356.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,73,6764,validation-00001-of-00002.parquet,2264,1,4,An older gentleman is taking a ride on his motorcycle. ,image_6764.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,74,6732,validation-00001-of-00002.parquet,2232,1,4,A gold bus traveling on a single lane road,image_6732.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,75,1408,validation-00000-of-00002.parquet,1408,1,4,A large white bird in the open water.,image_1408.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,76,8552,validation-00001-of-00002.parquet,4052,1,4,Motorcycle on platform to be worked on in garage,image_8552.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,77,4851,validation-00001-of-00002.parquet,351,1,4,A red train traveling through a rural countryside.,image_4851.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,78,5406,validation-00001-of-00002.parquet,906,1,4,Boy sitting on a bench with an angry birds toy reading a book.,image_5406.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,79,893,validation-00000-of-00002.parquet,893,1,4,A fire hose sitting on top of a man hole cover near a yellow post.,image_893.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,80,39,validation-00000-of-00002.parquet,39,1,4,The giraffe is sitting in the middle of the grass alone,image_39.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,81,833,validation-00000-of-00002.parquet,833,1,4,A man bending down next to a bicycle.,image_833.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,82,3450,validation-00000-of-00002.parquet,3450,1,4,A person in a hat is riding a horse.,image_3450.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,83,6236,validation-00001-of-00002.parquet,1736,1,4,A kitchen sink sitting inside of a white counter.,image_6236.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,84,6382,validation-00001-of-00002.parquet,1882,1,4,An adorable dog looking out the side of a car door window.,image_6382.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,85,551,validation-00000-of-00002.parquet,551,1,4,A medieval style tower and clock against blue sky.,image_551.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,86,8854,validation-00001-of-00002.parquet,4354,1,4,View of a snow capped mountain above trees and a bench.,image_8854.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,87,5927,validation-00001-of-00002.parquet,1427,1,4,a close up of a street sign with buildings in the background,image_5927.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,88,864,validation-00000-of-00002.parquet,864,1,4,a bunch of motorcycles are parked together outside,image_864.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,89,6156,validation-00001-of-00002.parquet,1656,1,4,A woman walking down a flight of stairs.,image_6156.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,90,7612,validation-00001-of-00002.parquet,3112,1,4,A group of men on bikes hitching a ride on the back of a bus.,image_7612.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,91,4009,validation-00000-of-00002.parquet,4009,1,4,A bathroom with a tub and his and her sinks.,image_4009.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,92,5481,validation-00001-of-00002.parquet,981,1,4,A green stop light that is hanging above the street.,image_5481.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,93,2914,validation-00000-of-00002.parquet,2914,1,4,A woman posing and riding on a red motorcycle,image_2914.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,94,8771,validation-00001-of-00002.parquet,4271,1,4,A large group of people on bikes on a road.,image_8771.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,95,2218,validation-00000-of-00002.parquet,2218,1,4,A yellow school bus parked  near a tree.,image_2218.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,96,149,validation-00000-of-00002.parquet,149,1,4,A man sits on top of a motorbike.,image_149.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,97,6012,validation-00001-of-00002.parquet,1512,1,4,The landing gear is down as the airliner comes in for a landing. ,image_6012.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,98,4448,validation-00000-of-00002.parquet,4448,1,4,"two benches, a small statue and some street signs stand between a street curb and the brick facade of a large building. ",image_4448.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,99,475,validation-00000-of-00002.parquet,475,1,4,A window in a kitchen filled with green plants.,image_475.jpg,Defactify_DALLE3,DALL-E_3
+DALLE_3,100,8594,validation-00001-of-00002.parquet,4094,1,4,this is a bathroom that has a sink and toilet,image_8594.jpg,Defactify_DALLE3,DALL-E_3
+SDXL,1,5092,validation-00001-of-00002.parquet,592,1,2,A cat sits next to a bike that is garnished with flowers. ,image_5092.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,2,8265,validation-00001-of-00002.parquet,3765,1,2,an image of taxi cabs parked and stationed thru out the city,image_8265.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,3,7827,validation-00001-of-00002.parquet,3327,1,2,A red fire hydrant sitting on the side of a road on a side walk.,image_7827.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,4,7681,validation-00001-of-00002.parquet,3181,1,2,The black cat is wondering what isw behind the wall.,image_7681.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,5,3421,validation-00000-of-00002.parquet,3421,1,2,A street sign on top of a pole next to a large green tree.,image_3421.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,6,6616,validation-00001-of-00002.parquet,2116,1,2,A woman taking a sip of a beer by people with laptops.,image_6616.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,7,5263,validation-00001-of-00002.parquet,763,1,2,A herd of sheep walking on top of a lush green field.,image_5263.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,8,6516,validation-00001-of-00002.parquet,2016,1,2,Canning tongs lifting a jar out of the water bath.,image_6516.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,9,4377,validation-00000-of-00002.parquet,4377,1,2,this is a bathroom and a tub with tile,image_4377.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,10,7301,validation-00001-of-00002.parquet,2801,1,2,A woman in sunglasses is in a picture with a giraffe. ,image_7301.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,11,6287,validation-00001-of-00002.parquet,1787,1,2,A bathroom sink with a bottle of cleaning solution on it. ,image_6287.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,12,5777,validation-00001-of-00002.parquet,1277,1,2,A parked motorcycle on display next to the skull of a demon.,image_5777.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,13,6519,validation-00001-of-00002.parquet,2019,1,2,A green street sign over a street next to a traffic light.,image_6519.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,14,4050,validation-00000-of-00002.parquet,4050,1,2,A young man has his foot placed on a pole while another looks on. ,image_4050.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,15,839,validation-00000-of-00002.parquet,839,1,2,A yellow smiley face cat sitting on a white plate.,image_839.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,16,5454,validation-00001-of-00002.parquet,954,1,2,A red fire hydrant sitting on the side of a road.,image_5454.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,17,1954,validation-00000-of-00002.parquet,1954,1,2,A renovated propeller airplane flying in a blue sky,image_1954.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,18,5654,validation-00001-of-00002.parquet,1154,1,2,a close up of a street sign with buildings in the background,image_5654.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,19,3122,validation-00000-of-00002.parquet,3122,1,2,It looks like there is writing on the bottom of the Stop sign.,image_3122.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,20,4872,validation-00001-of-00002.parquet,372,1,2,A bathroom with a narrow toilet and hanging towels. ,image_4872.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,21,5389,validation-00001-of-00002.parquet,889,1,2,A yellow scooter bike is by a fire hydrant.,image_5389.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,22,4610,validation-00001-of-00002.parquet,110,1,2,A fire hydrant that has been painted many colors in a tropical area.,image_4610.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,23,3179,validation-00000-of-00002.parquet,3179,1,2,"2 people take a stroll, as a stop sign looms in the foreground.",image_3179.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,24,5898,validation-00001-of-00002.parquet,1398,1,2,A tall building with balconies behind a red and white sign.,image_5898.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,25,945,validation-00000-of-00002.parquet,945,1,2,Conductors operating a miniature train for parents and their children.,image_945.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,26,3216,validation-00000-of-00002.parquet,3216,1,2,A toilet and container in a small room.,image_3216.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,27,5619,validation-00001-of-00002.parquet,1119,1,2,A view of a kitchen shows large and small appliances and pans on the cabinets.,image_5619.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,28,2124,validation-00000-of-00002.parquet,2124,1,2,A large kitchen with a stove and a sink.,image_2124.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,29,6893,validation-00001-of-00002.parquet,2393,1,2,A girl in a pink jacket on a bicycle passes a man in a blue cap on a bicycle.,image_6893.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,30,8580,validation-00001-of-00002.parquet,4080,1,2,A wooden park bench overlooking a valley full of trees.,image_8580.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,31,4556,validation-00001-of-00002.parquet,56,1,2,"A bathroom is shown with a mirror, sink, and shower.",image_4556.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,32,8027,validation-00001-of-00002.parquet,3527,1,2,Two giraffe standing next to a chain link fence.,image_8027.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,33,1506,validation-00000-of-00002.parquet,1506,1,2,A giraffe and two zebras walking in tall grass.,image_1506.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,34,1863,validation-00000-of-00002.parquet,1863,1,2,A stop sign at an empty intersection in the country side.,image_1863.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,35,4687,validation-00001-of-00002.parquet,187,1,2,A small boat in the ocean with four seagulls standing on it.,image_4687.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,36,794,validation-00000-of-00002.parquet,794,1,2,a toilet sits next to a shower an sink ,image_794.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,37,6443,validation-00001-of-00002.parquet,1943,1,2,A shower equipped for a physically challenged person with a shower chair,image_6443.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,38,3480,validation-00000-of-00002.parquet,3480,1,2,A downtown urban street scene with skyscrapers and historic buildings.,image_3480.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,39,5055,validation-00001-of-00002.parquet,555,1,2,A restroom filled with graffiti and two toilet stalls.,image_5055.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,40,2436,validation-00000-of-00002.parquet,2436,1,2,The motorcycle racer leans down to the road while making a turn. ,image_2436.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,41,3935,validation-00000-of-00002.parquet,3935,1,2,A couple of cats standing on top of a desk.,image_3935.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,42,3676,validation-00000-of-00002.parquet,3676,1,2,A white car parked in a parking space.,image_3676.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,43,2169,validation-00000-of-00002.parquet,2169,1,2,A cat laying next to a bike with a large tire.,image_2169.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,44,75,validation-00000-of-00002.parquet,75,1,2,A person on a skateboard on the road.,image_75.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,45,7069,validation-00001-of-00002.parquet,2569,1,2,A motorcycle parked on the side of a road.,image_7069.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,46,6221,validation-00001-of-00002.parquet,1721,1,2,A train with bright lights on it under utility wires.,image_6221.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,47,3746,validation-00000-of-00002.parquet,3746,1,2,Person riding a bicycle while walking two dogs. ,image_3746.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,48,7678,validation-00001-of-00002.parquet,3178,1,2,A traffic light sitting next to a tree near a sign.,image_7678.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,49,3303,validation-00000-of-00002.parquet,3303,1,2,A leaned over stop sign in a snowy parking lot.,image_3303.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,50,6301,validation-00001-of-00002.parquet,1801,1,2,Group of people flying a blight kite with smiley faces on it. ,image_6301.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,51,1976,validation-00000-of-00002.parquet,1976,1,2,A woman hovering over food on a wooden table.,image_1976.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,52,3569,validation-00000-of-00002.parquet,3569,1,2,Traffic on a road in winter with some snow on the ground.,image_3569.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,53,4346,validation-00000-of-00002.parquet,4346,1,2,this bathroom has a black table and a white animal house,image_4346.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,54,8853,validation-00001-of-00002.parquet,4353,1,2,"A bathroom contains a toilet, a sink and a bathtub.",image_8853.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,55,6058,validation-00001-of-00002.parquet,1558,1,2,A white toilet sitting in between tiled walls.,image_6058.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,56,6627,validation-00001-of-00002.parquet,2127,1,2,A man sitting on a motor bike smiling with a friend close to him,image_6627.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,57,5662,validation-00001-of-00002.parquet,1162,1,2,A bike leans on a wooden fence on a hill.,image_5662.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,58,6023,validation-00001-of-00002.parquet,1523,1,2,people crossing a zebra crossing and vehicles standing,image_6023.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,59,890,validation-00000-of-00002.parquet,890,1,2,A red train sits in the station while a worker passes.,image_890.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,60,7305,validation-00001-of-00002.parquet,2805,1,2,Running track and playing field in a mountainous landscape,image_7305.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,61,5829,validation-00001-of-00002.parquet,1329,1,2,"A view of a mirror with a stop sign, in the back.",image_5829.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,62,750,validation-00000-of-00002.parquet,750,1,2,a couple of chairs that are at a table,image_750.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,63,3173,validation-00000-of-00002.parquet,3173,1,2,A sheep eats grass alone by a lake,image_3173.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,64,6508,validation-00001-of-00002.parquet,2008,1,2,A small black dog on a leash next to a bike.,image_6508.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,65,83,validation-00000-of-00002.parquet,83,1,2,A large white sheep cake sitting on top of a foil plate.,image_83.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,66,7208,validation-00001-of-00002.parquet,2708,1,2,Inside a tram waiting to go out the door. ,image_7208.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,67,4611,validation-00001-of-00002.parquet,111,1,2,A kitchen being remodeled covered in lots of clutter.,image_4611.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,68,6903,validation-00001-of-00002.parquet,2403,1,2,People using their laptops in the backseat of a car.,image_6903.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,69,4180,validation-00000-of-00002.parquet,4180,1,2,A giraffe trying to cross a dirt road quickly.,image_4180.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,70,6160,validation-00001-of-00002.parquet,1660,1,2,A black dog in a bathroom drinking out of the toilet.,image_6160.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,71,2103,validation-00000-of-00002.parquet,2103,1,2,An old Acme factory that is by a stop light.,image_2103.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,72,4025,validation-00000-of-00002.parquet,4025,1,2,some oranges are stacked up in a bowl,image_4025.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,73,3639,validation-00000-of-00002.parquet,3639,1,2,A man poses with a yellow bicycle and a banana. ,image_3639.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,74,4742,validation-00001-of-00002.parquet,242,1,2,a couple of ssigns on a pole by a building,image_4742.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,75,7309,validation-00001-of-00002.parquet,2809,1,2,The top of the computer desk is very shiny.,image_7309.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,76,7361,validation-00001-of-00002.parquet,2861,1,2,A white bus route sign hanging from the side of a black pole.,image_7361.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,77,728,validation-00000-of-00002.parquet,728,1,2,A green and yellow train riding down the train tracks. ,image_728.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,78,1800,validation-00000-of-00002.parquet,1800,1,2,a close up ofa small stuffed animal on the grill of a car,image_1800.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,79,8399,validation-00001-of-00002.parquet,3899,1,2,A man is on the corner on a city street.,image_8399.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,80,6965,validation-00001-of-00002.parquet,2465,1,2,The men are in the kitchen preparing the meal.,image_6965.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,81,3019,validation-00000-of-00002.parquet,3019,1,2,A cat sitting in a bathtub behind the curtain.,image_3019.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,82,6348,validation-00001-of-00002.parquet,1848,1,2,"At the picture is a scene of an airplane outside of a town.
+",image_6348.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,83,8991,validation-00001-of-00002.parquet,4491,1,2,An animal that is on a tree eating some food.,image_8991.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,84,8034,validation-00001-of-00002.parquet,3534,1,2,A car that is sitting next to a building.,image_8034.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,85,6896,validation-00001-of-00002.parquet,2396,1,2,A commercial airplane ascending in to the sky,image_6896.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,86,1779,validation-00000-of-00002.parquet,1779,1,2,A woman walks past street posters and graffiti. ,image_1779.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,87,3687,validation-00000-of-00002.parquet,3687,1,2,A white toilet sitting inside of a bathroom.,image_3687.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,88,5153,validation-00001-of-00002.parquet,653,1,2,A car that is slightly driven off the road.,image_5153.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,89,2379,validation-00000-of-00002.parquet,2379,1,2,A train riding on a track near a forest and traffic signs.,image_2379.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,90,6083,validation-00001-of-00002.parquet,1583,1,2,A building with a tall clock tower with a green top.,image_6083.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,91,7448,validation-00001-of-00002.parquet,2948,1,2,A couple of people sitting on top of a wooden bench.,image_7448.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,92,7186,validation-00001-of-00002.parquet,2686,1,2,A plane that is flying in the air.,image_7186.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,93,1736,validation-00000-of-00002.parquet,1736,1,2,A bridge built over a water is shining lights at dusk.,image_1736.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,94,3084,validation-00000-of-00002.parquet,3084,1,2,A group of people riding on the back of motor bikes.,image_3084.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,95,5465,validation-00001-of-00002.parquet,965,1,2,A city bus is slowly making its way down a very crowded street. ,image_5465.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,96,3447,validation-00000-of-00002.parquet,3447,1,2,This intersection has more pedestrians than vehicles near it.,image_3447.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,97,2127,validation-00000-of-00002.parquet,2127,1,2,A motorcycle is parked on the sidewalk outside a tattoo shop.,image_2127.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,98,5156,validation-00001-of-00002.parquet,656,1,2,A group of giraffe standing next to each other.,image_5156.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,99,8237,validation-00001-of-00002.parquet,3737,1,2,A couple of cats sleeping on a car hood.,image_8237.jpg,Defactify_SDXL,Stable_Diffusion_XL
+SDXL,100,996,validation-00000-of-00002.parquet,996,1,2,A man wearing a green shirt on top of a tennis court.,image_996.jpg,Defactify_SDXL,Stable_Diffusion_XL

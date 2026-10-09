@@ -1,0 +1,293 @@
+{
+  "experiment": "V5 Resize Robustness",
+  "dataset": "V5 Frozen Test",
+  "test_samples": 9000,
+  "resize_definition": "Proportionally downscale original native image to the specified percentage, then restore to original dimensions using bilinear interpolation; apply the exact V5 test preprocessing afterward.",
+  "resize_levels": [
+    75,
+    50,
+    25
+  ],
+  "models": {
+    "spatial": {
+      "75": {
+        "accuracy": 0.6634444444444444,
+        "precision": 0.8628515046867291,
+        "recall": 0.38866666666666666,
+        "f1": 0.535927685000766,
+        "true_positive": 1749,
+        "true_negative": 4222,
+        "false_positive": 278,
+        "false_negative": 2751,
+        "total": 9000
+      },
+      "50": {
+        "accuracy": 0.5864444444444444,
+        "precision": 0.5611442942470921,
+        "recall": 0.7933333333333333,
+        "f1": 0.6573375069048056,
+        "true_positive": 3570,
+        "true_negative": 1708,
+        "false_positive": 2792,
+        "false_negative": 930,
+        "total": 9000
+      },
+      "25": {
+        "accuracy": 0.5126666666666667,
+        "precision": 0.506551724137931,
+        "recall": 0.9793333333333333,
+        "f1": 0.6677272727272727,
+        "true_positive": 4407,
+        "true_negative": 207,
+        "false_positive": 4293,
+        "false_negative": 93,
+        "total": 9000
+      }
+    },
+    "frequency": {
+      "75": {
+        "accuracy": 0.6023333333333334,
+        "precision": 0.8301075268817204,
+        "recall": 0.25733333333333336,
+        "f1": 0.3928753180661578,
+        "true_positive": 1158,
+        "true_negative": 4263,
+        "false_positive": 237,
+        "false_negative": 3342,
+        "total": 9000
+      },
+      "50": {
+        "accuracy": 0.5532222222222222,
+        "precision": 0.6019582801191996,
+        "recall": 0.31422222222222224,
+        "f1": 0.41290699372171125,
+        "true_positive": 1414,
+        "true_negative": 3565,
+        "false_positive": 935,
+        "false_negative": 3086,
+        "total": 9000
+      },
+      "25": {
+        "accuracy": 0.5252222222222223,
+        "precision": 0.5173733353742538,
+        "recall": 0.7511111111111111,
+        "f1": 0.6127073325478112,
+        "true_positive": 3380,
+        "true_negative": 1347,
+        "false_positive": 3153,
+        "false_negative": 1120,
+        "total": 9000
+      }
+    },
+    "hybrid": {
+      "75": {
+        "accuracy": 0.6398888888888888,
+        "precision": 0.87672052663076,
+        "recall": 0.32555555555555554,
+        "f1": 0.47480149084427153,
+        "true_positive": 1465,
+        "true_negative": 4294,
+        "false_positive": 206,
+        "false_negative": 3035,
+        "total": 9000
+      },
+      "50": {
+        "accuracy": 0.6116666666666667,
+        "precision": 0.7254374158815612,
+        "recall": 0.35933333333333334,
+        "f1": 0.4806063308069549,
+        "true_positive": 1617,
+        "true_negative": 3888,
+        "false_positive": 612,
+        "false_negative": 2883,
+        "total": 9000
+      },
+      "25": {
+        "accuracy": 0.593,
+        "precision": 0.5685279187817259,
+        "recall": 0.7715555555555556,
+        "f1": 0.6546620156500425,
+        "true_positive": 3472,
+        "true_negative": 1865,
+        "false_positive": 2635,
+        "false_negative": 1028,
+        "total": 9000
+      }
+    },
+    "gated_residual": {
+      "75": {
+        "accuracy": 0.6532222222222223,
+        "precision": 0.8924302788844621,
+        "recall": 0.34844444444444445,
+        "f1": 0.5011986575035959,
+        "true_positive": 1568,
+        "true_negative": 4311,
+        "false_positive": 189,
+        "false_negative": 2932,
+        "total": 9000
+      },
+      "50": {
+        "accuracy": 0.6444444444444445,
+        "precision": 0.7158034528552457,
+        "recall": 0.4791111111111111,
+        "f1": 0.5740149094781682,
+        "true_positive": 2156,
+        "true_negative": 3644,
+        "false_positive": 856,
+        "false_negative": 2344,
+        "total": 9000
+      },
+      "25": {
+        "accuracy": 0.5806666666666667,
+        "precision": 0.5471428571428572,
+        "recall": 0.9362222222222222,
+        "f1": 0.690655737704918,
+        "true_positive": 4213,
+        "true_negative": 1013,
+        "false_positive": 3487,
+        "false_negative": 287,
+        "total": 9000
+      }
+    }
+  },
+  "by_resize_percentage": {
+    "75": {
+      "spatial": {
+        "accuracy": 0.6634444444444444,
+        "precision": 0.8628515046867291,
+        "recall": 0.38866666666666666,
+        "f1": 0.535927685000766,
+        "true_positive": 1749,
+        "true_negative": 4222,
+        "false_positive": 278,
+        "false_negative": 2751,
+        "total": 9000
+      },
+      "frequency": {
+        "accuracy": 0.6023333333333334,
+        "precision": 0.8301075268817204,
+        "recall": 0.25733333333333336,
+        "f1": 0.3928753180661578,
+        "true_positive": 1158,
+        "true_negative": 4263,
+        "false_positive": 237,
+        "false_negative": 3342,
+        "total": 9000
+      },
+      "hybrid": {
+        "accuracy": 0.6398888888888888,
+        "precision": 0.87672052663076,
+        "recall": 0.32555555555555554,
+        "f1": 0.47480149084427153,
+        "true_positive": 1465,
+        "true_negative": 4294,
+        "false_positive": 206,
+        "false_negative": 3035,
+        "total": 9000
+      },
+      "gated_residual": {
+        "accuracy": 0.6532222222222223,
+        "precision": 0.8924302788844621,
+        "recall": 0.34844444444444445,
+        "f1": 0.5011986575035959,
+        "true_positive": 1568,
+        "true_negative": 4311,
+        "false_positive": 189,
+        "false_negative": 2932,
+        "total": 9000
+      }
+    },
+    "50": {
+      "spatial": {
+        "accuracy": 0.5864444444444444,
+        "precision": 0.5611442942470921,
+        "recall": 0.7933333333333333,
+        "f1": 0.6573375069048056,
+        "true_positive": 3570,
+        "true_negative": 1708,
+        "false_positive": 2792,
+        "false_negative": 930,
+        "total": 9000
+      },
+      "frequency": {
+        "accuracy": 0.5532222222222222,
+        "precision": 0.6019582801191996,
+        "recall": 0.31422222222222224,
+        "f1": 0.41290699372171125,
+        "true_positive": 1414,
+        "true_negative": 3565,
+        "false_positive": 935,
+        "false_negative": 3086,
+        "total": 9000
+      },
+      "hybrid": {
+        "accuracy": 0.6116666666666667,
+        "precision": 0.7254374158815612,
+        "recall": 0.35933333333333334,
+        "f1": 0.4806063308069549,
+        "true_positive": 1617,
+        "true_negative": 3888,
+        "false_positive": 612,
+        "false_negative": 2883,
+        "total": 9000
+      },
+      "gated_residual": {
+        "accuracy": 0.6444444444444445,
+        "precision": 0.7158034528552457,
+        "recall": 0.4791111111111111,
+        "f1": 0.5740149094781682,
+        "true_positive": 2156,
+        "true_negative": 3644,
+        "false_positive": 856,
+        "false_negative": 2344,
+        "total": 9000
+      }
+    },
+    "25": {
+      "spatial": {
+        "accuracy": 0.5126666666666667,
+        "precision": 0.506551724137931,
+        "recall": 0.9793333333333333,
+        "f1": 0.6677272727272727,
+        "true_positive": 4407,
+        "true_negative": 207,
+        "false_positive": 4293,
+        "false_negative": 93,
+        "total": 9000
+      },
+      "frequency": {
+        "accuracy": 0.5252222222222223,
+        "precision": 0.5173733353742538,
+        "recall": 0.7511111111111111,
+        "f1": 0.6127073325478112,
+        "true_positive": 3380,
+        "true_negative": 1347,
+        "false_positive": 3153,
+        "false_negative": 1120,
+        "total": 9000
+      },
+      "hybrid": {
+        "accuracy": 0.593,
+        "precision": 0.5685279187817259,
+        "recall": 0.7715555555555556,
+        "f1": 0.6546620156500425,
+        "true_positive": 3472,
+        "true_negative": 1865,
+        "false_positive": 2635,
+        "false_negative": 1028,
+        "total": 9000
+      },
+      "gated_residual": {
+        "accuracy": 0.5806666666666667,
+        "precision": 0.5471428571428572,
+        "recall": 0.9362222222222222,
+        "f1": 0.690655737704918,
+        "true_positive": 4213,
+        "true_negative": 1013,
+        "false_positive": 3487,
+        "false_negative": 287,
+        "total": 9000
+      }
+    }
+  }
+}

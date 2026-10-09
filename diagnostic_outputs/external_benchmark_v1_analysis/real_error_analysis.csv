@@ -1,0 +1,13 @@
+section,identifier,stat_1_name,stat_1_val,stat_2_name,stat_2_val,stat_3_name,stat_3_val,stat_4_name,stat_4_val,stat_5_name,stat_5_val,stat_6_name,stat_6_val,stat_7_name,stat_7_val
+Model REAL Performance,V5-A Spatial,Correct REAL (TN),222,False Positives (FP),178.0,FPR,0.445,Mean AI Prob,0.4486,Median AI Prob,0.2814,% AI Prob >= 50%,44.5,% AI Prob >= 90%,31.75
+Model REAL Performance,V5-B Frequency,Correct REAL (TN),354,False Positives (FP),46.0,FPR,0.115,Mean AI Prob,0.1306,Median AI Prob,0.0028,% AI Prob >= 50%,11.5,% AI Prob >= 90%,7.5
+Model REAL Performance,V5-C Hybrid,Correct REAL (TN),271,False Positives (FP),129.0,FPR,0.3225,Mean AI Prob,0.3224,Median AI Prob,0.0167,% AI Prob >= 50%,32.25,% AI Prob >= 90%,23.75
+Model REAL Performance,V5-D Gated Residual,Correct REAL (TN),308,False Positives (FP),92.0,FPR,0.23,Mean AI Prob,0.2521,Median AI Prob,0.0641,% AI Prob >= 50%,23.0,% AI Prob >= 90%,9.0
+REAL Error Groupings,All 4 Models Correct (No Error),Count,171,Percentage,42.75,,,,,,,,,,
+REAL Error Groupings,V5-A Spatial Only Wrong,Count,60,Percentage,15.0,,,,,,,,,,
+REAL Error Groupings,V5-B Frequency Only Wrong,Count,15,Percentage,3.75,,,,,,,,,,
+REAL Error Groupings,V5-C Hybrid Only Wrong,Count,22,Percentage,5.5,,,,,,,,,,
+REAL Error Groupings,V5-D Gated Residual Only Wrong,Count,4,Percentage,1.0,,,,,,,,,,
+REAL Error Groupings,Both V5-A and V5-D Wrong (Total),Count,80,Percentage,20.0,,,,,,,,,,
+REAL Error Groupings,Exclusively V5-A and V5-D Wrong (B & C Correct),Count,12,Percentage,3.0,,,,,,,,,,
+REAL Error Groupings,Multiple-Model Errors (>=2 Models Wrong),Count,128,Percentage,32.0,,,,,,,,,,

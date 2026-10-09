@@ -45,6 +45,34 @@ DEFAULT_MIN_CONFIDENCE         = 0.55
 DEFAULT_CONFLICT_ORIGINAL_TH   = 0.85
 DEFAULT_COMPETING_MARGIN       = 0.05
 
+# ---------------------------------------------------------------------------
+# RELIABILITY / ABSTENTION THRESHOLDS
+# ---------------------------------------------------------------------------
+
+# Strong AI consensus: both Spatial and Frequency independently detect AI evidence
+STRONG_AI_SPATIAL_THRESHOLD  = 0.75
+STRONG_AI_FREQ_THRESHOLD     = 0.75
+
+# Genuine photograph consensus: all generation streams agree on REAL + manipulation confirms original
+STRONG_REAL_SPATIAL_MAX      = 0.40
+STRONG_REAL_FREQ_MAX         = 0.60
+STRONG_REAL_HYBRID_MAX       = 0.20
+STRONG_REAL_ORIG_MIN         = 0.85
+
+# Disagreement thresholds for reliability classification
+#   HIGH  → UNCERTAIN (no consensus formed, models strongly contradict)
+#   MODERATE → UNCERTAIN unless Strategy E is unambiguously decisive
+HIGH_DISAGREEMENT_THRESHOLD     = 0.45   # max_gen - min_gen >= 0.45
+MODERATE_DISAGREEMENT_THRESHOLD = 0.30   # max_gen - min_gen >= 0.30
+
+# Spatial-Frequency raw disagreement cap: if S and F are themselves very far apart
+# this alone can flag a CONFLICT image
+SF_HIGH_DISAGREEMENT_THRESHOLD  = 0.50   # abs(P_SPATIAL_AI - P_FREQ_AI) >= 0.50
+
+# Strategy E must be strongly decisive (away from 50/50 ambiguity)
+# to issue a final verdict under moderate disagreement
+STRATEGY_E_DECISIVE_THRESHOLD   = 0.65   # calib_prob must be >= this to accept in moderate zone
+
 VALID_FINAL_STATES = {
     "REAL_ORIGINAL",
     "AI_GENERATED",
@@ -165,6 +193,7 @@ class ForensicDecisionEngine:
         generation_output: Optional[Dict[str, Any]],
         manipulation_output: Optional[Dict[str, Any]],
         strategy: Optional[str] = None,
+        auxiliary_evidence: Optional[Dict[str, float]] = None,
     ) -> Dict[str, Any]:
         """
         Evaluate model predictions and return the structured forensic decision.
@@ -178,6 +207,15 @@ class ForensicDecisionEngine:
                 - 'probability_ai_manipulated': float in [0, 1]
             strategy: Optional override ('v1_baseline' or 'v2_calibrated').
                      If None, uses self.default_strategy.
+            auxiliary_evidence: Optional Dict of multi-stream model probabilities:
+                - 'probability_spatial_ai'
+                - 'probability_spatial_real'
+                - 'probability_freq_ai'
+                - 'probability_freq_real'
+                - 'probability_hybrid_ai'
+                - 'probability_hybrid_real'
+                - 'probability_manipulated'
+                - 'probability_original'
 
         Returns:
             Dict containing:
@@ -247,7 +285,7 @@ class ForensicDecisionEngine:
         if active_strategy == "v1_baseline":
             final_dict = self._decide_baseline(norm_gen, norm_manip)
         else:
-            final_dict = self._decide_calibrated(norm_gen, norm_manip)
+            final_dict = self._decide_calibrated(norm_gen, norm_manip, auxiliary_evidence=auxiliary_evidence)
 
         return {
             "generation": norm_gen,
@@ -371,88 +409,302 @@ class ForensicDecisionEngine:
         }
 
     # -----------------------------------------------------------------------
-    # STRATEGY 2: CALIBRATED 2D FUSION (PHASE 12/13 STRATEGY E)
+    # STRATEGY 2: CALIBRATED 2D FUSION WITH RELIABILITY-AWARE ABSTENTION
+    #   Phase 12/13 Strategy E + multi-stream consensus + disagreement checks
+    #
+    # Decision Hierarchy (STEPS 1-9):
+    #   STEP 1 – Validate probabilities (done in decide() before dispatch)
+    #   STEP 2 – Strong AI Consensus (Spatial>=0.75 AND Freq>=0.75) → AI_GENERATED
+    #   STEP 3 – Strong Real Consensus (S<0.40 AND F<0.60 AND H<0.20 AND Orig>=0.85) → REAL_ORIGINAL
+    #   STEP 4 – High Disagreement (gen_disagree>=0.45) → UNCERTAIN
+    #   STEP 5 – Frozen Strategy E on [P_FREQ_AI, P_MANIPULATED]
+    #   STEP 6 – Moderate Disagreement (gen_disagree>=0.30) + Strategy E not decisive → UNCERTAIN
+    #   STEP 7 – Strategy E result (below-threshold confidence) → UNCERTAIN
+    #   STEP 8 – Return Strategy E result
     # -----------------------------------------------------------------------
-    def _decide_calibrated(self, norm_gen: Dict[str, Any], norm_manip: Dict[str, Any]) -> Dict[str, Any]:
+    def _decide_calibrated(
+        self,
+        norm_gen: Dict[str, Any],
+        norm_manip: Dict[str, Any],
+        auxiliary_evidence: Optional[Dict[str, float]] = None,
+    ) -> Dict[str, Any]:
         p_gen_ai = norm_gen["probability_ai_generated"]
         p_manip_ai = norm_manip["probability_ai_manipulated"]
 
-        # Feature vector: [P_GEN_AI, P_MANIPULATED]
-        x = np.array([p_gen_ai, p_manip_ai], dtype=np.float64)
+        # ---------------------------------------------------------------
+        # Determine if we have full multi-stream evidence
+        # ---------------------------------------------------------------
+        has_auxiliary = (
+            auxiliary_evidence is not None
+            and "probability_spatial_ai" in auxiliary_evidence
+            and "probability_freq_ai" in auxiliary_evidence
+            and "probability_hybrid_ai" in auxiliary_evidence
+        )
 
-        # Logits: W @ x + b
+        if has_auxiliary:
+            p_freq_ai = float(auxiliary_evidence["probability_freq_ai"])
+            p_spatial_ai = float(auxiliary_evidence["probability_spatial_ai"])
+            p_hybrid_ai = float(auxiliary_evidence["probability_hybrid_ai"])
+            p_manip = float(auxiliary_evidence.get("probability_manipulated", p_manip_ai))
+            p_orig = float(auxiliary_evidence.get("probability_original", norm_manip["probability_original"]))
+            domain_type = auxiliary_evidence.get("domain_type", "NATURAL_PHOTO")
+            domain_risk = auxiliary_evidence.get("domain_risk", "LOW")
+            domain_risk_score = float(auxiliary_evidence.get("domain_risk_score", 0.0))
+            domain_signals = auxiliary_evidence.get("domain_signals", {})
+        else:
+            # No multi-stream data — reliability/consensus/domain steps do not apply
+            # Used for frozen backward-compatibility tests (e.g. Test M Phase 13)
+            p_freq_ai = float(p_gen_ai)
+            p_manip = float(p_manip_ai)
+            p_spatial_ai = None
+            p_hybrid_ai = None
+            p_orig = norm_manip["probability_original"]
+            domain_type = "NATURAL_PHOTO"
+            domain_risk = "LOW"
+            domain_risk_score = 0.0
+            domain_signals = {}
+
+        # ---------------------------------------------------------------
+        # STEP 5 (computed first so results are available for all steps):
+        #   Frozen Strategy E calibration on [P_FREQ_AI, P_MANIPULATED]
+        # ---------------------------------------------------------------
+        x = np.array([p_freq_ai, p_manip], dtype=np.float64)
         logits = np.dot(self.calib_weights, x) + self.calib_biases
-
-        # Softmax probabilities
         exp_logits = np.exp(logits - np.max(logits))
         probs = exp_logits / np.sum(exp_logits)
 
-        # Max class selection
         max_idx = int(np.argmax(probs))
-        max_prob = float(probs[max_idx])
-        pred_label = self.calib_classes[max_idx]
-
-        # Conflict safeguard: if calibration chooses AI_GENERATED, but generation detector has
-        # weak/borderline AI excitation (< 0.60) while manipulation detector strongly confirms
-        # an authentic original camera photograph (>= conflict_strong_original = 0.85):
-        # Prevent borderline generation noise from falsely convicting genuine photos.
-        p_orig = norm_manip["probability_original"]
-        if pred_label == "AI_GENERATED" and p_orig >= self.conflict_strong_original:
-            if p_gen_ai < 0.50:
-                pred_label = "REAL_ORIGINAL"
-                max_prob = p_orig
-            elif p_gen_ai < 0.60:
-                pred_label = "UNCERTAIN"
-                max_prob = max(p_gen_ai, p_orig)
+        calib_prob = float(probs[max_idx])
+        calib_label = self.calib_classes[max_idx]
 
         fusion_probs = {
             cls: round(float(probs[i]), 4) for i, cls in enumerate(self.calib_classes)
         }
 
-        # Check uncertainty threshold
-        if pred_label == "UNCERTAIN" or max_prob < self.calib_uncertainty_threshold:
+        # ---------------------------------------------------------------
+        # Reliability metrics (disagreement & domain indicators)
+        # ---------------------------------------------------------------
+        if p_spatial_ai is not None and p_hybrid_ai is not None:
+            gen_values = [p_spatial_ai, p_freq_ai, p_hybrid_ai]
+            max_gen = max(gen_values)
+            min_gen = min(gen_values)
+            generation_disagreement = max_gen - min_gen
+            spatial_frequency_disagreement = abs(p_spatial_ai - p_freq_ai)
+            hybrid_disagreement = max(
+                abs(p_hybrid_ai - p_spatial_ai),
+                abs(p_hybrid_ai - p_freq_ai)
+            )
+
+            # Classify reliability level taking into account both disagreement and domain risk
+            if domain_risk == "HIGH" or generation_disagreement >= HIGH_DISAGREEMENT_THRESHOLD:
+                reliability_state = "LOW"
+            elif domain_risk == "MEDIUM" or generation_disagreement >= MODERATE_DISAGREEMENT_THRESHOLD:
+                reliability_state = "MODERATE"
+            else:
+                reliability_state = "RELIABLE"
+        else:
+            # No auxiliary evidence — reliability layer is not applicable
+            # Strategy E is the sole authority; treat as reliable
+            generation_disagreement = 0.0
+            spatial_frequency_disagreement = 0.0
+            hybrid_disagreement = 0.0
+            reliability_state = "RELIABLE"
+
+        reliability_metrics = {
+            "generation_disagreement": round(generation_disagreement, 4),
+            "spatial_frequency_disagreement": round(spatial_frequency_disagreement, 4),
+            "hybrid_disagreement": round(hybrid_disagreement, 4),
+            "domain_risk_score": round(domain_risk_score, 4),
+            "domain_risk": domain_risk,
+            "domain_type": domain_type,
+            "reliability_state": reliability_state,
+        }
+
+        # Helper: build a return dict
+        def make_result(
+            label: str,
+            confidence: float,
+            reason: str,
+            decision_source: str,
+            consensus_state: str,
+            decision_case: Optional[str] = None,
+        ) -> Dict[str, Any]:
+            if decision_case is None:
+                decision_case = (
+                    f"V2_CALIBRATED_{label}"
+                    if label != "UNCERTAIN"
+                    else "V2_CALIBRATED_UNCERTAIN"
+                )
             return {
-                "label": "UNCERTAIN",
-                "confidence": round(max_prob, 4),
-                "fusion_confidence": round(max_prob, 4),
+                "label": label,
+                "confidence": round(confidence, 4),
+                "fusion_confidence": round(calib_prob, 4),
                 "fusion_probabilities": fusion_probs,
-                "reason": (
-                    f"Calibrated forensic evidence is ambiguous or contradictory: generation detector "
-                    f"excitation ({p_gen_ai:.2%}) is in conflict with authentic pristine capture ({p_orig:.2%})."
-                ) if pred_label == "UNCERTAIN" else (
-                    f"Calibrated probability fusion evidence is ambiguous: dominant class confidence "
-                    f"({max_prob:.2%}) is below threshold ({self.calib_uncertainty_threshold:.2%})."
-                ),
-                "decision_case": "V2_CALIBRATED_UNCERTAIN",
+                "decision_source": decision_source,
+                "consensus_state": consensus_state,
+                "reliability_state": reliability_state,
+                "reliability_metrics": reliability_metrics,
+                "domain_type": domain_type,
+                "domain_risk": domain_risk,
+                "domain_risk_score": domain_risk_score,
+                "reason": reason,
+                "decision_case": decision_case,
                 "strategy": "v2_calibrated",
             }
 
-        # Format descriptive reason
-        if pred_label == "REAL_ORIGINAL":
+        # ---------------------------------------------------------------
+        # HIERARCHICAL DECISION LOGIC
+        # Applies ONLY when full multi-stream evidence is present.
+        # Without auxiliary evidence, Strategy E is the sole authority.
+        # ---------------------------------------------------------------
+        if has_auxiliary:
+            # -----------------------------------------------------------
+            # HIERARCHY STEP 4: HIGH DOMAIN-RISK OVERRIDE
+            #   If domain_risk == "HIGH", the image exhibits document/scan/
+            #   structured-canvas traits outside the validated natural-photo
+            #   training distribution.
+            #   Do NOT permit automatic AI_GENERATED convictions or automatic
+            #   REAL_ORIGINAL convictions based on model agreement alone.
+            #   → UNCERTAIN (domain_risk_abstention).
+            # -----------------------------------------------------------
+            if domain_risk == "HIGH":
+                return make_result(
+                    "UNCERTAIN",
+                    domain_risk_score,
+                    (
+                        "Generation signals were detected, but the image appears to belong to a domain "
+                        "outside the detector's validated operating distribution. The system cannot make "
+                        "a reliable AI-generation determination from the available forensic evidence."
+                    ),
+                    "domain_risk_abstention",
+                    "OUT_OF_DOMAIN",
+                )
+
+            # -----------------------------------------------------------
+            # HIERARCHY STEP 5: LOW DOMAIN RISK (VALIDATED NATURAL OPERATING DOMAIN)
+            #   1. Apply Strong AI Consensus
+            #   2. Apply Strong Real Consensus
+            #   3. Apply High Disagreement Abstention
+            #   4. Fall through to Strategy E for normal/borderline cases
+            # -----------------------------------------------------------
+            if domain_risk == "LOW":
+                # Strong AI Consensus (Spatial >= 0.75 AND Frequency >= 0.75)
+                strong_ai = (
+                    p_spatial_ai >= STRONG_AI_SPATIAL_THRESHOLD
+                    and p_freq_ai >= STRONG_AI_FREQ_THRESHOLD
+                )
+
+                if strong_ai:
+                    if calib_label == "AI_GENERATED":
+                        final_conf = calib_prob
+                        src = "strategy_e_calibration"
+                    else:
+                        final_conf = max(p_spatial_ai, p_freq_ai)
+                        src = "generation_consensus_override"
+
+                    return make_result(
+                        "AI_GENERATED",
+                        final_conf,
+                        "Spatial and frequency generation analysis independently identify strong synthetic-image evidence.",
+                        src,
+                        "STRONG_AI",
+                    )
+
+                # Strong Real Consensus (Spatial < 0.40 AND Frequency < 0.60 AND Hybrid < 0.20 AND Original >= 0.85)
+                strong_real = (
+                    p_spatial_ai < STRONG_REAL_SPATIAL_MAX
+                    and p_freq_ai < STRONG_REAL_FREQ_MAX
+                    and p_hybrid_ai < STRONG_REAL_HYBRID_MAX
+                    and p_orig >= STRONG_REAL_ORIG_MIN
+                )
+
+                if strong_real:
+                    return make_result(
+                        "REAL_ORIGINAL",
+                        p_orig,
+                        "Spatial, frequency, hybrid, and localized-manipulation evidence are consistent with an authentic photograph.",
+                        "genuine_photograph_consensus",
+                        "STRONG_REAL",
+                    )
+
+                # High Disagreement check (models strongly contradict each other)
+                if generation_disagreement >= HIGH_DISAGREEMENT_THRESHOLD:
+                    return make_result(
+                        "UNCERTAIN",
+                        generation_disagreement,
+                        (
+                            "Generation signals are inconsistent across forensic models. "
+                            "The image may belong to a domain outside the detector's validated "
+                            "operating distribution."
+                        ),
+                        "high_disagreement_abstention",
+                        "CONFLICT",
+                    )
+
+            # -----------------------------------------------------------
+            # HIERARCHY STEP 6: MEDIUM DOMAIN RISK PATH
+            #   Under moderate domain shift:
+            #   Do not automatically abstain, but do not force a verdict
+            #   if evidence is conflicting or not decisive.
+            # -----------------------------------------------------------
+            if domain_risk == "MEDIUM":
+                if generation_disagreement >= MODERATE_DISAGREEMENT_THRESHOLD or calib_prob < STRATEGY_E_DECISIVE_THRESHOLD:
+                    return make_result(
+                        "UNCERTAIN",
+                        calib_prob,
+                        (
+                            "Forensic signals are inconsistent or the evidence is in an ambiguous "
+                            "region of the detector's operating range under moderate domain risk. "
+                            "The system cannot make a reliable AI/real determination from this image alone."
+                        ),
+                        "moderate_disagreement_abstention",
+                        "CONFLICT",
+                    )
+
+
+
+        # ---------------------------------------------------------------
+        # STEP 7: Strategy E below uncertainty threshold → UNCERTAIN
+        # ---------------------------------------------------------------
+        if calib_prob < self.calib_uncertainty_threshold:
+            return make_result(
+                "UNCERTAIN",
+                calib_prob,
+                (
+                    f"Calibrated probability fusion evidence is ambiguous: dominant class confidence "
+                    f"({calib_prob:.2%}) is below threshold ({self.calib_uncertainty_threshold:.2%})."
+                ),
+                "strategy_e_calibration",
+                "CONFLICT",
+            )
+
+        # ---------------------------------------------------------------
+        # STEP 8: Return Strategy E result
+        # ---------------------------------------------------------------
+        if calib_label == "REAL_ORIGINAL":
             reason = (
                 f"Calibrated forensic fusion confirms an unaltered genuine camera photograph "
-                f"(confidence: {max_prob:.2%})."
+                f"(confidence: {calib_prob:.2%})."
             )
-        elif pred_label == "AI_GENERATED":
+        elif calib_label == "AI_GENERATED":
             reason = (
                 f"Calibrated forensic fusion identifies end-to-end AI synthesis artifacts "
-                f"(confidence: {max_prob:.2%})."
+                f"(confidence: {calib_prob:.2%})."
             )
         else:  # AI_MANIPULATED
             reason = (
                 f"Calibrated forensic fusion identifies authentic origin with localized AI manipulation traces "
-                f"(confidence: {max_prob:.2%})."
+                f"(confidence: {calib_prob:.2%})."
             )
 
-        return {
-            "label": pred_label,
-            "confidence": round(max_prob, 4),
-            "fusion_confidence": round(max_prob, 4),
-            "fusion_probabilities": fusion_probs,
-            "reason": reason,
-            "decision_case": f"V2_CALIBRATED_{pred_label}",
-            "strategy": "v2_calibrated",
-        }
+        return make_result(
+            calib_label,
+            calib_prob,
+            reason,
+            "strategy_e_calibration",
+            "CONFLICT",
+        )
+
 
     # -----------------------------------------------------------------------
     # INPUT VALIDATION

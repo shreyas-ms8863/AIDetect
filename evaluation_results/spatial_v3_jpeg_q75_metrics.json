@@ -1,0 +1,31 @@
+{
+    "experiment": "Spatial V3 JPEG Re-encoding Robustness",
+    "model": "ResNet-50 V3",
+    "dataset": "CIFAKE",
+    "split": "official_test",
+    "jpeg_quality": 75,
+    "total_images": 20000,
+    "correct": 19741,
+    "incorrect": 259,
+    "accuracy": 0.98705,
+    "precision": 0.9870505893312131,
+    "recall": 0.98705,
+    "f1_score": 0.9870499960826238,
+    "fake": {
+        "precision": 0.9875863449794774,
+        "recall": 0.9865,
+        "f1_score": 0.9870428735804693
+    },
+    "real": {
+        "precision": 0.9865148336829488,
+        "recall": 0.9876,
+        "f1_score": 0.9870571185847784
+    },
+    "confusion_matrix": {
+        "actual_fake_pred_fake": 9865,
+        "actual_fake_pred_real": 135,
+        "actual_real_pred_fake": 124,
+        "actual_real_pred_real": 9876
+    },
+    "evaluation_time_seconds": 102.59147071838379
+}

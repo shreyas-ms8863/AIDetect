@@ -1,0 +1,16 @@
+metric_category,item,count,percentage
+Overall Agreement,All 4 Models Agree (Unanimous),298,37.25
+Overall Agreement,3 Models Agree (1 Dissenter),368,46.0
+Overall Agreement,2 vs 2 Split Decision,134,16.75
+REAL Images (N=400),All 4 Models Agree Unanimously,185,46.25
+REAL Images (N=400),All 4 Correctly Say REAL,171,42.75
+REAL Images (N=400),All 4 Wrongly Say AI (Shared False Alarm),14,3.5
+AI Images (N=400),All 4 Models Agree Unanimously,113,28.25
+AI Images (N=400),All 4 Correctly Say AI,55,13.75
+AI Images (N=400),All 4 Wrongly Say REAL (Shared Miss),58,14.5
+Pairwise Agreement,V5-A Spatial vs V5-B Frequency,377,47.12
+Pairwise Agreement,V5-A Spatial vs V5-C Hybrid,585,73.12
+Pairwise Agreement,V5-A Spatial vs V5-D Gated Residual,554,69.25
+Pairwise Agreement,V5-B Frequency vs V5-C Hybrid,478,59.75
+Pairwise Agreement,V5-B Frequency vs V5-D Gated Residual,537,67.12
+Pairwise Agreement,V5-C Hybrid vs V5-D Gated Residual,629,78.62

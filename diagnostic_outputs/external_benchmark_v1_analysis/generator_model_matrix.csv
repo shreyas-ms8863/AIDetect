@@ -1,0 +1,17 @@
+model,generator_raw,generator_name,N,TP,FN,recall,fnr,mean_ai_probability,median_ai_probability
+V5-A Spatial,Stable_Diffusion_3,SD3,100,91,9,0.91,0.09,0.8905,0.9998
+V5-A Spatial,Midjourney_v6,Midjourney v6,100,73,27,0.73,0.27,0.7176,0.9852
+V5-A Spatial,DALL-E_3,DALL-E 3,100,79,21,0.79,0.21,0.7927,0.9988
+V5-A Spatial,Stable_Diffusion_XL,SDXL,100,74,26,0.74,0.26,0.7318,0.9854
+V5-B Frequency,Stable_Diffusion_3,SD3,100,17,83,0.17,0.83,0.157,0.0007
+V5-B Frequency,Midjourney_v6,Midjourney v6,100,34,66,0.34,0.66,0.3828,0.2619
+V5-B Frequency,DALL-E_3,DALL-E 3,100,28,72,0.28,0.72,0.2819,0.0309
+V5-B Frequency,Stable_Diffusion_XL,SDXL,100,9,91,0.09,0.91,0.1094,0.0005
+V5-C Hybrid,Stable_Diffusion_3,SD3,100,62,38,0.62,0.38,0.6215,0.9305
+V5-C Hybrid,Midjourney_v6,Midjourney v6,100,66,34,0.66,0.34,0.6582,0.9615
+V5-C Hybrid,DALL-E_3,DALL-E 3,100,65,35,0.65,0.35,0.6397,0.9739
+V5-C Hybrid,Stable_Diffusion_XL,SDXL,100,50,50,0.5,0.5,0.4905,0.5163
+V5-D Gated Residual,Stable_Diffusion_3,SD3,100,56,44,0.56,0.44,0.572,0.6886
+V5-D Gated Residual,Midjourney_v6,Midjourney v6,100,67,33,0.67,0.33,0.6343,0.8429
+V5-D Gated Residual,DALL-E_3,DALL-E 3,100,47,53,0.47,0.53,0.478,0.373
+V5-D Gated Residual,Stable_Diffusion_XL,SDXL,100,31,69,0.31,0.69,0.3506,0.1515
