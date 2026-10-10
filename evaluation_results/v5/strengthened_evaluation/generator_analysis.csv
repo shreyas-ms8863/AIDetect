@@ -1,0 +1,17 @@
+model,generator,N,recall,fnr,macro_generator_recall,worst_generator_recall,generator_recall_std_dev
+V5-A Spatial,SD3,100,0.91,0.09,0.7925,0.73,0.0826
+V5-A Spatial,Midjourney v6,100,0.73,0.27,0.7925,0.73,0.0826
+V5-A Spatial,DALL-E 3,100,0.79,0.21,0.7925,0.73,0.0826
+V5-A Spatial,SDXL,100,0.74,0.26,0.7925,0.73,0.0826
+V5-B Frequency,SD3,100,0.17,0.83,0.22,0.09,0.1117
+V5-B Frequency,Midjourney v6,100,0.34,0.66,0.22,0.09,0.1117
+V5-B Frequency,DALL-E 3,100,0.28,0.72,0.22,0.09,0.1117
+V5-B Frequency,SDXL,100,0.09,0.91,0.22,0.09,0.1117
+V5-C Hybrid,SD3,100,0.62,0.38,0.6075,0.5,0.0737
+V5-C Hybrid,Midjourney v6,100,0.66,0.34,0.6075,0.5,0.0737
+V5-C Hybrid,DALL-E 3,100,0.65,0.35,0.6075,0.5,0.0737
+V5-C Hybrid,SDXL,100,0.5,0.5,0.6075,0.5,0.0737
+V5-D Gated Residual,SD3,100,0.56,0.44,0.5025,0.31,0.1522
+V5-D Gated Residual,Midjourney v6,100,0.67,0.33,0.5025,0.31,0.1522
+V5-D Gated Residual,DALL-E 3,100,0.47,0.53,0.5025,0.31,0.1522
+V5-D Gated Residual,SDXL,100,0.31,0.69,0.5025,0.31,0.1522

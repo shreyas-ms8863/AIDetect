@@ -1,0 +1,31 @@
+comparison,model_1,model_2,metric,point_estimate_diff,ci_lower_95,ci_upper_95,std_error,statistically_significant_05,approx_two_sided_p_value
+A vs B,V5-A Spatial,V5-B Frequency,f1,0.063651,0.056727,0.070699,0.003478,True,0.001
+A vs B,V5-A Spatial,V5-B Frequency,auroc,0.026618,0.023522,0.03,0.001658,True,0.001
+A vs B,V5-A Spatial,V5-B Frequency,mcc,0.127338,0.113565,0.140875,0.006789,True,0.001
+A vs B,V5-A Spatial,V5-B Frequency,accuracy,0.063667,0.056778,0.070444,0.003395,True,0.001
+A vs B,V5-A Spatial,V5-B Frequency,balanced_accuracy,0.063667,0.056786,0.070429,0.003395,True,0.001
+A vs C,V5-A Spatial,V5-C Hybrid,f1,0.001318,-0.002974,0.005715,0.002178,False,0.552
+A vs C,V5-A Spatial,V5-C Hybrid,auroc,-0.001054,-0.002391,0.000185,0.000664,False,0.098
+A vs C,V5-A Spatial,V5-C Hybrid,mcc,0.002881,-0.005748,0.011735,0.004347,False,0.514
+A vs C,V5-A Spatial,V5-C Hybrid,accuracy,0.001444,-0.002889,0.005889,0.002175,False,0.53
+A vs C,V5-A Spatial,V5-C Hybrid,balanced_accuracy,0.001444,-0.00284,0.005867,0.002172,False,0.512
+A vs D,V5-A Spatial,V5-D Gated Residual,f1,-0.001564,-0.005814,0.002703,0.002194,False,0.48
+A vs D,V5-A Spatial,V5-D Gated Residual,auroc,-0.001413,-0.002712,-0.000152,0.000653,True,0.024
+A vs D,V5-A Spatial,V5-D Gated Residual,mcc,-0.00311,-0.011548,0.005341,0.004366,False,0.47
+A vs D,V5-A Spatial,V5-D Gated Residual,accuracy,-0.001556,-0.005778,0.002669,0.002184,False,0.49
+A vs D,V5-A Spatial,V5-D Gated Residual,balanced_accuracy,-0.001556,-0.005761,0.002674,0.002182,False,0.476
+B vs C,V5-B Frequency,V5-C Hybrid,f1,-0.062333,-0.068492,-0.056772,0.00304,True,0.001
+B vs C,V5-B Frequency,V5-C Hybrid,auroc,-0.027673,-0.030708,-0.024934,0.001462,True,0.001
+B vs C,V5-B Frequency,V5-C Hybrid,mcc,-0.124457,-0.136707,-0.114085,0.00597,True,0.001
+B vs C,V5-B Frequency,V5-C Hybrid,accuracy,-0.062222,-0.068333,-0.057,0.002986,True,0.001
+B vs C,V5-B Frequency,V5-C Hybrid,balanced_accuracy,-0.062222,-0.068327,-0.057007,0.002985,True,0.001
+B vs D,V5-B Frequency,V5-D Gated Residual,f1,-0.065216,-0.071127,-0.059242,0.003015,True,0.001
+B vs D,V5-B Frequency,V5-D Gated Residual,auroc,-0.028031,-0.031048,-0.025166,0.001469,True,0.001
+B vs D,V5-B Frequency,V5-D Gated Residual,mcc,-0.130448,-0.142219,-0.119321,0.005864,True,0.001
+B vs D,V5-B Frequency,V5-D Gated Residual,accuracy,-0.065222,-0.071111,-0.059664,0.002932,True,0.001
+B vs D,V5-B Frequency,V5-D Gated Residual,balanced_accuracy,-0.065222,-0.071093,-0.059672,0.002932,True,0.001
+C vs D,V5-C Hybrid,V5-D Gated Residual,f1,-0.002883,-0.006444,0.000603,0.001763,False,0.11
+C vs D,V5-C Hybrid,V5-D Gated Residual,auroc,-0.000358,-0.001149,0.000522,0.000425,False,0.43
+C vs D,V5-C Hybrid,V5-D Gated Residual,mcc,-0.005991,-0.013115,0.000903,0.003522,False,0.094
+C vs D,V5-C Hybrid,V5-D Gated Residual,accuracy,-0.003,-0.006556,0.000444,0.001762,False,0.106
+C vs D,V5-C Hybrid,V5-D Gated Residual,balanced_accuracy,-0.003,-0.006496,0.00045,0.00176,False,0.096

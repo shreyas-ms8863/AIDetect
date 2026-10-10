@@ -83,6 +83,14 @@ backend/models/**/*.onnx
 diagnostic_outputs/defactify_validation_raw/
 diagnostic_outputs/external_benchmark_payloads/
 
+# Local datasets and caches
+datasets/
+data/
+cache/
+.cache/
+*.bak
+*.backup
+
 # Local diagnostic datasets
 diagnostic_real/
 backend/external_test/
@@ -90,6 +98,7 @@ backend/real_world_test/
 
 # Large per-image evaluation prediction exports
 evaluation_results/*/*_predictions.csv
+evaluation_results/v5/strengthened_evaluation/v5_clean_test_predictions.csv
 
 # Intermediate calibration artifact
 backend/evaluation_results/v5/v5_d_val_logits.npz

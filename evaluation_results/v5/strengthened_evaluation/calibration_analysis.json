@@ -1,0 +1,122 @@
+{
+  "model": "V5-D Gated Residual",
+  "dataset": "Defactify External Benchmark v1 (N=800)",
+  "calibration_configuration": {
+    "method": "Temperature Scaling",
+    "frozen_temperature_T": 2.1983866642849734,
+    "source_config": "backend/models/v5/v5_d_calibration.json"
+  },
+  "external_calibration_metrics": {
+    "nll": 0.997634,
+    "brier_score": 0.288056,
+    "ece": 0.251141,
+    "mce": 0.328129
+  },
+  "reliability_bins": [
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "sample_count": 344,
+      "mean_predicted_prob": 0.0336,
+      "true_ai_fraction": 0.3517,
+      "mean_confidence": 0.9664,
+      "accuracy": 0.6483
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "sample_count": 75,
+      "mean_predicted_prob": 0.1422,
+      "true_ai_fraction": 0.4133,
+      "mean_confidence": 0.8578,
+      "accuracy": 0.5867
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "sample_count": 37,
+      "mean_predicted_prob": 0.2437,
+      "true_ai_fraction": 0.4324,
+      "mean_confidence": 0.7563,
+      "accuracy": 0.5676
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "sample_count": 34,
+      "mean_predicted_prob": 0.3469,
+      "true_ai_fraction": 0.5588,
+      "mean_confidence": 0.6531,
+      "accuracy": 0.4412
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "sample_count": 17,
+      "mean_predicted_prob": 0.4512,
+      "true_ai_fraction": 0.7059,
+      "mean_confidence": 0.5488,
+      "accuracy": 0.2941
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "sample_count": 26,
+      "mean_predicted_prob": 0.556,
+      "true_ai_fraction": 0.5385,
+      "mean_confidence": 0.556,
+      "accuracy": 0.5385
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "sample_count": 25,
+      "mean_predicted_prob": 0.646,
+      "true_ai_fraction": 0.64,
+      "mean_confidence": 0.646,
+      "accuracy": 0.64
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "sample_count": 24,
+      "mean_predicted_prob": 0.7451,
+      "true_ai_fraction": 0.5,
+      "mean_confidence": 0.7451,
+      "accuracy": 0.5
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "sample_count": 49,
+      "mean_predicted_prob": 0.8587,
+      "true_ai_fraction": 0.5306,
+      "mean_confidence": 0.8587,
+      "accuracy": 0.5306
+    },
+    {
+      "bin_idx": 10,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "sample_count": 169,
+      "mean_predicted_prob": 0.9648,
+      "true_ai_fraction": 0.787,
+      "mean_confidence": 0.9648,
+      "accuracy": 0.787
+    }
+  ],
+  "methodology_and_limitations": {
+    "calibration_fit_source": "Held-out partition of the 9,000-image V5 validation set",
+    "selection_limitation": "The reported validation metrics were evaluated on the same half used to select between Platt and Temperature scaling; it was not evaluated on an untouched final validation split.",
+    "external_transfer_limitation": "Temperature scaling (T=2.198387) was frozen from in-distribution validation data and evaluated out-of-distribution without refitting. While it drastically reduced extreme overconfidence on REAL false alarms (from 31.75% to 9.00%), out-of-distribution distribution shift causes elevated NLL and ECE compared to in-distribution validation."
+  }
+}

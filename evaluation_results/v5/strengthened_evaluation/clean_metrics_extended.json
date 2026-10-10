@@ -1,0 +1,639 @@
+{
+  "dataset": "V5 Frozen Test Set (N=9,000)",
+  "sample_size": 9000,
+  "classes": {
+    "REAL": 4500,
+    "AI": 4500
+  },
+  "threshold": 0.5,
+  "point_estimates": {
+    "V5-A Spatial": {
+      "accuracy": 0.9702222222222222,
+      "precision": 0.9716897012929113,
+      "recall": 0.9686666666666667,
+      "f1": 0.9701758290674384,
+      "balanced_accuracy": 0.9702222222222222,
+      "mcc": 0.9404489957641778,
+      "auroc": 0.9945489629629631,
+      "auprc": 0.9949428635444346,
+      "eer": 0.029777777777777785,
+      "tpr_at_1_pct_fpr": 0.9257777777777778,
+      "tpr_at_5_pct_fpr": 0.9791111111111112,
+      "tpr_at_10_pct_fpr": 0.9895555555555555,
+      "real_fpr": 0.02822222222222222,
+      "ai_fnr": 0.03133333333333333,
+      "tp": 4359,
+      "tn": 4373,
+      "fp": 127,
+      "fn": 141
+    },
+    "V5-B Frequency": {
+      "accuracy": 0.9065555555555556,
+      "precision": 0.9068267734044919,
+      "recall": 0.9062222222222223,
+      "f1": 0.9065243970212293,
+      "balanced_accuracy": 0.9065555555555556,
+      "mcc": 0.8131112918025293,
+      "auroc": 0.9679305185185185,
+      "auprc": 0.9671941457402683,
+      "eer": 0.09355555555555553,
+      "tpr_at_1_pct_fpr": 0.6,
+      "tpr_at_5_pct_fpr": 0.8475555555555555,
+      "tpr_at_10_pct_fpr": 0.9122222222222223,
+      "real_fpr": 0.09311111111111112,
+      "ai_fnr": 0.09377777777777778,
+      "tp": 4078,
+      "tn": 4081,
+      "fp": 419,
+      "fn": 422
+    },
+    "V5-C Hybrid": {
+      "accuracy": 0.9687777777777777,
+      "precision": 0.9663939862922839,
+      "recall": 0.9713333333333334,
+      "f1": 0.9688573645129115,
+      "balanced_accuracy": 0.9687777777777777,
+      "mcc": 0.9375678018915155,
+      "auroc": 0.9956031604938271,
+      "auprc": 0.9953514656608063,
+      "eer": 0.030888888888888872,
+      "tpr_at_1_pct_fpr": 0.9235555555555556,
+      "tpr_at_5_pct_fpr": 0.9831111111111112,
+      "tpr_at_10_pct_fpr": 0.9935555555555555,
+      "real_fpr": 0.033777777777777775,
+      "ai_fnr": 0.028666666666666667,
+      "tp": 4371,
+      "tn": 4348,
+      "fp": 152,
+      "fn": 129
+    },
+    "V5-D Gated Residual": {
+      "accuracy": 0.9717777777777777,
+      "precision": 0.9730392156862745,
+      "recall": 0.9704444444444444,
+      "f1": 0.9717400979083222,
+      "balanced_accuracy": 0.9717777777777779,
+      "mcc": 0.9435589104376458,
+      "auroc": 0.9959615802469136,
+      "auprc": 0.996040580081758,
+      "eer": 0.02800000000000001,
+      "tpr_at_1_pct_fpr": 0.9317777777777778,
+      "tpr_at_5_pct_fpr": 0.9822222222222222,
+      "tpr_at_10_pct_fpr": 0.9922222222222222,
+      "real_fpr": 0.02688888888888889,
+      "ai_fnr": 0.029555555555555557,
+      "tp": 4367,
+      "tn": 4379,
+      "fp": 121,
+      "fn": 133
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "V5-A Spatial": {
+      "accuracy": {
+        "point_estimate": 0.970222,
+        "ci_lower_95": 0.966778,
+        "ci_upper_95": 0.973778,
+        "std_error": 0.001822,
+        "bootstrap_mean": 0.970177
+      },
+      "precision": {
+        "point_estimate": 0.97169,
+        "ci_lower_95": 0.966895,
+        "ci_upper_95": 0.976164,
+        "std_error": 0.002392,
+        "bootstrap_mean": 0.971588
+      },
+      "recall": {
+        "point_estimate": 0.968667,
+        "ci_lower_95": 0.963313,
+        "ci_upper_95": 0.973573,
+        "std_error": 0.00269,
+        "bootstrap_mean": 0.968681
+      },
+      "f1": {
+        "point_estimate": 0.970176,
+        "ci_lower_95": 0.966514,
+        "ci_upper_95": 0.973912,
+        "std_error": 0.001854,
+        "bootstrap_mean": 0.970129
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.970222,
+        "ci_lower_95": 0.966765,
+        "ci_upper_95": 0.973785,
+        "std_error": 0.001822,
+        "bootstrap_mean": 0.970176
+      },
+      "auroc": {
+        "point_estimate": 0.994549,
+        "ci_lower_95": 0.993285,
+        "ci_upper_95": 0.995589,
+        "std_error": 0.000608,
+        "bootstrap_mean": 0.994534
+      },
+      "auprc": {
+        "point_estimate": 0.994943,
+        "ci_lower_95": 0.993587,
+        "ci_upper_95": 0.996014,
+        "std_error": 0.000631,
+        "bootstrap_mean": 0.994928
+      },
+      "mcc": {
+        "point_estimate": 0.940449,
+        "ci_lower_95": 0.933555,
+        "ci_upper_95": 0.947568,
+        "std_error": 0.003643,
+        "bootstrap_mean": 0.940357
+      }
+    },
+    "V5-B Frequency": {
+      "accuracy": {
+        "point_estimate": 0.906556,
+        "ci_lower_95": 0.900444,
+        "ci_upper_95": 0.912444,
+        "std_error": 0.003037,
+        "bootstrap_mean": 0.906438
+      },
+      "precision": {
+        "point_estimate": 0.906827,
+        "ci_lower_95": 0.898342,
+        "ci_upper_95": 0.914603,
+        "std_error": 0.004263,
+        "bootstrap_mean": 0.906715
+      },
+      "recall": {
+        "point_estimate": 0.906222,
+        "ci_lower_95": 0.897321,
+        "ci_upper_95": 0.914323,
+        "std_error": 0.004375,
+        "bootstrap_mean": 0.906102
+      },
+      "f1": {
+        "point_estimate": 0.906524,
+        "ci_lower_95": 0.900056,
+        "ci_upper_95": 0.912564,
+        "std_error": 0.003192,
+        "bootstrap_mean": 0.906399
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.906556,
+        "ci_lower_95": 0.900456,
+        "ci_upper_95": 0.91237,
+        "std_error": 0.003037,
+        "bootstrap_mean": 0.906438
+      },
+      "auroc": {
+        "point_estimate": 0.967931,
+        "ci_lower_95": 0.964617,
+        "ci_upper_95": 0.971027,
+        "std_error": 0.001599,
+        "bootstrap_mean": 0.967866
+      },
+      "auprc": {
+        "point_estimate": 0.967194,
+        "ci_lower_95": 0.963263,
+        "ci_upper_95": 0.970749,
+        "std_error": 0.001982,
+        "bootstrap_mean": 0.967118
+      },
+      "mcc": {
+        "point_estimate": 0.813111,
+        "ci_lower_95": 0.800887,
+        "ci_upper_95": 0.824863,
+        "std_error": 0.006073,
+        "bootstrap_mean": 0.812876
+      }
+    },
+    "V5-C Hybrid": {
+      "accuracy": {
+        "point_estimate": 0.968778,
+        "ci_lower_95": 0.965331,
+        "ci_upper_95": 0.972447,
+        "std_error": 0.001858,
+        "bootstrap_mean": 0.968757
+      },
+      "precision": {
+        "point_estimate": 0.966394,
+        "ci_lower_95": 0.960743,
+        "ci_upper_95": 0.971532,
+        "std_error": 0.002742,
+        "bootstrap_mean": 0.966338
+      },
+      "recall": {
+        "point_estimate": 0.971333,
+        "ci_lower_95": 0.966585,
+        "ci_upper_95": 0.97626,
+        "std_error": 0.002477,
+        "bootstrap_mean": 0.971352
+      },
+      "f1": {
+        "point_estimate": 0.968857,
+        "ci_lower_95": 0.96526,
+        "ci_upper_95": 0.972605,
+        "std_error": 0.001894,
+        "bootstrap_mean": 0.968835
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.968778,
+        "ci_lower_95": 0.965247,
+        "ci_upper_95": 0.972448,
+        "std_error": 0.001857,
+        "bootstrap_mean": 0.968757
+      },
+      "auroc": {
+        "point_estimate": 0.995603,
+        "ci_lower_95": 0.994672,
+        "ci_upper_95": 0.996451,
+        "std_error": 0.000465,
+        "bootstrap_mean": 0.995607
+      },
+      "auprc": {
+        "point_estimate": 0.995351,
+        "ci_lower_95": 0.994062,
+        "ci_upper_95": 0.996452,
+        "std_error": 0.000612,
+        "bootstrap_mean": 0.995361
+      },
+      "mcc": {
+        "point_estimate": 0.937568,
+        "ci_lower_95": 0.930654,
+        "ci_upper_95": 0.944895,
+        "std_error": 0.003714,
+        "bootstrap_mean": 0.937528
+      }
+    },
+    "V5-D Gated Residual": {
+      "accuracy": {
+        "point_estimate": 0.971778,
+        "ci_lower_95": 0.968,
+        "ci_upper_95": 0.975222,
+        "std_error": 0.001789,
+        "bootstrap_mean": 0.971751
+      },
+      "precision": {
+        "point_estimate": 0.973039,
+        "ci_lower_95": 0.967984,
+        "ci_upper_95": 0.977798,
+        "std_error": 0.002495,
+        "bootstrap_mean": 0.972961
+      },
+      "recall": {
+        "point_estimate": 0.970444,
+        "ci_lower_95": 0.965825,
+        "ci_upper_95": 0.975353,
+        "std_error": 0.002502,
+        "bootstrap_mean": 0.970471
+      },
+      "f1": {
+        "point_estimate": 0.97174,
+        "ci_lower_95": 0.968022,
+        "ci_upper_95": 0.975189,
+        "std_error": 0.001822,
+        "bootstrap_mean": 0.971712
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.971778,
+        "ci_lower_95": 0.968038,
+        "ci_upper_95": 0.975222,
+        "std_error": 0.001789,
+        "bootstrap_mean": 0.971751
+      },
+      "auroc": {
+        "point_estimate": 0.995962,
+        "ci_lower_95": 0.995055,
+        "ci_upper_95": 0.99675,
+        "std_error": 0.000434,
+        "bootstrap_mean": 0.995937
+      },
+      "auprc": {
+        "point_estimate": 0.996041,
+        "ci_lower_95": 0.995093,
+        "ci_upper_95": 0.99689,
+        "std_error": 0.000459,
+        "bootstrap_mean": 0.996015
+      },
+      "mcc": {
+        "point_estimate": 0.943559,
+        "ci_lower_95": 0.93601,
+        "ci_upper_95": 0.950446,
+        "std_error": 0.003579,
+        "bootstrap_mean": 0.943504
+      }
+    }
+  },
+  "paired_model_comparisons": {
+    "A vs B": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.063651,
+        "ci_lower_95": 0.056727,
+        "ci_upper_95": 0.070699,
+        "std_error": 0.003478,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.026618,
+        "ci_lower_95": 0.023522,
+        "ci_upper_95": 0.03,
+        "std_error": 0.001658,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.127338,
+        "ci_lower_95": 0.113565,
+        "ci_upper_95": 0.140875,
+        "std_error": 0.006789,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.063667,
+        "ci_lower_95": 0.056778,
+        "ci_upper_95": 0.070444,
+        "std_error": 0.003395,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.063667,
+        "ci_lower_95": 0.056786,
+        "ci_upper_95": 0.070429,
+        "std_error": 0.003395,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "A vs C": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.001318,
+        "ci_lower_95": -0.002974,
+        "ci_upper_95": 0.005715,
+        "std_error": 0.002178,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.552
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.001054,
+        "ci_lower_95": -0.002391,
+        "ci_upper_95": 0.000185,
+        "std_error": 0.000664,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.098
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.002881,
+        "ci_lower_95": -0.005748,
+        "ci_upper_95": 0.011735,
+        "std_error": 0.004347,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.514
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.001444,
+        "ci_lower_95": -0.002889,
+        "ci_upper_95": 0.005889,
+        "std_error": 0.002175,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.53
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.001444,
+        "ci_lower_95": -0.00284,
+        "ci_upper_95": 0.005867,
+        "std_error": 0.002172,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.512
+      }
+    },
+    "A vs D": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.001564,
+        "ci_lower_95": -0.005814,
+        "ci_upper_95": 0.002703,
+        "std_error": 0.002194,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.48
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.001413,
+        "ci_lower_95": -0.002712,
+        "ci_upper_95": -0.000152,
+        "std_error": 0.000653,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.024
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.00311,
+        "ci_lower_95": -0.011548,
+        "ci_upper_95": 0.005341,
+        "std_error": 0.004366,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.47
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.001556,
+        "ci_lower_95": -0.005778,
+        "ci_upper_95": 0.002669,
+        "std_error": 0.002184,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.49
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.001556,
+        "ci_lower_95": -0.005761,
+        "ci_upper_95": 0.002674,
+        "std_error": 0.002182,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.476
+      }
+    },
+    "B vs C": {
+      "f1": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.062333,
+        "ci_lower_95": -0.068492,
+        "ci_upper_95": -0.056772,
+        "std_error": 0.00304,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.027673,
+        "ci_lower_95": -0.030708,
+        "ci_upper_95": -0.024934,
+        "std_error": 0.001462,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.124457,
+        "ci_lower_95": -0.136707,
+        "ci_upper_95": -0.114085,
+        "std_error": 0.00597,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.062222,
+        "ci_lower_95": -0.068333,
+        "ci_upper_95": -0.057,
+        "std_error": 0.002986,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.062222,
+        "ci_lower_95": -0.068327,
+        "ci_upper_95": -0.057007,
+        "std_error": 0.002985,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "B vs D": {
+      "f1": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.065216,
+        "ci_lower_95": -0.071127,
+        "ci_upper_95": -0.059242,
+        "std_error": 0.003015,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.028031,
+        "ci_lower_95": -0.031048,
+        "ci_upper_95": -0.025166,
+        "std_error": 0.001469,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.130448,
+        "ci_lower_95": -0.142219,
+        "ci_upper_95": -0.119321,
+        "std_error": 0.005864,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.065222,
+        "ci_lower_95": -0.071111,
+        "ci_upper_95": -0.059664,
+        "std_error": 0.002932,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.065222,
+        "ci_lower_95": -0.071093,
+        "ci_upper_95": -0.059672,
+        "std_error": 0.002932,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "C vs D": {
+      "f1": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.002883,
+        "ci_lower_95": -0.006444,
+        "ci_upper_95": 0.000603,
+        "std_error": 0.001763,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.11
+      },
+      "auroc": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.000358,
+        "ci_lower_95": -0.001149,
+        "ci_upper_95": 0.000522,
+        "std_error": 0.000425,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.43
+      },
+      "mcc": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.005991,
+        "ci_lower_95": -0.013115,
+        "ci_upper_95": 0.000903,
+        "std_error": 0.003522,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.094
+      },
+      "accuracy": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.003,
+        "ci_lower_95": -0.006556,
+        "ci_upper_95": 0.000444,
+        "std_error": 0.001762,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.106
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.003,
+        "ci_lower_95": -0.006496,
+        "ci_upper_95": 0.00045,
+        "std_error": 0.00176,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.096
+      }
+    }
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "dataset": "Defactify External Benchmark v1",
+  "sample_size": 800,
+  "classes": {
+    "REAL": 400,
+    "AI": 400
+  },
+  "threshold": 0.5,
+  "point_estimates": {
+    "V5-A Spatial": {
+      "accuracy": 0.67375,
+      "precision": 0.6404040404040404,
+      "recall": 0.7925,
+      "f1": 0.7083798882681565,
+      "balanced_accuracy": 0.6737500000000001,
+      "mcc": 0.3577356989034114,
+      "auroc": 0.74589375,
+      "auprc": 0.7367762984306596,
+      "eer": 0.3125,
+      "tpr_at_1_pct_fpr": 0.062222222222222234,
+      "tpr_at_5_pct_fpr": 0.2275,
+      "tpr_at_10_pct_fpr": 0.4375,
+      "real_fpr": 0.445,
+      "ai_fnr": 0.2075,
+      "tp": 317,
+      "tn": 222,
+      "fp": 178,
+      "fn": 83
+    },
+    "V5-B Frequency": {
+      "accuracy": 0.5525,
+      "precision": 0.6567164179104478,
+      "recall": 0.22,
+      "f1": 0.32958801498127344,
+      "balanced_accuracy": 0.5525,
+      "mcc": 0.14059173052284343,
+      "auroc": 0.5572531249999999,
+      "auprc": 0.5816190684790385,
+      "eer": 0.4425,
+      "tpr_at_1_pct_fpr": 0.035,
+      "tpr_at_5_pct_fpr": 0.09,
+      "tpr_at_10_pct_fpr": 0.2025,
+      "real_fpr": 0.115,
+      "ai_fnr": 0.78,
+      "tp": 88,
+      "tn": 354,
+      "fp": 46,
+      "fn": 312
+    },
+    "V5-C Hybrid": {
+      "accuracy": 0.6425,
+      "precision": 0.6532258064516129,
+      "recall": 0.6075,
+      "f1": 0.6295336787564767,
+      "balanced_accuracy": 0.6425000000000001,
+      "mcc": 0.285700826591988,
+      "auroc": 0.685921875,
+      "auprc": 0.6632219116638207,
+      "eer": 0.35750000000000004,
+      "tpr_at_1_pct_fpr": 0.025,
+      "tpr_at_5_pct_fpr": 0.16,
+      "tpr_at_10_pct_fpr": 0.2975,
+      "real_fpr": 0.3225,
+      "ai_fnr": 0.3925,
+      "tp": 243,
+      "tn": 271,
+      "fp": 129,
+      "fn": 157
+    },
+    "V5-D Gated Residual": {
+      "accuracy": 0.63625,
+      "precision": 0.6860068259385665,
+      "recall": 0.5025,
+      "f1": 0.5800865800865801,
+      "balanced_accuracy": 0.63625,
+      "mcc": 0.2828060578910863,
+      "auroc": 0.70355,
+      "auprc": 0.7121596903848091,
+      "eer": 0.36,
+      "tpr_at_1_pct_fpr": 0.1025,
+      "tpr_at_5_pct_fpr": 0.23,
+      "tpr_at_10_pct_fpr": 0.3375,
+      "real_fpr": 0.23,
+      "ai_fnr": 0.4975,
+      "tp": 201,
+      "tn": 308,
+      "fp": 92,
+      "fn": 199
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "V5-A Spatial": {
+      "accuracy": {
+        "point_estimate": 0.67375,
+        "ci_lower_95": 0.642469,
+        "ci_upper_95": 0.705,
+        "std_error": 0.016479,
+        "bootstrap_mean": 0.67343
+      },
+      "precision": {
+        "point_estimate": 0.640404,
+        "ci_lower_95": 0.596764,
+        "ci_upper_95": 0.682099,
+        "std_error": 0.021984,
+        "bootstrap_mean": 0.639958
+      },
+      "recall": {
+        "point_estimate": 0.7925,
+        "ci_lower_95": 0.750656,
+        "ci_upper_95": 0.829179,
+        "std_error": 0.020928,
+        "bootstrap_mean": 0.792068
+      },
+      "f1": {
+        "point_estimate": 0.70838,
+        "ci_lower_95": 0.674909,
+        "ci_upper_95": 0.741744,
+        "std_error": 0.017753,
+        "bootstrap_mean": 0.707698
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.67375,
+        "ci_lower_95": 0.643561,
+        "ci_upper_95": 0.703351,
+        "std_error": 0.015697,
+        "bootstrap_mean": 0.67351
+      },
+      "auroc": {
+        "point_estimate": 0.745894,
+        "ci_lower_95": 0.710598,
+        "ci_upper_95": 0.779285,
+        "std_error": 0.017381,
+        "bootstrap_mean": 0.745937
+      },
+      "auprc": {
+        "point_estimate": 0.736776,
+        "ci_lower_95": 0.685984,
+        "ci_upper_95": 0.783444,
+        "std_error": 0.024786,
+        "bootstrap_mean": 0.737647
+      },
+      "mcc": {
+        "point_estimate": 0.357736,
+        "ci_lower_95": 0.294775,
+        "ci_upper_95": 0.418442,
+        "std_error": 0.032123,
+        "bootstrap_mean": 0.357205
+      }
+    },
+    "V5-B Frequency": {
+      "accuracy": {
+        "point_estimate": 0.5525,
+        "ci_lower_95": 0.5175,
+        "ci_upper_95": 0.586281,
+        "std_error": 0.017958,
+        "bootstrap_mean": 0.55291
+      },
+      "precision": {
+        "point_estimate": 0.656716,
+        "ci_lower_95": 0.578552,
+        "ci_upper_95": 0.733895,
+        "std_error": 0.040079,
+        "bootstrap_mean": 0.657193
+      },
+      "recall": {
+        "point_estimate": 0.22,
+        "ci_lower_95": 0.182955,
+        "ci_upper_95": 0.258458,
+        "std_error": 0.019492,
+        "bootstrap_mean": 0.220529
+      },
+      "f1": {
+        "point_estimate": 0.329588,
+        "ci_lower_95": 0.28339,
+        "ci_upper_95": 0.377169,
+        "std_error": 0.024681,
+        "bootstrap_mean": 0.329843
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.5525,
+        "ci_lower_95": 0.529011,
+        "ci_upper_95": 0.576789,
+        "std_error": 0.012788,
+        "bootstrap_mean": 0.552726
+      },
+      "auroc": {
+        "point_estimate": 0.557253,
+        "ci_lower_95": 0.516795,
+        "ci_upper_95": 0.594079,
+        "std_error": 0.020342,
+        "bootstrap_mean": 0.556802
+      },
+      "auprc": {
+        "point_estimate": 0.581619,
+        "ci_lower_95": 0.532885,
+        "ci_upper_95": 0.632451,
+        "std_error": 0.025479,
+        "bootstrap_mean": 0.583394
+      },
+      "mcc": {
+        "point_estimate": 0.140592,
+        "ci_lower_95": 0.077438,
+        "ci_upper_95": 0.204805,
+        "std_error": 0.033775,
+        "bootstrap_mean": 0.141155
+      }
+    },
+    "V5-C Hybrid": {
+      "accuracy": {
+        "point_estimate": 0.6425,
+        "ci_lower_95": 0.611219,
+        "ci_upper_95": 0.675,
+        "std_error": 0.016656,
+        "bootstrap_mean": 0.642186
+      },
+      "precision": {
+        "point_estimate": 0.653226,
+        "ci_lower_95": 0.604834,
+        "ci_upper_95": 0.701398,
+        "std_error": 0.024253,
+        "bootstrap_mean": 0.652537
+      },
+      "recall": {
+        "point_estimate": 0.6075,
+        "ci_lower_95": 0.556614,
+        "ci_upper_95": 0.655106,
+        "std_error": 0.024228,
+        "bootstrap_mean": 0.607559
+      },
+      "f1": {
+        "point_estimate": 0.629534,
+        "ci_lower_95": 0.588692,
+        "ci_upper_95": 0.667494,
+        "std_error": 0.019778,
+        "bootstrap_mean": 0.628929
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.6425,
+        "ci_lower_95": 0.610802,
+        "ci_upper_95": 0.675255,
+        "std_error": 0.016576,
+        "bootstrap_mean": 0.642179
+      },
+      "auroc": {
+        "point_estimate": 0.685922,
+        "ci_lower_95": 0.64733,
+        "ci_upper_95": 0.722304,
+        "std_error": 0.018837,
+        "bootstrap_mean": 0.685387
+      },
+      "auprc": {
+        "point_estimate": 0.663222,
+        "ci_lower_95": 0.609107,
+        "ci_upper_95": 0.714488,
+        "std_error": 0.026509,
+        "bootstrap_mean": 0.66378
+      },
+      "mcc": {
+        "point_estimate": 0.285701,
+        "ci_lower_95": 0.221693,
+        "ci_upper_95": 0.351616,
+        "std_error": 0.033212,
+        "bootstrap_mean": 0.285052
+      }
+    },
+    "V5-D Gated Residual": {
+      "accuracy": {
+        "point_estimate": 0.63625,
+        "ci_lower_95": 0.6025,
+        "ci_upper_95": 0.67,
+        "std_error": 0.016911,
+        "bootstrap_mean": 0.636263
+      },
+      "precision": {
+        "point_estimate": 0.686007,
+        "ci_lower_95": 0.631752,
+        "ci_upper_95": 0.737546,
+        "std_error": 0.026951,
+        "bootstrap_mean": 0.685433
+      },
+      "recall": {
+        "point_estimate": 0.5025,
+        "ci_lower_95": 0.452433,
+        "ci_upper_95": 0.550981,
+        "std_error": 0.024727,
+        "bootstrap_mean": 0.503034
+      },
+      "f1": {
+        "point_estimate": 0.580087,
+        "ci_lower_95": 0.534485,
+        "ci_upper_95": 0.62242,
+        "std_error": 0.021926,
+        "bootstrap_mean": 0.57988
+      },
+      "balanced_accuracy": {
+        "point_estimate": 0.63625,
+        "ci_lower_95": 0.604317,
+        "ci_upper_95": 0.667776,
+        "std_error": 0.016163,
+        "bootstrap_mean": 0.636194
+      },
+      "auroc": {
+        "point_estimate": 0.70355,
+        "ci_lower_95": 0.66782,
+        "ci_upper_95": 0.739653,
+        "std_error": 0.017844,
+        "bootstrap_mean": 0.703533
+      },
+      "auprc": {
+        "point_estimate": 0.71216,
+        "ci_lower_95": 0.661008,
+        "ci_upper_95": 0.757048,
+        "std_error": 0.023523,
+        "bootstrap_mean": 0.713043
+      },
+      "mcc": {
+        "point_estimate": 0.282806,
+        "ci_lower_95": 0.217171,
+        "ci_upper_95": 0.346718,
+        "std_error": 0.033303,
+        "bootstrap_mean": 0.282607
+      }
+    }
+  },
+  "paired_model_comparisons": {
+    "A vs B": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.378792,
+        "ci_lower_95": 0.319502,
+        "ci_upper_95": 0.43428,
+        "std_error": 0.029261,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.188641,
+        "ci_lower_95": 0.134689,
+        "ci_upper_95": 0.239683,
+        "std_error": 0.025697,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.217144,
+        "ci_lower_95": 0.129903,
+        "ci_upper_95": 0.304612,
+        "std_error": 0.044355,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.12125,
+        "ci_lower_95": 0.0675,
+        "ci_upper_95": 0.170031,
+        "std_error": 0.02622,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-B Frequency",
+        "point_estimate_diff": 0.12125,
+        "ci_lower_95": 0.084627,
+        "ci_upper_95": 0.159392,
+        "std_error": 0.019309,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "A vs C": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.078846,
+        "ci_lower_95": 0.044127,
+        "ci_upper_95": 0.115839,
+        "std_error": 0.018572,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.059972,
+        "ci_lower_95": 0.03033,
+        "ci_upper_95": 0.091479,
+        "std_error": 0.015533,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.072035,
+        "ci_lower_95": 0.006146,
+        "ci_upper_95": 0.140188,
+        "std_error": 0.0351,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.038
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.03125,
+        "ci_lower_95": -0.003781,
+        "ci_upper_95": 0.0675,
+        "std_error": 0.018586,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.092
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": 0.03125,
+        "ci_lower_95": -0.000934,
+        "ci_upper_95": 0.064917,
+        "std_error": 0.017269,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.054
+      }
+    },
+    "A vs D": {
+      "f1": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.128293,
+        "ci_lower_95": 0.087335,
+        "ci_upper_95": 0.169955,
+        "std_error": 0.021609,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.042344,
+        "ci_lower_95": 0.010956,
+        "ci_upper_95": 0.071624,
+        "std_error": 0.015144,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.002
+      },
+      "mcc": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.07493,
+        "ci_lower_95": 0.00351,
+        "ci_upper_95": 0.146661,
+        "std_error": 0.036052,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.034
+      },
+      "accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.0375,
+        "ci_lower_95": -0.00125,
+        "ci_upper_95": 0.078781,
+        "std_error": 0.020325,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.064
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-A Spatial",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.0375,
+        "ci_lower_95": 0.002607,
+        "ci_upper_95": 0.07202,
+        "std_error": 0.017563,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.024
+      }
+    },
+    "B vs C": {
+      "f1": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.299946,
+        "ci_lower_95": -0.356775,
+        "ci_upper_95": -0.241433,
+        "std_error": 0.029891,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.128669,
+        "ci_lower_95": -0.175501,
+        "ci_upper_95": -0.079828,
+        "std_error": 0.024333,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.145109,
+        "ci_lower_95": -0.229203,
+        "ci_upper_95": -0.05432,
+        "std_error": 0.044233,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.002
+      },
+      "accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.09,
+        "ci_lower_95": -0.135,
+        "ci_upper_95": -0.04375,
+        "std_error": 0.022461,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-C Hybrid",
+        "point_estimate_diff": -0.09,
+        "ci_lower_95": -0.128478,
+        "ci_upper_95": -0.048664,
+        "std_error": 0.019649,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "B vs D": {
+      "f1": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.250499,
+        "ci_lower_95": -0.307117,
+        "ci_upper_95": -0.191406,
+        "std_error": 0.030647,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "auroc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.146297,
+        "ci_lower_95": -0.192496,
+        "ci_upper_95": -0.098228,
+        "std_error": 0.023396,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "mcc": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.142214,
+        "ci_lower_95": -0.22037,
+        "ci_upper_95": -0.055553,
+        "std_error": 0.042437,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.002
+      },
+      "accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.08375,
+        "ci_lower_95": -0.12125,
+        "ci_upper_95": -0.039969,
+        "std_error": 0.020042,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-B Frequency",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.08375,
+        "ci_lower_95": -0.117509,
+        "ci_upper_95": -0.047373,
+        "std_error": 0.018635,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.001
+      }
+    },
+    "C vs D": {
+      "f1": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.049447,
+        "ci_lower_95": 0.010633,
+        "ci_upper_95": 0.087318,
+        "std_error": 0.019671,
+        "statistically_significant_05": true,
+        "approx_two_sided_p_value": 0.006
+      },
+      "auroc": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": -0.017628,
+        "ci_lower_95": -0.043786,
+        "ci_upper_95": 0.011069,
+        "std_error": 0.013639,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.192
+      },
+      "mcc": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.002895,
+        "ci_lower_95": -0.060161,
+        "ci_upper_95": 0.065003,
+        "std_error": 0.032572,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.948
+      },
+      "accuracy": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.00625,
+        "ci_lower_95": -0.025,
+        "ci_upper_95": 0.0375,
+        "std_error": 0.016431,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.754
+      },
+      "balanced_accuracy": {
+        "model_1": "V5-C Hybrid",
+        "model_2": "V5-D Gated Residual",
+        "point_estimate_diff": 0.00625,
+        "ci_lower_95": -0.02491,
+        "ci_upper_95": 0.036822,
+        "std_error": 0.016076,
+        "statistically_significant_05": false,
+        "approx_two_sided_p_value": 0.71
+      }
+    }
+  },
+  "generator_generalization_analysis": {
+    "V5-A Spatial": {
+      "generator_recalls": {
+        "SD3": 0.91,
+        "Midjourney v6": 0.73,
+        "DALL-E 3": 0.79,
+        "SDXL": 0.74
+      },
+      "macro_generator_recall": 0.7925,
+      "worst_generator_recall": 0.73,
+      "generator_recall_std_dev": 0.0826
+    },
+    "V5-B Frequency": {
+      "generator_recalls": {
+        "SD3": 0.17,
+        "Midjourney v6": 0.34,
+        "DALL-E 3": 0.28,
+        "SDXL": 0.09
+      },
+      "macro_generator_recall": 0.22,
+      "worst_generator_recall": 0.09,
+      "generator_recall_std_dev": 0.1117
+    },
+    "V5-C Hybrid": {
+      "generator_recalls": {
+        "SD3": 0.62,
+        "Midjourney v6": 0.66,
+        "DALL-E 3": 0.65,
+        "SDXL": 0.5
+      },
+      "macro_generator_recall": 0.6075,
+      "worst_generator_recall": 0.5,
+      "generator_recall_std_dev": 0.0737
+    },
+    "V5-D Gated Residual": {
+      "generator_recalls": {
+        "SD3": 0.56,
+        "Midjourney v6": 0.67,
+        "DALL-E 3": 0.47,
+        "SDXL": 0.31
+      },
+      "macro_generator_recall": 0.5025,
+      "worst_generator_recall": 0.31,
+      "generator_recall_std_dev": 0.1522
+    }
+  },
+  "v5_d_calibration_summary": {
+    "nll": 0.997634,
+    "brier": 0.288056,
+    "ece": 0.251141,
+    "mce": 0.328129
+  }
+}

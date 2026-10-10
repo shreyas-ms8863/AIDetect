@@ -1,0 +1,80 @@
+metric,reported_value,recomputed_value,difference,status,notes
+clean_accuracy_V5-A Spatial,97.02,97.02,0.0,PASS,Report matches JSON
+clean_balanced_accuracy_V5-A Spatial,97.02,97.02,0.0,PASS,Report matches JSON
+clean_precision_V5-A Spatial,97.17,97.17,0.0,PASS,Report matches JSON
+clean_recall_V5-A Spatial,96.87,96.87,0.0,PASS,Report matches JSON
+clean_f1_V5-A Spatial,97.02,97.02,0.0,PASS,Report matches JSON
+clean_mcc_V5-A Spatial,0.9404,0.9404,0.0,PASS,Report matches JSON
+clean_auroc_V5-A Spatial,0.9945,0.9945,0.0,PASS,Report matches JSON
+clean_auprc_V5-A Spatial,0.9949,0.9949,0.0,PASS,Report matches JSON
+clean_accuracy_V5-B Frequency,90.66,90.66,0.0,PASS,Report matches JSON
+clean_balanced_accuracy_V5-B Frequency,90.66,90.66,0.0,PASS,Report matches JSON
+clean_precision_V5-B Frequency,90.68,90.68,0.0,PASS,Report matches JSON
+clean_recall_V5-B Frequency,90.62,90.62,0.0,PASS,Report matches JSON
+clean_f1_V5-B Frequency,90.65,90.65,0.0,PASS,Report matches JSON
+clean_mcc_V5-B Frequency,0.8131,0.8131,0.0,PASS,Report matches JSON
+clean_auroc_V5-B Frequency,0.9679,0.9679,0.0,PASS,Report matches JSON
+clean_auprc_V5-B Frequency,0.9672,0.9672,0.0,PASS,Report matches JSON
+clean_accuracy_V5-C Hybrid,96.88,96.88,0.0,PASS,Report matches JSON
+clean_balanced_accuracy_V5-C Hybrid,96.88,96.88,0.0,PASS,Report matches JSON
+clean_precision_V5-C Hybrid,96.64,96.64,0.0,PASS,Report matches JSON
+clean_recall_V5-C Hybrid,97.13,97.13,0.0,PASS,Report matches JSON
+clean_f1_V5-C Hybrid,96.89,96.89,0.0,PASS,Report matches JSON
+clean_mcc_V5-C Hybrid,0.9376,0.9376,0.0,PASS,Report matches JSON
+clean_auroc_V5-C Hybrid,0.9956,0.9956,0.0,PASS,Report matches JSON
+clean_auprc_V5-C Hybrid,0.9954,0.9954,0.0,PASS,Report matches JSON
+clean_accuracy_V5-D Gated Residual,97.18,97.18,0.0,PASS,Report matches JSON
+clean_balanced_accuracy_V5-D Gated Residual,97.18,97.18,0.0,PASS,Report matches JSON
+clean_precision_V5-D Gated Residual,97.3,97.3,0.0,PASS,Report matches JSON
+clean_recall_V5-D Gated Residual,97.04,97.04,0.0,PASS,Report matches JSON
+clean_f1_V5-D Gated Residual,97.17,97.17,0.0,PASS,Report matches JSON
+clean_mcc_V5-D Gated Residual,0.9436,0.9436,0.0,PASS,Report matches JSON
+clean_auroc_V5-D Gated Residual,0.996,0.996,0.0,PASS,Report matches JSON
+clean_auprc_V5-D Gated Residual,0.996,0.996,0.0,PASS,Report matches JSON
+clean_eer_V5-A Spatial,0.0301,0.0298,0.0003,REQUIRES_REVIEW,Draft report table 2.1 (3.01%) vs JSON recomputed (2.98%)
+clean_tpr_at_1_pct_fpr_V5-A Spatial,0.8842,0.9258,0.0416,REQUIRES_REVIEW,Draft report table 2.1 (88.42%) vs JSON recomputed (92.58%)
+clean_eer_V5-B Frequency,0.0889,0.0936,0.0047,REQUIRES_REVIEW,Draft report table 2.1 (8.89%) vs JSON recomputed (9.36%)
+clean_tpr_at_1_pct_fpr_V5-B Frequency,0.6127,0.6,0.0127,REQUIRES_REVIEW,Draft report table 2.1 (61.27%) vs JSON recomputed (60.00%)
+clean_eer_V5-C Hybrid,0.0291,0.0309,0.0018,REQUIRES_REVIEW,Draft report table 2.1 (2.91%) vs JSON recomputed (3.09%)
+clean_tpr_at_1_pct_fpr_V5-C Hybrid,0.9211,0.9236,0.0025,REQUIRES_REVIEW,Draft report table 2.1 (92.11%) vs JSON recomputed (92.36%)
+clean_eer_V5-D Gated Residual,0.0271,0.028,0.0009,REQUIRES_REVIEW,Draft report table 2.1 (2.71%) vs JSON recomputed (2.80%)
+clean_tpr_at_1_pct_fpr_V5-D Gated Residual,0.9289,0.9318,0.0029,REQUIRES_REVIEW,Draft report table 2.1 (92.89%) vs JSON recomputed (93.18%)
+clean_paired_diff_auroc_A_vs_D,-0.001413,-0.001413,0.0,PASS,Exact match: -0.001413 (D > A)
+clean_paired_p_val_auroc_A_vs_D,0.024,0.024,0.0,REQUIRES_REVIEW,Raw p=0.024 does not survive Holm correction (alpha_Holm=0.0167)
+clean_paired_diff_f1_A_vs_D,-0.001564,-0.001564,0.0,PASS,Exact match: -0.001564 (D > A)
+clean_paired_p_val_f1_A_vs_D,0.48,0.48,0.0,PASS,Exact match: p=0.480 (non-significant)
+defactify_f1_V5-A Spatial,70.84,70.84,0.0,PASS,Matches report table 4.1
+defactify_auroc_V5-A Spatial,0.7459,0.7459,0.0,PASS,Matches report table 4.1
+defactify_mcc_V5-A Spatial,0.3577,0.3577,0.0,PASS,Matches report table 4.1
+defactify_real_fpr_V5-A Spatial,44.5,44.5,0.0,PASS,Matches report table 4.1
+defactify_f1_V5-B Frequency,32.96,32.96,0.0,PASS,Matches report table 4.1
+defactify_auroc_V5-B Frequency,0.5573,0.5573,0.0,PASS,Matches report table 4.1
+defactify_mcc_V5-B Frequency,0.1406,0.1406,0.0,PASS,Matches report table 4.1
+defactify_real_fpr_V5-B Frequency,11.5,11.5,0.0,PASS,Matches report table 4.1
+defactify_f1_V5-C Hybrid,62.95,62.95,0.0,PASS,Matches report table 4.1
+defactify_auroc_V5-C Hybrid,0.6859,0.6859,0.0,PASS,Matches report table 4.1
+defactify_mcc_V5-C Hybrid,0.2857,0.2857,0.0,PASS,Matches report table 4.1
+defactify_real_fpr_V5-C Hybrid,32.25,32.25,0.0,PASS,Matches report table 4.1
+defactify_f1_V5-D Gated Residual,58.01,58.01,0.0,PASS,Matches report table 4.1
+defactify_auroc_V5-D Gated Residual,0.7036,0.7036,0.0,PASS,Matches report table 4.1
+defactify_mcc_V5-D Gated Residual,0.2828,0.2828,0.0,PASS,Matches report table 4.1
+defactify_real_fpr_V5-D Gated Residual,23.0,23.0,0.0,PASS,Matches report table 4.1
+defactify_v5_b_sd3_recall,0.17,0.17,0.0,PASS,SD3 recall is 17.0%
+defactify_v5_b_sdxl_recall,0.09,0.09,0.0,PASS,SDXL recall is 9.0% (worst generator)
+defactify_all_worst_on_sd3_claim,1.0,0.0,1.0,REQUIRES_REVIEW,Report claimed all models worst on SD3; V5-B worst on SDXL (9%) and Midjourney v6 is 34%
+subgroup_cifake_f1_v5_a,0.981949,0.981949,0.0,PASS,Matches report
+subgroup_cifake_f1_v5_d,0.971622,0.971622,0.0,PASS,Matches report
+subgroup_non_cifake_f1_v5_a,0.825444,0.825444,0.0,PASS,Matches report
+subgroup_non_cifake_f1_v5_d,0.973126,0.973126,0.0,PASS,Matches report
+subgroup_non_cifake_f1_v5_b,0.944046,0.944046,0.0,PASS,Matches report
+subgroup_cifake_count,8356.0,8356.0,0.0,PASS,Exact partition
+subgroup_non_cifake_count,644.0,644.0,0.0,PASS,Exact partition
+robustness_resize_25_mcc_v5_d,0.2295,0.2295,0.0,PASS,Matches report
+robustness_resize_25_mcc_v5_a,0.0706,0.0706,0.0,PASS,Matches report
+robustness_noise_0.10_mcc_v5_c,0.4478,0.4478,0.0,PASS,Matches report
+robustness_noise_0.10_mcc_v5_d,0.3645,0.3645,0.0,PASS,Matches report
+robustness_noise_0.10_mcc_v5_a,0.1485,0.1485,0.0,PASS,Matches report
+robustness_jpeg_q50_mcc_v5_a,0.8927,0.8927,0.0,PASS,Matches report
+robustness_jpeg_q50_mcc_v5_d,0.8724,0.8724,0.0,PASS,Matches report
+calibration_temperature_parameter_T,2.198387,2.198387,0.0,PASS,Exact parameter match
+calibration_external_ece,25.11,25.11,0.0,PASS,Matches report table 5.1
